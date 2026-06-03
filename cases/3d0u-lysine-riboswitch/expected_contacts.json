@@ -1,0 +1,24 @@
+{
+  "interactionKinds": [
+    "phosphateElectrostatic"
+  ],
+  "receptorResidues": [
+    "G:111",
+    "U:137",
+    "G:9",
+    "G:8",
+    "G:77",
+    "A:78"
+  ],
+  "ligandAtoms": [
+    "N",
+    "O1",
+    "O2",
+    "NZ",
+    "CB",
+    "CG",
+    "CD",
+    "CE"
+  ],
+  "notes": "Validated against Serganov et al. Cell 2008 (doi:10.1016/j.cell.2007.12.022) and Garst et al. J Biol Chem 2008 (PMC2504901). L-lysine binds at the five-helix junction; pocket completely envelops the ligand. Carboxylate: H-bonds G111-U137 wobble (via G111 N2) and G9-C76 W-C pair (via G9 N2) and G8 2'-OH. Epsilon-amino: H-bonds G111 N3 and O2', and G77 non-bridging phosphate O. Methylene chain packs against G77, A78, and the G8-G152 pair, but lysine is non-aromatic, so MacVina calibration does not list baseStacking as an expected term; this packing is a hydrophobic/shape contact outside the current aptamer terms. IRI (iridium hexamine phasing agent) stripped from receptor."
+}

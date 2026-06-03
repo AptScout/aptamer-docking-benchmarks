@@ -1,0 +1,26 @@
+{
+  "interactionKinds": [
+    "baseStacking",
+    "phosphateElectrostatic"
+  ],
+  "receptorResidues": [
+    "C:7",
+    "U:8",
+    "U:17",
+    "A:18",
+    "A:85",
+    "A:84"
+  ],
+  "ligandAtoms": [
+    "N1",
+    "C2",
+    "N3",
+    "C4",
+    "C5",
+    "N7",
+    "C8",
+    "N9",
+    "C7b"
+  ],
+  "notes": "Validated against Suddala et al. PNAS 2015 (doi:10.1073/pnas.1503955112) and Roth et al. 2007, Connelly et al. Nat Comm 2019. PRF is a synthetic preQ1 analog (7-aminomethyl-7-deazaguanine). C7 forms trans Watson-Crick interaction with guanine-like face of preQ1. U17 engages the minor-groove edge. A85 O2 and pro-Rp nonbridging phosphate O form H-bond/salt bridge to methylamine of preQ1. A-minor interactions (A84, A18) provide stacking that buttresses the binding-pocket floor. The ligand is sandwiched between J1-2 and J2-1 junctions of the three-way helical junction."
+}

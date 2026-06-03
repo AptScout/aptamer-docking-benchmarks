@@ -1,0 +1,15 @@
+{
+  "id": "4gxy-cobalamin-riboswitch",
+  "name": "Cobalamin riboswitch bound to adenosylcobalamin",
+  "systemType": "rna_ligand",
+  "curationStatus": "not_applicable",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "structureID": "4GXY",
+  "sourceDatabase": "RCSB PDB / HARIBOSS",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 3.05,
+  "source": "RCSB PDB 4GXY; HARIBOSS RNA-small-molecule complex candidate.",
+  "notes": "Adenosylcobalamin (MW ~1300+, cobalt center, corrin macrocycle) \u2014 too large and complex for current Vina. Ligand-P term fires (phosphate group) but overall scoring unreliable at this size. Defer pending large-ligand scoring improvements."
+}

@@ -1,0 +1,17 @@
+{
+  "id": "4qlm-c-di-amp-riboswitch",
+  "name": "c-di-AMP riboswitch bound to cyclic di-AMP (2BA)",
+  "systemType": "rna_ligand",
+  "curationStatus": "validated",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "structureID": "4QLM",
+  "sourceDatabase": "RCSB PDB / HARIBOSS",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.72,
+  "affinitySource": "not curated",
+  "source": "RCSB PDB 4QLM; HARIBOSS prep queue.",
+  "notes": "c-di-AMP riboswitch (ydaO class) at 2.72 \u00c5. 2BA is cyclic-di-AMP (MW ~658, 2 P atoms, residue 203). Both adenine bases stack on receptor; pyrophosphate contacts backbone. SO4 stripped; Mg retained. Second copy of 2BA (residue 204) excluded. Complement to 3IRW: tests same aptamer scoring terms with adenine vs guanine rings. Ref: Ren et al. 2015 Nature.",
+  "enrichmentSets": []
+}

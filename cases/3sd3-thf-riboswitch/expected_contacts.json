@@ -1,0 +1,31 @@
+{
+  "interactionKinds": [
+    "baseStacking",
+    "phosphateElectrostatic"
+  ],
+  "receptorResidues": [
+    "C:53",
+    "U:25",
+    "G:26",
+    "G:54",
+    "G:68",
+    "U:7",
+    "A:8"
+  ],
+  "ligandAtoms": [
+    "N1",
+    "N2",
+    "N3",
+    "N5",
+    "C4a",
+    "C8",
+    "C8a",
+    "C1b",
+    "C2b",
+    "C3b",
+    "C4b",
+    "C5b",
+    "C6b"
+  ],
+  "notes": "Validated against Trausch et al. Structure 2011 (doi:10.1016/j.str.2011.06.007). 3SD3 has U25C mutation in aptamer 1 (does not affect aptamer 2 / site 3WJ). FFO is folinic acid / (6S)-5-formyl-THF (MW 473). TWO BINDING SITES in the THF riboswitch aptamer: Site 3WJ (main): pteridine stacks between G26 and G54; C53 and U25 form H-bonds to pteridine N2/N3 and N1/N8 edges respectively; G68 (bulged) stacks with the aminobenzoate benzene ring. Site PK (secondary): pteridine stacks on A8; U7, U35, U42 H-bond pteridine. Glutamate tail disordered \u2014 no specific contacts in either site."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "1fmn-fmn-riboswitch-mg",
+  "name": "FMN riboswitch with crystallographic Mg bridge",
+  "systemType": "rna_ligand",
+  "curationStatus": "validated",
+  "configPath": "inputs/1fmn-mg-conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "structureID": "3F4E",
+  "sourceDatabase": "RCSB PDB",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 3.05,
+  "affinitySource": "not curated",
+  "source": "RCSB PDB 3F4E; FMN riboswitch bound to flavin mononucleotide with crystallographic Mg ion X:304 retained near the FMN phosphate.",
+  "notes": "Metal-coordination companion to 1fmn-fmn-riboswitch. The receptor keeps Mg X:304 from 3F4E, which lies 2.54 A from FMN O1P in the crystal structure and exercises MacVina's metalCoordination calibration term."
+}

@@ -1,0 +1,152 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aptamer-docking-benchmarks.local/schema/case.schema.json",
+  "title": "Aptamer Docking Benchmark Case",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "systemType",
+    "curationStatus",
+    "configPath",
+    "referencePoseMode"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9._-]*$"
+    },
+    "name": { "type": "string", "minLength": 1 },
+    "systemType": {
+      "type": "string",
+      "enum": [
+        "dna_aptamer_protein",
+        "rna_aptamer_protein",
+        "rna_ligand",
+        "dna_ligand",
+        "protein_nucleic_acid",
+        "other"
+      ]
+    },
+    "curationStatus": {
+      "type": "string",
+      "enum": [
+        "seed",
+        "parsed",
+        "contact_reviewed",
+        "affinity_reviewed",
+        "validated"
+      ]
+    },
+    "configPath": { "$ref": "#/$defs/caseRelativePath" },
+    "referencePoseMode": { "type": "integer", "minimum": 1 },
+    "preparationStatus": {
+      "type": "string",
+      "enum": [
+        "metadata_only",
+        "inputs_prepared",
+        "runnable",
+        "contact_curated",
+        "calibration_ready"
+      ]
+    },
+    "primaryLigandID": {
+      "type": "string",
+      "minLength": 1
+    },
+    "selectedReceptorChains": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "selectedLigandChains": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "retainedIonLigands": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "removedIonLigands": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "preparationNotes": { "type": "string" },
+    "expectedBestAffinityKcalMol": { "type": "number" },
+    "expectedContactsPath": { "$ref": "#/$defs/caseRelativePath" },
+    "decoyPosePath": { "$ref": "#/$defs/caseRelativePath" },
+    "decoyPosePaths": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/caseRelativePath" },
+      "uniqueItems": true
+    },
+    "enrichmentSets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "decoyPosePath"],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z0-9][a-z0-9._-]*$"
+          },
+          "curationStatus": {
+            "type": "string",
+            "enum": [
+              "seed",
+              "identity_reviewed",
+              "source_reviewed",
+              "validated"
+            ]
+          },
+          "description": { "type": "string" },
+          "source": { "type": "string" },
+          "receptorPath": { "$ref": "#/$defs/caseRelativePath" },
+          "activePosePath": { "$ref": "#/$defs/caseRelativePath" },
+          "activePosePaths": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/caseRelativePath" },
+            "uniqueItems": true
+          },
+          "activeLigands": {
+            "type": "array",
+            "items": { "type": "string", "minLength": 1 },
+            "uniqueItems": true
+          },
+          "crystalPosePath": { "$ref": "#/$defs/caseRelativePath" },
+          "decoyPosePath": { "$ref": "#/$defs/caseRelativePath" },
+          "decoyPosePaths": {
+            "type": "array",
+            "items": { "$ref": "#/$defs/caseRelativePath" },
+            "uniqueItems": true
+          },
+          "decoyLigandLabel": { "type": "string" },
+          "activeCount": { "type": "integer", "minimum": 0 },
+          "decoyCount": { "type": "integer", "minimum": 0 },
+          "intendedUse": { "type": "string" },
+          "notes": { "type": "string" }
+        },
+        "additionalProperties": false
+      },
+      "uniqueItems": true
+    },
+    "source": { "type": "string" },
+    "structureID": { "type": "string" },
+    "sourceDatabase": { "type": "string" },
+    "experimentalMethod": { "type": "string" },
+    "resolutionAngstrom": { "type": "number", "exclusiveMinimum": 0 },
+    "affinitySource": { "type": "string" },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "caseRelativePath": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^(?!/)(?!.*(^|/)\\.\\.(/|$)).+$"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "5dhb-rna-gmp-primer-template",
+  "name": "RNA primer-template bound to GMP",
+  "systemType": "rna_ligand",
+  "curationStatus": "seed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "structureID": "5DHB",
+  "sourceDatabase": "RCSB PDB / HARIBOSS",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 1.8,
+  "source": "RCSB PDB 5DHB; HARIBOSS RNA-small-molecule complex example.",
+  "notes": "Seed HARIBOSS expansion case. Ligand 5GP is guanosine-5'-monophosphate on chains A-D. High-resolution nucleotide-like ligand case; receptor/ligand instance selection is required."
+}

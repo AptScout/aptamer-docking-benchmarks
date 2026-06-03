@@ -1,0 +1,28 @@
+{
+  "id": "6c64-mango-ii-ekm",
+  "name": "Mango-II fluorescent RNA aptamer bound to EKM",
+  "systemType": "rna_ligand",
+  "curationStatus": "validated",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "preparationStatus": "runnable",
+  "primaryLigandID": "EKM",
+  "selectedReceptorChains": [
+    "A"
+  ],
+  "selectedLigandChains": [
+    "A"
+  ],
+  "retainedIonLigands": [],
+  "removedIonLigands": [
+    "K"
+  ],
+  "preparationNotes": "Initial runnable preparation uses RNA chain A and ligand EKM chain A from RCSB PDB 6C64. Crystallographic K ions were removed for this first MacVina stacking-focused case because the current aptamer scorer has no potassium-specific term. Open Babel generated PDBQT files; ligand aromatic perception emitted a kekulization warning, so this case remains parsed rather than contact_reviewed.",
+  "structureID": "6C64",
+  "sourceDatabase": "RCSB PDB / HARIBOSS",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 3.00014879601,
+  "source": "RCSB PDB 6C64; HARIBOSS RNA-small-molecule complex example.",
+  "notes": "HARIBOSS expansion case promoted to parsed with local ignored PDBQT inputs. Ligand EKM is a fluorescent dye-like heteroaromatic ligand bound in chains A and B; this case uses the chain A instance. Use as an early Mango-II base-stacking benchmark after reviewing contacts against the source structure/paper."
+}

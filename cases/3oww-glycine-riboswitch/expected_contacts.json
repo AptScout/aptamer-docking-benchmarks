@@ -1,0 +1,20 @@
+{
+  "interactionKinds": [
+    "phosphateElectrostatic"
+  ],
+  "receptorResidues": [
+    "G:32",
+    "A:33",
+    "A:34",
+    "U:69",
+    "A:71",
+    "G:47"
+  ],
+  "ligandAtoms": [
+    "N",
+    "O1",
+    "O2",
+    "CA"
+  ],
+  "notes": "Validated against Butler et al. PNAS 2011 (doi:10.1073/pnas.1011699108). 3OWW: Vibrio cholerae tandem glycine riboswitch, aptamer I (chain A, glycine residue 89). COOPERATIVE BINDING: two aptamers act cooperatively through a shared linker helix. Glycine is tiny and non-aromatic, so MacVina calibration does not list baseStacking as an expected term even when local distance checks place glycine near nucleobases; the current baseStacking scorer is reserved for planar aromatic or ring-like ligand systems. Binding is represented here through phosphate/backbone electrostatic contacts. Very weak binder due to small ligand size; not a good VS enrichment target."
+}

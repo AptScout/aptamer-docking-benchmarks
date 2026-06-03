@@ -1,0 +1,16 @@
+{
+  "id": "6wzs-ztp-riboswitch",
+  "name": "ZTP riboswitch bound to UG4 (pyridine-imidazole analog)",
+  "systemType": "rna_ligand",
+  "curationStatus": "validated",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "structureID": "6WZS",
+  "sourceDatabase": "RCSB PDB / HARIBOSS",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 3.23,
+  "affinitySource": "not curated",
+  "source": "RCSB PDB 6WZS; HARIBOSS prep queue.",
+  "notes": "ZTP riboswitch with UG4 (5-amino-1-(pyridin-3-yl)-1H-imidazole-4-carboxamide, MW 203) at 3.23 \u00c5. Simplified ZTP analog without phosphate tail. Heteroaromatic rings test baseStacking term. Mg present in binding site. Chain A used (2 chains). Ref: Kim et al. 2020 PNAS."
+}

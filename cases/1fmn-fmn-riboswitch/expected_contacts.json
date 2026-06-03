@@ -1,0 +1,27 @@
+{
+  "interactionKinds": [
+    "baseStacking",
+    "phosphateElectrostatic"
+  ],
+  "receptorResidues": [
+    "A:48",
+    "A:85",
+    "A:99",
+    "G:10",
+    "G:11",
+    "G:32",
+    "G:84"
+  ],
+  "ligandAtoms": [
+    "N1",
+    "C2",
+    "N3",
+    "C4",
+    "C4a",
+    "C5a",
+    "C10a",
+    "O1P",
+    "O2P"
+  ],
+  "notes": "Validated against Serganov, Huang & Patel, Nature 2009 (doi:10.1038/nature07642). FMN isoalloxazine ring intercalates between A48 (below) and A85 (above), providing continuous stacking alignment linking helices P6 and P3. Uracil-like edge of isoalloxazine forms Watson-Crick-like H-bonds with A99. FMN phosphate contacts conserved guanosines G10, G11, G32, G84 via H-bonds; also direct and Mg2+-mediated phosphate contacts. Mg ion M1 directly coordinates FMN phosphate oxygen and G33 N7."
+}

@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.macvina/aptamer-docking-benchmarks/benchmark.schema.json",
+  "title": "Aptamer Docking Benchmark Dataset",
+  "type": "object",
+  "required": ["schemaVersion", "datasetVersion", "name", "cases"],
+  "properties": {
+    "schemaVersion": { "type": "integer", "minimum": 1 },
+    "datasetVersion": { "type": "string" },
+    "name": { "type": "string" },
+    "description": { "type": "string" },
+    "cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "casePath"],
+        "properties": {
+          "id": { "type": "string" },
+          "casePath": { "type": "string" }
+        }
+      }
+    }
+  }
+}

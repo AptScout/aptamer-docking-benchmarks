@@ -1,0 +1,16 @@
+{
+  "id": "5dhb-gmp-primer-template",
+  "name": "RNA primer-template bound to GMP",
+  "systemType": "rna_ligand",
+  "curationStatus": "validated",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "structureID": "5DHB",
+  "sourceDatabase": "RCSB PDB / HARIBOSS",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 1.8,
+  "affinitySource": "not curated",
+  "source": "RCSB PDB 5DHB; HARIBOSS prep queue.",
+  "notes": "RNA primer-template complex with GMP at 1.80 \u00c5. Ligand 5GP is guanosine-5'-monophosphate (MW 363, 1 P atom). Nucleotide-like ligand exercises baseStacking (guanine ring), phosphateElectrostatic (5'-phosphate near backbone), and ligandPhosphateWeight (1 P atom). Chain A used (4 identical chains in ASU). Ref: PDB 5DHB."
+}

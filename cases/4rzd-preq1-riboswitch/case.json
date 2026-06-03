@@ -1,0 +1,39 @@
+{
+  "id": "4rzd-preq1-riboswitch",
+  "name": "PreQ1 riboswitch bound to PRF (7-aminomethyl-7-deazaguanine analog)",
+  "systemType": "rna_ligand",
+  "curationStatus": "validated",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "structureID": "4RZD",
+  "sourceDatabase": "RCSB PDB",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.75,
+  "affinitySource": "Roth A et al. Nat Struct Mol Biol 2007; ITC data from PMC5749633",
+  "source": "RCSB PDB 4RZD",
+  "notes": "PreQ1 class-I riboswitch aptamer domain. Ligand PRF is a synthetic preQ1 analog. Ligand inserts into a preformed pocket and stacks on C15/A14. Phosphate backbone of G5/A29 contacts the amino group. Compact ~34-nt fold; good test of narrow deep-pocket sampling.",
+  "enrichmentSets": [
+    {
+      "id": "preq1-enrich",
+      "curationStatus": "seed",
+      "description": "PreQ1 riboswitch actives (deazaguanine analogs) vs property-matched decoys",
+      "source": "Literature actives + RDKit property-matched decoys (Tanimoto<0.35 vs actives)",
+      "receptorPath": "inputs/receptor.pdbqt",
+      "activePosePath": "enrich/actives.pdbqt",
+      "activeLigands": [
+        "PRF",
+        "preQ1",
+        "preQ0"
+      ],
+      "crystalPosePath": "enrich/crystal.pdbqt",
+      "decoyPosePath": "enrich/decoys.pdbqt",
+      "decoyLigandLabel": "UNL",
+      "activeCount": 5,
+      "decoyCount": 272,
+      "intendedUse": "active-vs-decoy enrichment calibration for aptamer scoring terms"
+    }
+  ],
+  "affinityNotes": "preQ1 binds class III preQ1 riboswitch with Kd ~72 nM (Ferre-D'Amare group). PRF is a synthetic analog; exact Kd for PRF to 4RZD not published.",
+  "expectedBestAffinityKcalMol": -9.75
+}

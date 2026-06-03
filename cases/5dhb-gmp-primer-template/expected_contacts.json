@@ -1,0 +1,30 @@
+{
+  "interactionKinds": [
+    "baseStacking",
+    "phosphateElectrostatic"
+  ],
+  "receptorResidues": [
+    "A:7",
+    "A:8",
+    "A:9",
+    "U:10"
+  ],
+  "ligandAtoms": [
+    "N1",
+    "N2",
+    "C2",
+    "N3",
+    "C4",
+    "C5",
+    "C6",
+    "O6",
+    "N7",
+    "C8",
+    "N9",
+    "O5'",
+    "O1P",
+    "O2P",
+    "O3P"
+  ],
+  "notes": "Based on PDB 5DHB (1.80 \u00c5 resolution). GMP (5\u2032-guanosine monophosphate) is the nascent nucleotide being positioned at the 3\u2032-end of an RNA primer for extension \u2014 this is an RNA-dependent RNA primer-template complex. GMP guanine stacks on the terminal adenosine A7 of the primer (3.38 \u00c5 confirmed). The 5\u2032-phosphate of GMP interacts with template backbone phosphates. Watson-Crick template pairing expected with the complementary C residue on the template strand. ligandPhosphateWeight fires (1P in GMP) \u2014 enrichment AUC 0.35 with initial decoys. Note: GMP is being ADDED to the primer, not binding a riboswitch \u2014 this case tests nucleotide binding to an RNA template, not gene regulation."
+}

@@ -1,0 +1,31 @@
+{
+  "id": "5bjp-corn-dfho",
+  "name": "Corn RNA aptamer bound to DFHO",
+  "systemType": "rna_ligand",
+  "curationStatus": "validated",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "preparationStatus": "runnable",
+  "primaryLigandID": "747",
+  "selectedReceptorChains": [
+    "Y"
+  ],
+  "selectedLigandChains": [
+    "Y"
+  ],
+  "retainedIonLigands": [],
+  "removedIonLigands": [
+    "IR",
+    "K",
+    "MG",
+    "DMS"
+  ],
+  "preparationNotes": "Initial runnable preparation uses RNA chain Y and ligand 747 (DFHO) chain Y from RCSB PDB 5BJP. The PDB contains two RNA chains (E and Y); only chain Y bears the DFHO ligand. All crystallographic ions (IR iridium hexammine soaking/phasing agent, K potassium, MG magnesium, DMS dimethyl sulfoxide) were removed for this first MacVina stacking-focused case. Open Babel 3.1.0 generated PDBQT files with preserved atom names; ligand torsions had 2 active rotatable bonds.",
+  "structureID": "5BJP",
+  "sourceDatabase": "RCSB PDB / HARIBOSS",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.51,
+  "source": "RCSB PDB 5BJP; HARIBOSS RNA-small-molecule complex example.",
+  "notes": "HARIBOSS expansion case promoted to parsed with local ignored PDBQT inputs. Ligand 747 is DFHO, a fluorogenic dye-like heteroaromatic ligand bound specifically to RNA chain Y (PDB chain Y residue 104). Chain E is a crystallographic dimer without ligand. Use as a fluorogenic aptamer base-stacking benchmark alongside 6C64-mango-ii-ekm."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "3irw-c-di-gmp-riboswitch",
+  "name": "c-di-GMP riboswitch bound to cyclic di-GMP (C2E)",
+  "systemType": "rna_ligand",
+  "curationStatus": "validated",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "structureID": "3IRW",
+  "sourceDatabase": "RCSB PDB / HARIBOSS",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.7,
+  "affinitySource": "not curated",
+  "source": "RCSB PDB 3IRW; HARIBOSS prep queue.",
+  "notes": "c-di-GMP riboswitch aptamer (GEMM-I class) from Clostridium acetobutylicum at 2.70 \u00c5. C2E is cyclic-di-GMP (MW ~690, 2 P atoms). Both guanine bases stack on receptor nucleobases; pyrophosphate bridges contact backbone P. IRI (iridium hexamine, phasing agent) and GTP stripped from receptor. Mg retained. Exercises ligand-P term (2P), stacking (2 guanine rings), phosphate. Ref: Kang et al. 2012 PNAS."
+}

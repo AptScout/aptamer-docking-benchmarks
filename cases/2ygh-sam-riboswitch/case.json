@@ -1,0 +1,39 @@
+{
+  "id": "2ygh-sam-riboswitch",
+  "name": "SAM-I riboswitch bound to S-adenosylmethionine",
+  "systemType": "rna_ligand",
+  "curationStatus": "validated",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "structureID": "2YGH",
+  "sourceDatabase": "RCSB PDB",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.6,
+  "affinitySource": "Montange RK & Batey RT, Nature 2006; Discrimination study PMC2822714",
+  "source": "RCSB PDB 2YGH",
+  "notes": "SAM-I riboswitch aptamer domain from Thermoanaerobacter tengcongensis. SAM ligand: adenosine moiety stacks on G11/A10, methionine tail contacts backbone phosphates of A61/G62. Large ligand (MW 399) with multiple interaction modes; exercises both stacking and phosphate terms simultaneously.",
+  "enrichmentSets": [
+    {
+      "id": "sam-enrich",
+      "curationStatus": "contact_reviewed",
+      "description": "SAM + adenosine + methionine actives vs filtered ChEMBL decoys. 3-active set; AUC 0.725 at 1k.",
+      "source": "Literature actives + RDKit property-matched decoys (Tanimoto<0.35 vs actives)",
+      "receptorPath": "inputs/receptor.pdbqt",
+      "activePosePath": "enrich/actives.pdbqt",
+      "activeLigands": [
+        "SAM",
+        "SAH",
+        "sinefungin"
+      ],
+      "crystalPosePath": "enrich/crystal.pdbqt",
+      "decoyPosePath": "enrich/decoys.pdbqt",
+      "decoyLigandLabel": "UNL",
+      "activeCount": 3,
+      "decoyCount": 238,
+      "intendedUse": "active-vs-decoy enrichment calibration for aptamer scoring terms"
+    }
+  ],
+  "affinityNotes": "SAM binds T. tengcongensis SAM-I riboswitch Kd ~100 nM (ITC, Montange & Batey 2006 + variants). >500-fold selectivity for SAM over SAH.",
+  "expectedBestAffinityKcalMol": -9.55
+}

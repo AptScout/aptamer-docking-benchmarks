@@ -1,0 +1,55 @@
+{
+  "id": "2hoj-tpp-riboswitch",
+  "name": "TPP riboswitch bound to thiamine pyrophosphate",
+  "systemType": "rna_ligand",
+  "curationStatus": "validated",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "structureID": "2HOJ",
+  "sourceDatabase": "RCSB PDB",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.5,
+  "affinitySource": "Kulshina N et al. Nat Struct Mol Biol 2009, PMC2802028; Serganov et al. 2006",
+  "source": "RCSB PDB 2HOJ",
+  "notes": "TPP riboswitch from Escherichia coli thiM mRNA. Native ligand TPP (thiamine pyrophosphate). Aminopyrimidine stacks on A84; pyrophosphate tail contacts backbone P atoms of C91/G92. Complementary to 2GDI (different organism, native vs analog ligand). Both TPP structures together enable cross-validation of TPP pose prediction.",
+  "enrichmentSets": [
+    {
+      "id": "tpp-enrich",
+      "curationStatus": "seed",
+      "description": "TPP riboswitch actives (thiamine/pyrophosphate analogs) vs property-matched decoys",
+      "source": "Literature actives + RDKit property-matched decoys (Tanimoto<0.35 vs actives)",
+      "receptorPath": "inputs/receptor.pdbqt",
+      "activePosePath": "enrich/actives.pdbqt",
+      "activeLigands": [
+        "TPP",
+        "thiamine"
+      ],
+      "crystalPosePath": "enrich/crystal.pdbqt",
+      "decoyPosePath": "enrich/decoys.pdbqt",
+      "decoyLigandLabel": "UNL",
+      "activeCount": 7,
+      "decoyCount": 266,
+      "intendedUse": "active-vs-decoy enrichment calibration for aptamer scoring terms"
+    },
+    {
+      "id": "tpp-enrich-filtered",
+      "curationStatus": "contact_reviewed",
+      "description": "TPP riboswitch actives vs filtered non-nucleotide decoys (no P atoms, no nucleobase scaffolds). 2HOJ lacks Mg in receptor \u2014 use 2GDI for Mg-aware benchmark.",
+      "source": "Literature actives (thiamine analogs) + ChEMBL property-matched decoys filtered to exclude P atoms and nucleobase scaffolds (no purines, pyrimidines, nucleosides, phosphates)",
+      "receptorPath": "inputs/receptor.pdbqt",
+      "activePosePath": "enrich/actives.pdbqt",
+      "activeLigands": [
+        "TPP",
+        "thiamine",
+        "pyrithiamine_PP"
+      ],
+      "crystalPosePath": "enrich/crystal.pdbqt",
+      "decoyPosePath": "enrich/decoys.pdbqt",
+      "decoyLigandLabel": "UNL",
+      "intendedUse": "active-vs-decoy enrichment with nucleotide-chemotype decoys excluded"
+    }
+  ],
+  "affinityNotes": "TPP binds E. coli thiM riboswitch Kd ~198 nM at 0.5 mM Mg2+, ~9 nM at 2.5 mM Mg2+. Thiamine monophosphate ~30-fold weaker.",
+  "expectedBestAffinityKcalMol": -9.96
+}

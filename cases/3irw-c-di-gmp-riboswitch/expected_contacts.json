@@ -1,0 +1,43 @@
+{
+  "interactionKinds": [
+    "baseStacking",
+    "phosphateElectrostatic",
+    "metalCoordination"
+  ],
+  "receptorResidues": [
+    "G:20",
+    "C:92",
+    "A:47",
+    "A:18",
+    "C:46",
+    "G:14",
+    "G:21"
+  ],
+  "ligandAtoms": [
+    "N1a",
+    "C2a",
+    "N2a",
+    "N3a",
+    "C4a",
+    "C5a",
+    "C6a",
+    "O6a",
+    "N7a",
+    "N9a",
+    "N1b",
+    "C2b",
+    "N2b",
+    "N3b",
+    "C4b",
+    "C5b",
+    "C6b",
+    "O6b",
+    "N7b",
+    "N9b",
+    "O1P_a",
+    "O2P_a",
+    "O1P_b",
+    "O2P_b"
+  ],
+  "notes": "Validated against Smith et al. Nat Struct Mol Biol 2009 (doi:10.1038/nsmb.1702) and Kang et al. PNAS 2012. c-di-GMP is recognised asymmetrically by the monomeric riboswitch. A47 is the single most critical residue \u2014 it intercalates between both guanine bases of c-di-GMP, creating a continuous 3-base stack (G\u03b1\u2013A47\u2013G\u03b2). G20 Hoogsteen-pairs with G\u03b1; C92 Watson-Crick-pairs with G\u03b2. Metal coordination: G\u03b1 5\u2032-phosphate coordinated by a hydrated Mg\u00b2\u207a (outer-sphere); G\u03b2 5\u2032-phosphate makes inner-sphere contact to a second Mg\u00b2\u207a. Mg also contacts G19 and G20 to stabilise the binding pocket."
+}

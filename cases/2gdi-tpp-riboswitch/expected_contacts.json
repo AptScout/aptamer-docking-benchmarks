@@ -1,0 +1,32 @@
+{
+  "interactionKinds": [
+    "baseStacking",
+    "phosphateElectrostatic"
+  ],
+  "receptorResidues": [
+    "G:42",
+    "A:43",
+    "A:41",
+    "G:21",
+    "G:40",
+    "G:19",
+    "G:60",
+    "C:77",
+    "G:78"
+  ],
+  "ligandAtoms": [
+    "N1",
+    "N3",
+    "N4",
+    "C2",
+    "C4",
+    "C5",
+    "C6",
+    "O1Pa",
+    "O2Pa",
+    "O3Pa",
+    "O1Pb",
+    "O2Pb"
+  ],
+  "notes": "Validated against Serganov et al. Nature 2006 (doi:10.1038/nature04740). 2GDI structure: Arabidopsis thaliana TPP riboswitch with CCC (pyrithiamine PP analog). CRITICAL: thiazole ring is NOT recognised by the RNA \u2014 only the aminopyrimidine (HMP) arm and pyrophosphate tail are contacted. Aminopyrimidine: continuous stacking A41-G42-HMP-A43-G21; base triples (G19\u00b7A47)\u00b7G42 and (G18-C48)\u00b7A41 stabilise the pocket. G40 and G19 2\u2032-OH H-bond to polar aminopyrimidine groups. Pyrophosphate: two Mg\u00b2\u207a ions (Mg1/Mg2) coordinate the phosphate oxygens; Mg1 directly contacts G60 O6 and G78 O6; C77 and G78 H-bond terminal phosphate. Chain X used for 2GDI (two-chain ASU)."
+}

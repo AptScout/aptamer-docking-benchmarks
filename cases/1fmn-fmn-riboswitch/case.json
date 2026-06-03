@@ -1,0 +1,36 @@
+{
+  "id": "1fmn-fmn-riboswitch",
+  "name": "FMN riboswitch bound to flavin mononucleotide",
+  "systemType": "rna_ligand",
+  "curationStatus": "validated",
+  "configPath": "inputs/1fmn-conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "enrichmentSets": [
+    {
+      "id": "fmn-enrich-calib",
+      "curationStatus": "seed",
+      "description": "Local FMN riboswitch ligand-enrichment set for active-vs-decoy discrimination.",
+      "source": "Local enrichment files under enrich_calib/. Active/crystal FMN identity inspected from PDBQT atom records; decoy generation protocol not yet traced.",
+      "receptorPath": "enrich_calib/receptor.pdbqt",
+      "activePosePath": "enrich_calib/actives.pdbqt",
+      "activeLigands": [
+        "FMN"
+      ],
+      "crystalPosePath": "enrich_calib/crystal.pdbqt",
+      "decoyPosePath": "enrich_calib/decoys.pdbqt",
+      "decoyLigandLabel": "UNL",
+      "activeCount": 1,
+      "decoyCount": 60,
+      "intendedUse": "active-vs-decoy ligand enrichment and contact-specificity calibration",
+      "notes": "The active and crystal poses are FMN with 31 atoms matching the reference ligand. The 60 decoys are different UNL ligands, not alternate FMN poses. Do not treat them as same-ligand pose decoys for RMSD; use them for enrichment/contact-specificity calibration."
+    }
+  ],
+  "structureID": "3F4E",
+  "sourceDatabase": "RCSB PDB",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 3.05,
+  "affinitySource": "not curated",
+  "source": "RCSB PDB 3F4E; Crystal structure of Fusobacterium nucleatum FMN riboswitch bound to flavin mononucleotide (FMN). Split RNA construct.",
+  "notes": "Seed RNA-ligand case selected to exercise both baseStacking and phosphateElectrostatic terms simultaneously. FMN isoalloxazine ring stacks on guanine base and contacts phosphate backbone. Inputs prepared from 3F4E: RNA chains X+Y as receptor, HETATM FMN as ligand, Fab absent."
+}

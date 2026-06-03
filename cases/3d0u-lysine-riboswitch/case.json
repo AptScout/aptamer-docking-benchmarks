@@ -1,0 +1,17 @@
+{
+  "id": "3d0u-lysine-riboswitch",
+  "name": "Lysine riboswitch bound to L-lysine",
+  "systemType": "rna_ligand",
+  "curationStatus": "validated",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "structureID": "3D0U",
+  "sourceDatabase": "RCSB PDB / HARIBOSS",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.8,
+  "affinitySource": "not curated",
+  "source": "RCSB PDB 3D0U; HARIBOSS prep queue.",
+  "notes": "Lysine riboswitch (L-box class) from Thermatoga maritima at 2.80 \u00c5. LYS is L-lysine (MW 146, charged amino acid). No aromatic rings \u2192 no stacking. Lysine amino/carboxylate groups contact backbone P and Mg\u00b2\u207a via electrostatics. IRI (iridium hexamine phasing agent) stripped. Tests phosphate electrostatic term for non-aromatic charged ligands. Ref: Serganov et al. 2008 Cell.",
+  "enrichmentNote": "Enrichment AUC 0.22 \u2014 Vina inverted. Lysine amino acid actives score worse than amino acid/aromatic decoys because Vina Gaussian terms cannot capture the H-bond cage geometry (G111 carboxylate contacts, G77 phosphate \u03b5-amino contacts). Same fundamental inversion as SAM. Gnina CNN rescoring would partially correct; explicit electrostatics needed for full fix."
+}

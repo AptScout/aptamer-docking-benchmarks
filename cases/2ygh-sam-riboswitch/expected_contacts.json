@@ -1,0 +1,25 @@
+{
+  "interactionKinds": [
+    "baseStacking"
+  ],
+  "receptorResidues": [
+    "A:45",
+    "U:57",
+    "G:11",
+    "A:46",
+    "U:78",
+    "U:7",
+    "A:87"
+  ],
+  "ligandAtoms": [
+    "N6",
+    "N1",
+    "C8",
+    "N9",
+    "S",
+    "C_carboxylate",
+    "O1",
+    "O2"
+  ],
+  "notes": "Validated against Montange & Batey Nature 2006 (doi:10.1038/nature04440) and Stoddard et al. Structure 2010. SAM is recognised through three chemically distinct moieties: (1) Adenosine: base triple A45-U57-SAM adenine; sheared A46-U78 pair recognises the Watson-Crick and Hoogsteen faces. (2) Methionine main chain: contacts G11-(C44-G58) triple; carboxylate H-bonds G11 N1/N2 Watson-Crick face. (3) Sulfonium cation: electrostatic interaction with U7 and U88 carbonyl O2/O4 in the P1 helix minor groove. MacVina calibration does not list phosphateElectrostatic as an expected term for this prepared PDBQT because the local reference geometry places the methionine-tail sulfonium/amine atoms outside the phosphate cutoff from A61/A62, and the cited sulfonium contact is to base carbonyl oxygens rather than backbone phosphate atoms. The ligandAtoms list includes literature-recognition atoms; only the adenine-ring atoms are currently expected to contribute through MacVina baseStacking. Note: 2YGH has G2nA kink-turn mutation; binding contacts same as wild-type."
+}

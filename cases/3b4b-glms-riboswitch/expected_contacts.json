@@ -1,0 +1,21 @@
+{
+  "interactionKinds": [
+    "phosphateElectrostatic"
+  ],
+  "receptorResidues": [
+    "G:1",
+    "G:57",
+    "U:43",
+    "A:2",
+    "G:65",
+    "G:66"
+  ],
+  "ligandAtoms": [
+    "N2",
+    "O1",
+    "O1P",
+    "O2P",
+    "O3P"
+  ],
+  "notes": "Validated against Klein & Ferr\u00e9-D'Amar\u00e9 Science 2006 (doi:10.1126/science.1129666) and Cochrane et al. 2007. GlcN6P is a RIBOZYME COFACTOR not a classical riboswitch ligand \u2014 it positions the 2\u2032-OH for self-cleavage of the scissile phosphate at G1. CRITICAL CONTACTS: C2-amine of GlcN6P H-bonds the leaving group G1 5\u2032-O; also H-bonds U43 O4. C1-OH H-bonds G57 N1 in the minor groove. 6-Phosphate H-bonds G1 N1 and backbone atoms. G1 N1 is directly involved in the cleavage reaction (general acid). Both RNA chains (A+B) contribute to the active site in 3B4B. CALIBRATION NOTES: baseStacking removed from interactionKinds (2026-06-03) because GlcN6P has no aromatic ring. Primary literature interactions are H-bonds not yet scored by MacVina aptamer terms. phosphateElectrostatic is the only scorable term. Used as negative control for baseStacking term specificity."
+}

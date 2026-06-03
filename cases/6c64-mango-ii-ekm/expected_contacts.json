@@ -1,0 +1,28 @@
+{
+  "interactionKinds": [
+    "baseStacking"
+  ],
+  "receptorResidues": [
+    "G:13",
+    "G:29",
+    "A:17",
+    "A:22",
+    "A:23",
+    "A:28"
+  ],
+  "ligandAtoms": [
+    "C7",
+    "C8",
+    "C9",
+    "N10",
+    "C11",
+    "C12",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "N1",
+    "C1"
+  ],
+  "notes": "Validated against Trachman et al. Nat Chem Biol 2019 (doi:10.1038/s41589-018-0216-8) and Ryckelynck 2018 Nat Comm. 6C64: Mango-II bound to TO3-Biotin (EKM). Two chains A+B in structure; chain A used for MacDock receptor/ligand. Binding mechanism: EKM thiazolium-quinolinium heterocycles stack directly on G13/G29 of the T3 (tier-3) G-quartet. Five loop adenines (A17, A22, A23, A28 + A14) define the fluorophore binding pocket. A22 most critical: van der Waals to methine linker; A22U mutation improves selectivity (TO1 vs TO3). No phosphate in EKM ligand \u2192 only stacking term fires."
+}

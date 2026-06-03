@@ -1,0 +1,28 @@
+{
+  "interactionKinds": [
+    "baseStacking"
+  ],
+  "receptorResidues": [
+    "G:22",
+    "G:25",
+    "G:12",
+    "A:14",
+    "A:24"
+  ],
+  "ligandAtoms": [
+    "C6",
+    "C7",
+    "N3",
+    "C4",
+    "C5",
+    "O1",
+    "C1",
+    "C2",
+    "C3",
+    "C4b",
+    "C5b",
+    "C6b",
+    "F"
+  ],
+  "notes": "Validated against Warner et al. Nat Chem Biol 2017 (doi:10.1038/nchembio.2439) and Sjekloca & Pabit 2019. 5BJP: Corn homodimer with DFHO (747 ligand). CRITICAL: Corn functions as a HOMODIMER \u2014 DFHO is encapsulated at the interprotomer interface, sandwiched between a G-quadruplex from each chain. Chain Y used for MacDock receptor; chain E is the second protomer. DFHO imidazolinone-phenyl system stacks on G-quartets from both protomers. Six unpaired adenosines at the dimer interface break two-fold symmetry. No phosphate in DFHO \u2192 only stacking term fires. Single-chain MacDock docking cannot fully capture dimer-interface binding."
+}

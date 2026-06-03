@@ -1,0 +1,16 @@
+{
+  "id": "3oww-glycine-riboswitch",
+  "name": "Glycine riboswitch aptamer 1 bound to glycine",
+  "systemType": "rna_ligand",
+  "curationStatus": "validated",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "structureID": "3OWW",
+  "sourceDatabase": "RCSB PDB / HARIBOSS",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.8,
+  "affinitySource": "not curated",
+  "source": "RCSB PDB 3OWW; HARIBOSS prep queue.",
+  "notes": "Glycine riboswitch tandem aptamer I from Fusobacterium nucleatum at 2.80 \u00c5. GLY is glycine (MW 75, 5 atoms). Smallest RNA-binding ligand in the dataset. No aromatic rings, no phosphate \u2192 tests backbone-only electrostatic contacts. Chain A (aptamer I) used; GLY residue 89. CCC and GDP are crystallographic artifacts stripped. Mg retained. Note: at 5 atoms, PDBQT preparation is challenging and pose quality unreliable. Ref: Butler et al. 2011 Nat Struct Mol Biol."
+}

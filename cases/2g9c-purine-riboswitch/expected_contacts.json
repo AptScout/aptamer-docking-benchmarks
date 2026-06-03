@@ -1,0 +1,20 @@
+{
+  "interactionKinds": [
+    "baseStacking"
+  ],
+  "receptorResidues": [
+    "A:73",
+    "A:52"
+  ],
+  "ligandAtoms": [
+    "N1",
+    "N3",
+    "N4",
+    "N5",
+    "C2",
+    "C4",
+    "C5",
+    "C6"
+  ],
+  "notes": "Validated against Beisel & Batey J Am Chem Soc 2006 (doi:10.1021/ja063645t) and Serganov et al. 2004 (adenine riboswitch structure). 2G9C: V. vulnificus add adenine riboswitch bound to 3AY (pyrimidine-2,4,6-triamine, a modified pyrimidine). 3AY binds the adenine riboswitch like adenine: U74 is the SPECIFICITY BASE forming Watson-Crick H-bonds to the ligand; U51, U47, and U22 form a three-sided H-bond pocket around the other faces. A73 and A52 stack above/below the ligand in the binding cavity. receptorResidues is scoped to A:73 and A:52 only (the baseStacking partners) because U:74, U:51, U:47, and U:22 are H-bond contacts (2.87 \u00c5 range), not \u03c0-stacking, and are not scorable by MacVina's current baseStacking term. 3AY has no phosphate group \u2014 phosphateElectrostatic is intentionally absent."
+}

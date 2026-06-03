@@ -1,0 +1,31 @@
+{
+  "interactionKinds": [
+    "baseStacking",
+    "phosphateElectrostatic"
+  ],
+  "receptorResidues": [
+    "G:63",
+    "U:70",
+    "G:71",
+    "G:17",
+    "C:35",
+    "C:69"
+  ],
+  "ligandAtoms": [
+    "N1",
+    "C2",
+    "N3",
+    "C4",
+    "C5",
+    "C6",
+    "N4",
+    "C4a",
+    "N7",
+    "C8",
+    "N9",
+    "C8a",
+    "N12",
+    "O13"
+  ],
+  "notes": "Validated against Kim et al. PNAS 2020 (doi:10.1073/pnas.2006209117) and Greenlee et al. Cell Chem Biol 2022. 6WZS structure: F. ulcerans ZTP riboswitch bound to UG4 (5-amino-1-(pyridin-3-yl)-1H-imidazole-4-carboxamide, a synthetic ZTP analog without phosphate). UG4 binds via: pyridine ring \u03c0-stacking with G63; imidazole ring stacking on G17/G71. G63 2\u2032-OH H-bonds the ligand. C69 N4 H-bonds the natural ligand ZMP; UG4 loses the ZMP phosphate-mediated H-bond to backbone, explaining ~2-fold lower affinity but maintained in vitro riboswitch activation. Mg\u00b2\u207a ions mediate some ligand-backbone contacts in 3.23 \u00c5 structure."
+}

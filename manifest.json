@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "datasetVersion": "0.6.0-alpha",
+  "name": "Shared Aptamer Docking Benchmarks",
+  "description": "Tool-neutral aptamer and nucleic-acid docking benchmark metadata for MacVina, MacDock, and external comparator calibration.",
+  "cases": [
+    {
+      "id": "t6-thrombin-vina",
+      "casePath": "cases/t6-thrombin-vina/case.json"
+    },
+    {
+      "id": "4q9r-spinach-2zy",
+      "casePath": "cases/4q9r-spinach-2zy/case.json"
+    },
+    {
+      "id": "1fmn-fmn-riboswitch",
+      "casePath": "cases/1fmn-fmn-riboswitch/case.json"
+    },
+    {
+      "id": "1fmn-fmn-riboswitch-mg",
+      "casePath": "cases/1fmn-fmn-riboswitch-mg/case.json"
+    },
+    {
+      "id": "2g9c-purine-riboswitch",
+      "casePath": "cases/2g9c-purine-riboswitch/case.json"
+    },
+    {
+      "id": "4rzd-preq1-riboswitch",
+      "casePath": "cases/4rzd-preq1-riboswitch/case.json"
+    },
+    {
+      "id": "2gdi-tpp-riboswitch",
+      "casePath": "cases/2gdi-tpp-riboswitch/case.json"
+    },
+    {
+      "id": "2ygh-sam-riboswitch",
+      "casePath": "cases/2ygh-sam-riboswitch/case.json"
+    },
+    {
+      "id": "3b4b-glms-riboswitch",
+      "casePath": "cases/3b4b-glms-riboswitch/case.json"
+    },
+    {
+      "id": "2hoj-tpp-riboswitch",
+      "casePath": "cases/2hoj-tpp-riboswitch/case.json"
+    },
+    {
+      "id": "3sd3-thf-riboswitch",
+      "casePath": "cases/3sd3-thf-riboswitch/case.json"
+    },
+    {
+      "id": "5dhb-gmp-primer-template",
+      "casePath": "cases/5dhb-gmp-primer-template/case.json"
+    },
+    {
+      "id": "6c64-mango-ii-ekm",
+      "casePath": "cases/6c64-mango-ii-ekm/case.json"
+    },
+    {
+      "id": "5bjp-corn-dfho",
+      "casePath": "cases/5bjp-corn-dfho/case.json"
+    },
+    {
+      "id": "6wzs-ztp-riboswitch",
+      "casePath": "cases/6wzs-ztp-riboswitch/case.json"
+    },
+    {
+      "id": "3irw-c-di-gmp-riboswitch",
+      "casePath": "cases/3irw-c-di-gmp-riboswitch/case.json"
+    },
+    {
+      "id": "4qlm-c-di-amp-riboswitch",
+      "casePath": "cases/4qlm-c-di-amp-riboswitch/case.json"
+    },
+    {
+      "id": "3d0u-lysine-riboswitch",
+      "casePath": "cases/3d0u-lysine-riboswitch/case.json"
+    },
+    {
+      "id": "3oww-glycine-riboswitch",
+      "casePath": "cases/3oww-glycine-riboswitch/case.json"
+    }
+  ]
+}

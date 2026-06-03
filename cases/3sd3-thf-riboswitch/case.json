@@ -1,0 +1,16 @@
+{
+  "id": "3sd3-thf-riboswitch",
+  "name": "THF riboswitch bound to folinic acid (FFO)",
+  "systemType": "rna_ligand",
+  "curationStatus": "validated",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "structureID": "3SD3",
+  "sourceDatabase": "RCSB PDB / HARIBOSS",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 1.95,
+  "affinitySource": "not curated",
+  "source": "RCSB PDB 3SD3; HARIBOSS prep queue.",
+  "notes": "THF (tetrahydrofolate) riboswitch from Eubacterium siraeum (1.95 \u00c5). Ligand FFO is (6S)-5-formyl-tetrahydrofolate (folinic acid, MW 473). Pteridine ring stacks on nucleobase; aminobenzoyl tail makes H-bonds. High-resolution single-chain case \u2014 good for scoring calibration. Ref: Serganov et al. 2012 Nat Chem Biol."
+}

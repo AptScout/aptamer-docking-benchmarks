@@ -1,0 +1,13 @@
+{
+  "id": "t6-thrombin-vina",
+  "name": "T6 thrombin aptamer Vina reference",
+  "systemType": "dna_aptamer_protein",
+  "curationStatus": "validated",
+  "configPath": "inputs/confainaT6.txt",
+  "referencePoseMode": 1,
+  "expectedBestAffinityKcalMol": -17.2,
+  "affinitySource": "QuickVina local legacy output; docking reference score, not experimental affinity",
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "User-provided traditional AutoDock/QuickVina run files copied from the original MacVina /1 folder into this case's local ignored inputs directory.",
+  "notes": "First shared aptamer calibration case. The config is self-contained under inputs/ and references PROTEIN.pdbqt, T6_model1.pdbqt, outT6.pdbqt, and logT6.txt."
+}

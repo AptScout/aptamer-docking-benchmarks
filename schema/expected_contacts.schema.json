@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aptamer-docking-benchmarks.local/schema/expected_contacts.schema.json",
+  "title": "Aptamer Docking Expected Contacts",
+  "type": "object",
+  "properties": {
+    "receptorResidues": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "ligandAtoms": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "uniqueItems": true
+    },
+    "interactionKinds": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "contact",
+          "hydrophobicContact",
+          "hydrogenBond",
+          "electrostaticAttraction",
+          "electrostaticRepulsion",
+          "phosphateElectrostatic",
+          "baseStacking",
+          "metalCoordination",
+          "clash"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "notes": { "type": "string" }
+  },
+  "additionalProperties": false
+}

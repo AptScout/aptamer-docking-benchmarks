@@ -1,0 +1,26 @@
+{
+  "interactionKinds": [
+    "metalCoordination",
+    "baseStacking",
+    "phosphateElectrostatic"
+  ],
+  "receptorResidues": [
+    "G:33",
+    "A:85",
+    "A:48",
+    "A:99",
+    "G:11",
+    "G:32"
+  ],
+  "ligandAtoms": [
+    "O1P",
+    "O2P",
+    "N1",
+    "C2",
+    "N3",
+    "C4",
+    "C4a",
+    "C5a"
+  ],
+  "notes": "Validated against Serganov, Huang & Patel Nature 2009 (doi:10.1038/nature07642). 3F4E: same structure as 1fmn-fmn-riboswitch but this case focuses on metalCoordination. CRYSTALLOGRAPHIC Mg BRIDGE (M1): inner-sphere coordination between FMN phosphate oxygen O1P and G33 N7. This bridging Mg positions the phosphate moiety and is the 'crystallographic Mg' referenced in the case title. Stacking: isoalloxazine intercalates between A48 (below) and A85 (above) \u2014 same as FMN case. The metalCoordination term should fire when OA atoms of FMN phosphate land within 3.5 \u00c5 of Mg positions in the receptor."
+}

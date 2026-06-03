@@ -1,0 +1,39 @@
+{
+  "id": "2g9c-purine-riboswitch",
+  "name": "Adenine/purine riboswitch bound to 3AY (pyrimidine-2,4,6-triamine)",
+  "systemType": "rna_ligand",
+  "curationStatus": "validated",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "structureID": "2G9C",
+  "sourceDatabase": "RCSB PDB",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 1.7,
+  "affinitySource": "Gilbert SD et al. J Am Chem Soc 2006, 128:14214",
+  "source": "RCSB PDB 2G9C",
+  "notes": "1.7 \u00c5 adenine riboswitch (purine riboswitch aptamer domain). Ligand 3AY is pyrimidine-2,4,6-triamine, a tight-binding mimic of adenine. Literature/source notes describe base-stacking on U47/C74 and hydrogen bonds to U48/U51. In the current local PDBQT geometry, MacVina reports zero baseStacking contribution and zero expected-contact hit fraction, so the base-stacking annotation needs local atom-label and ring-plane review before this case is used for stacking calibration.",
+  "enrichmentSets": [
+    {
+      "id": "purine-enrich",
+      "curationStatus": "seed",
+      "description": "Adenine riboswitch actives (purine analogs) vs property-matched decoys",
+      "source": "Literature actives + RDKit property-matched decoys (Tanimoto<0.35 vs actives)",
+      "receptorPath": "inputs/receptor.pdbqt",
+      "activePosePath": "enrich/actives.pdbqt",
+      "activeLigands": [
+        "3AY",
+        "adenine",
+        "guanine",
+        "hypoxanthine"
+      ],
+      "crystalPosePath": "enrich/crystal.pdbqt",
+      "decoyPosePath": "enrich/decoys.pdbqt",
+      "decoyLigandLabel": "UNL",
+      "activeCount": 7,
+      "decoyCount": 88,
+      "intendedUse": "active-vs-decoy enrichment calibration for aptamer scoring terms"
+    }
+  ],
+  "affinityNotes": "3AY (pyrimidine-2,4,6-triamine) binds purine riboswitch; adenine Kd ~300 nM (Gilbert et al. 2006 JACS); 3AY analog Kd not directly published. 2,6-diaminopurine Kd ~10 nM same riboswitch."
+}

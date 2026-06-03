@@ -1,0 +1,38 @@
+{
+  "id": "3b4b-glms-riboswitch",
+  "name": "glmS riboswitch/ribozyme bound to glucosamine-6-phosphate (GlcN6P)",
+  "systemType": "rna_ligand",
+  "curationStatus": "validated",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "structureID": "3B4B",
+  "sourceDatabase": "RCSB PDB",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.7,
+  "affinitySource": "Cochrane JC et al. Biochemistry 2007; Klein DJ & Ferre-D'Amare AR Science 2006",
+  "source": "RCSB PDB 3B4B",
+  "notes": "glmS riboswitch-ribozyme from Bacillus anthracis. GLP (glucosamine-6-phosphate) is the natural ligand and ribozyme cofactor. Primary contact: phosphate moiety of GLP contacts backbone P near G1/A2. No stacking interaction \u2014 good negative control for baseStacking term specificity. Chain A used.",
+  "enrichmentSets": [
+    {
+      "id": "glms-enrich",
+      "curationStatus": "seed",
+      "description": "glmS riboswitch actives (GlcN6P analogs) vs property-matched decoys",
+      "source": "Literature actives + RDKit property-matched decoys (Tanimoto<0.35 vs actives)",
+      "receptorPath": "inputs/receptor.pdbqt",
+      "activePosePath": "enrich/actives.pdbqt",
+      "activeLigands": [
+        "GLP",
+        "glucosamine"
+      ],
+      "crystalPosePath": "enrich/crystal.pdbqt",
+      "decoyPosePath": "enrich/decoys.pdbqt",
+      "decoyLigandLabel": "UNL",
+      "activeCount": 4,
+      "decoyCount": 165,
+      "intendedUse": "active-vs-decoy enrichment calibration for aptamer scoring terms"
+    }
+  ],
+  "affinityNotes": "GlcN6P activates glmS ribozyme with K1/2 ~1-2 mM (not a true Kd; cofactor-assisted cleavage). Binding Kd ~0.36-0.43 mM at pH 7.5-8.5 (Cochrane et al. 2007 PMC3156831).",
+  "expectedBestAffinityKcalMol": -4.64
+}

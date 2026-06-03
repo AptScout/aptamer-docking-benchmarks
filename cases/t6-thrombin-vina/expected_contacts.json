@@ -1,0 +1,26 @@
+{
+  "interactionKinds": [
+    "phosphateElectrostatic"
+  ],
+  "receptorResidues": [
+    "Arg:75",
+    "Tyr:76",
+    "Arg:77A",
+    "Asn:78",
+    "Ile:79",
+    "Leu:65",
+    "Arg:97"
+  ],
+  "ligandAtoms": [
+    "O4",
+    "C4",
+    "C5",
+    "C7",
+    "O4'",
+    "O5'",
+    "OP1",
+    "OP2",
+    "N3"
+  ],
+  "notes": "Validated against Russo Krauss et al. Nucleic Acids Res 2012 (doi:10.1093/nar/gks1001) and Padmanabhan & Tulinsky 1996 Acta Crystallogr D. T6/HD1 is a 15-mer DNA G-quadruplex aptamer (thrombin-binding aptamer, TBA). SPECIAL CASE: T6 is the LIGAND (DNA aptamer), thrombin protein is the RECEPTOR \u2014 reversed from the typical riboswitch setup. BINDING MECHANISM: The aptamer's TT loops dock into exosite I (fibrinogen-recognition exosite) of thrombin. Primary contacts: Arg75 and Tyr76 hydrophobic pocket with TT loop thymines; Arg77A salt bridge to Gua2 backbone phosphate; Asn78 H-bonds thymine N3; Ile79 hydrophobic. Secondary contact: Arg97 cation-\u03c0 with TGT loop Thy9. The G-quartet is mostly solvent-exposed; electrostatic interactions dominate. Note: Vina scores this poorly (DNA-protein scoring not calibrated) \u2014 kept as calibration reference, not enrichment target."
+}

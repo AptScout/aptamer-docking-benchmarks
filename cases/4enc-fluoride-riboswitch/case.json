@@ -1,0 +1,15 @@
+{
+  "id": "4enc-fluoride-riboswitch",
+  "name": "Fluoride riboswitch bound to fluoride",
+  "systemType": "rna_ligand",
+  "curationStatus": "not_applicable",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "structureID": "4ENC",
+  "sourceDatabase": "RCSB PDB / HARIBOSS",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.272,
+  "source": "RCSB PDB 4ENC; HARIBOSS RNA-small-molecule/ion complex candidate.",
+  "notes": "Fluoride ion (F\u207b, single atom) \u2014 undockable with Vina's Gaussian scoring function. No van der Waals geometry at atom scale. Mark as not applicable."
+}

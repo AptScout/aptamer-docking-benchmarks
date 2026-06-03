@@ -1,0 +1,31 @@
+{
+  "interactionKinds": [
+    "baseStacking",
+    "phosphateElectrostatic"
+  ],
+  "receptorResidues": [
+    "G:78",
+    "G:40",
+    "A:43",
+    "G:41",
+    "G:19",
+    "C:73",
+    "G:91"
+  ],
+  "ligandAtoms": [
+    "N1",
+    "N3",
+    "N4",
+    "C2",
+    "C4",
+    "C5",
+    "C6",
+    "O1P",
+    "O2P",
+    "O3P",
+    "O1B",
+    "O2B",
+    "O3B"
+  ],
+  "notes": "Validated against Serganov et al. Nature 2006 (doi:10.1038/nature04740). 2HOJ: E. coli thiM riboswitch with native TPP ligand (2.50 \u00c5). Same overall recognition mode as 2GDI: aminopyrimidine arm stacks in pyrimidine sensor helix (G78-G40 stack); thiazole ring van der Waals contact with G72 sugar but not base-paired. Pyrophosphate sensor helix contacts via two Mg\u00b2\u207a ions; C73-G91 pair in backbone proximity of pyrophosphate tail."
+}

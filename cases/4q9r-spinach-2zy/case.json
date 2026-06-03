@@ -1,0 +1,18 @@
+{
+  "id": "4q9r-spinach-2zy",
+  "name": "Spinach RNA aptamer bound to 2ZY fluorophore analog",
+  "systemType": "rna_ligand",
+  "curationStatus": "validated",
+  "configPath": "inputs/4q9r-conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "decoyPosePath": "inputs/decoys.pdbqt",
+  "structureID": "4Q9R",
+  "sourceDatabase": "RCSB PDB / NAKB",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 3.12,
+  "affinitySource": "not curated",
+  "source": "RCSB PDB 4Q9R / NAKB 4Q9R; Spinach RNA aptamer bound to ligand 2ZY in antibody-assisted crystal structure.",
+  "notes": "Seed RNA-ligand stacking case selected to exercise baseStacking calibration. Structure includes Fab chains; curation should extract the RNA aptamer and ligand 2ZY before docking.",
+  "enrichmentNote": "Enrichment AUC 0.10 \u2014 Vina severely inverted. 2ZY (TO1-Biotin analog, MW ~374) scores worse than small aromatic decoys because Vina hydrophobic terms favour smaller ligands. The G-quartet stacking geometry is not differentiated from generic aromatic docking. Gnina CNN may help; G-quadruplex-specific scoring terms would be needed for full fix."
+}

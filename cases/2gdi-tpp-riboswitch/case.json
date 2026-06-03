@@ -1,0 +1,37 @@
+{
+  "id": "2gdi-tpp-riboswitch",
+  "name": "TPP riboswitch bound to CCC (thiamine pyrophosphate analog, chain X)",
+  "systemType": "rna_ligand",
+  "curationStatus": "validated",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "structureID": "2GDI",
+  "sourceDatabase": "RCSB PDB",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.05,
+  "affinitySource": "Kulshina N et al. Nat Struct Mol Biol 2009, PMC2802028",
+  "source": "RCSB PDB 2GDI",
+  "notes": "TPP (thiamine pyrophosphate) riboswitch aptamer from Arabidopsis thaliana. CCC ligand is a thiamine pyrophosphate analog (pyrithiamine pyrophosphate). Two-domain fold: aminopyrimidine arm stacks on G39, pyrophosphate chelates Mg via backbone P. Chain X used (two symmetric copies in asymmetric unit). Key exercise for both baseStacking (pyrimidine arm) and phosphateElectrostatic (pyrophosphate tail).",
+  "affinityNotes": "TPP binds thiM riboswitch Kd ~9 nM at 2.5 mM Mg2+ (Kulshina et al. 2009). CCC (pyrithiamine pyrophosphate analog) Kd not directly measured for 2GDI.",
+  "expectedBestAffinityKcalMol": -10.98,
+  "enrichmentSets": [
+    {
+      "id": "tpp-enrich-filtered",
+      "curationStatus": "contact_reviewed",
+      "description": "TPP riboswitch actives (thiamine analogs) vs filtered non-nucleotide decoys. 2GDI receptor includes 3 Mg\u00b2\u207a ions \u2014 canonical TPP benchmark case with metal coordination. Best enrichment at 1k screen (AUC 0.574 vs 0.320 for 2HOJ without Mg).",
+      "source": "Literature actives (thiamine analogs) + ChEMBL property-matched decoys filtered to exclude P atoms and nucleobase scaffolds (no purines, pyrimidines, nucleosides, phosphates)",
+      "receptorPath": "inputs/receptor.pdbqt",
+      "activePosePath": "enrich/actives.pdbqt",
+      "activeLigands": [
+        "TPP",
+        "thiamine",
+        "pyrithiamine_PP"
+      ],
+      "crystalPosePath": "enrich/crystal.pdbqt",
+      "decoyPosePath": "enrich/decoys.pdbqt",
+      "decoyLigandLabel": "UNL",
+      "intendedUse": "active-vs-decoy enrichment with nucleotide-chemotype decoys excluded"
+    }
+  ]
+}
