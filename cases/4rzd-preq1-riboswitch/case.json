@@ -30,7 +30,7 @@
       "decoyPosePath": "enrich/decoys.pdbqt",
       "decoyLigandLabel": "UNL",
       "activeCount": 5,
-      "decoyCount": 272,
+      "decoyCount": 74,
       "intendedUse": "active-vs-decoy enrichment calibration for aptamer scoring terms"
     }
   ],

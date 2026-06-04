@@ -1,5 +1,7 @@
-derived/
-*.pyc
+# Raw PDB downloads (link to RCSB instead)
+raw/
 __pycache__/
+*.pyc
 .DS_Store
-*.swp
+/tmp/
+*.tmp

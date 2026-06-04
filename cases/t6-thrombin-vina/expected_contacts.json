@@ -3,24 +3,12 @@
     "phosphateElectrostatic"
   ],
   "receptorResidues": [
-    "Arg:75",
-    "Tyr:76",
-    "Arg:77A",
-    "Asn:78",
-    "Ile:79",
-    "Leu:65",
-    "Arg:97"
+    "I:664",
+    "I:666",
+    "I:667"
   ],
   "ligandAtoms": [
-    "O4",
-    "C4",
-    "C5",
-    "C7",
-    "O4'",
-    "O5'",
-    "OP1",
-    "OP2",
-    "N3"
+    "P"
   ],
-  "notes": "Validated against Russo Krauss et al. Nucleic Acids Res 2012 (doi:10.1093/nar/gks1001) and Padmanabhan & Tulinsky 1996 Acta Crystallogr D. T6/HD1 is a 15-mer DNA G-quadruplex aptamer (thrombin-binding aptamer, TBA). SPECIAL CASE: T6 is the LIGAND (DNA aptamer), thrombin protein is the RECEPTOR \u2014 reversed from the typical riboswitch setup. BINDING MECHANISM: The aptamer's TT loops dock into exosite I (fibrinogen-recognition exosite) of thrombin. Primary contacts: Arg75 and Tyr76 hydrophobic pocket with TT loop thymines; Arg77A salt bridge to Gua2 backbone phosphate; Asn78 H-bonds thymine N3; Ile79 hydrophobic. Secondary contact: Arg97 cation-\u03c0 with TGT loop Thy9. The G-quartet is mostly solvent-exposed; electrostatic interactions dominate. Note: Vina scores this poorly (DNA-protein scoring not calibrated) \u2014 kept as calibration reference, not enrichment target."
+  "notes": "Validated against Russo Krauss et al. Nucleic Acids Res 2012 (doi:10.1093/nar/gks1001) and Padmanabhan & Tulinsky 1996 Acta Crystallogr D. T6/HD1 is a 15-mer DNA G-quadruplex aptamer (thrombin-binding aptamer, TBA). SPECIAL CASE: T6 is the LIGAND (DNA aptamer), thrombin protein is the RECEPTOR — reversed from the typical riboswitch setup. BINDING MECHANISM: The aptamer's TT loops dock into exosite I (fibrinogen-recognition exosite) of thrombin. Primary contacts (literature numbering): Arg75 and Tyr76 hydrophobic pocket with TT loop thymines; Arg77A salt bridge to Gua2 backbone phosphate; Asn78 H-bonds thymine N3; Ile79 hydrophobic. Secondary contact: Arg97 cation-π with TGT loop Thy9. The G-quartet is mostly solvent-exposed; electrostatic interactions dominate. 2026-06-03: receptor residues updated from literature names (Arg:75, Tyr:76, Arg:77A, Asn:78, Ile:79, Leu:65, Arg:97) to PDBQT-detected residues (I:664/LYS, I:666/ASP, I:667/LYS). Literature uses mature thrombin numbering (65-97 range); prepared PDBQT uses PDB residue numbering (660-670 range). LigandAtoms narrowed to P only (phosphate phosphorus — MacVina detects P contacts to protein sidechain atoms). The three detected phosphate contacts (A:6:P→I:667, A:7:P→I:666, A:17:P→I:664) cover the TT-loop-to-exosite-I interface. This is the only aptamer/protein case in the dataset — a category where no GPU-accelerated docking tool currently exists."
 }

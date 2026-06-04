@@ -1,0 +1,2 @@
+case_id,case_name,system_type,mode,vina_affinity_kcal_mol,output_affinity_kcal_mol,expected_best_affinity_kcal_mol,vina_inspired_score,aptamer_interaction_score,phosphate_electrostatic,base_stacking,metal_coordination,contact_count,clash_count,evaluated_pair_count,expected_contact_hit_fraction,vina_elapsed_time_seconds,macvina_elapsed_time_seconds
+1fmn-fmn-riboswitch-mg,FMN riboswitch with crystallographic Mg bridge,rna_ligand,1,n/a,n/a,n/a,-8.047419,-8.818028,-0.412836,-0.199590,-0.158184,2784,38,2857,1.000,n/a,2.507305

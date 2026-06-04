@@ -1,0 +1,2 @@
+case_id,case_name,system_type,mode,vina_affinity_kcal_mol,output_affinity_kcal_mol,expected_best_affinity_kcal_mol,vina_inspired_score,aptamer_interaction_score,phosphate_electrostatic,base_stacking,metal_coordination,contact_count,clash_count,evaluated_pair_count,expected_contact_hit_fraction,vina_elapsed_time_seconds,macvina_elapsed_time_seconds
+1fmn-fmn-riboswitch,FMN riboswitch bound to flavin mononucleotide,rna_ligand,1,n/a,n/a,n/a,-8.716109,-9.230038,-0.314339,-0.199590,0.000000,2774,35,2844,0.500,n/a,2.169628

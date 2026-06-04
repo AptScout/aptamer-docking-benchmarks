@@ -1,0 +1,18 @@
+case_id,ligand_type,baseline_auc,aptamer_auc,delta_auc,ef1_percent,rmsd_angstrom
+2hoj-tpp-riboswitch,thiamine-PP,0.29,0.667,0.377,0.0,0.3
+2gdi-tpp-riboswitch,TPP+Mg²⁺,0.319,0.562,0.243,0.0,16.6
+2ygh-sam-riboswitch,SAM,0.427,0.66,0.233,0.0,0.3
+3b4b-glms-riboswitch,glucosamine-6P,0.346,0.57,0.224,25.0,9.9
+6wzs-ztp-riboswitch,ZTP triphosphate,0.678,0.813,0.135,20.0,6.9
+1fmn-fmn-riboswitch,FMN (fixed decoys),0.786,0.857,0.071,0.0,0.4
+3d0u-lysine-riboswitch,L-lysine,0.218,0.277,0.059,0.0,0.3
+3sd3-thf-riboswitch,tetrahydrofolate,0.307,0.357,0.05,0.0,17.9
+5dhb-gmp-primer-template,GMP nucleotide,0.939,0.986,0.047,50.0,6.1
+4qlm-c-di-amp-riboswitch,c-di-AMP,0.96,0.992,0.032,33.3,11.7
+1fmn-fmn-riboswitch-mg,FMN+Mg (fixed),0.762,0.786,0.024,0.0,0.3
+2g9c-purine-riboswitch,pyrimidine analog,0.909,0.93,0.021,14.3,0.4
+6c64-mango-ii-ekm,TO1-biotin,0.878,0.894,0.016,33.3,0.4
+3irw-c-di-gmp-riboswitch,c-di-GMP,0.973,0.976,0.003,50.0,7.5
+4q9r-spinach-2zy,DFHBI-1T fluorogen,0.3,0.3,0.0,0.0,5.1
+4rzd-preq1-riboswitch,preQ1 base,0.958,0.88,-0.078,20.0,11.7
+5bjp-corn-dfho,DFHO fluorogen,0.95,0.847,-0.103,20.0,0.2

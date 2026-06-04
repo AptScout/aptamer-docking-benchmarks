@@ -16,17 +16,18 @@
   ],
   "ligandAtoms": [
     "N1",
-    "N3",
-    "N4",
     "C2",
+    "N3",
     "C4",
+    "N4",
     "C5",
     "C6",
-    "O1Pa",
-    "O2Pa",
-    "O3Pa",
-    "O1Pb",
-    "O2Pb"
+    "PC",
+    "O1C",
+    "O2C",
+    "P",
+    "OP1",
+    "OP2"
   ],
-  "notes": "Validated against Serganov et al. Nature 2006 (doi:10.1038/nature04740). 2GDI structure: Arabidopsis thaliana TPP riboswitch with CCC (pyrithiamine PP analog). CRITICAL: thiazole ring is NOT recognised by the RNA \u2014 only the aminopyrimidine (HMP) arm and pyrophosphate tail are contacted. Aminopyrimidine: continuous stacking A41-G42-HMP-A43-G21; base triples (G19\u00b7A47)\u00b7G42 and (G18-C48)\u00b7A41 stabilise the pocket. G40 and G19 2\u2032-OH H-bond to polar aminopyrimidine groups. Pyrophosphate: two Mg\u00b2\u207a ions (Mg1/Mg2) coordinate the phosphate oxygens; Mg1 directly contacts G60 O6 and G78 O6; C77 and G78 H-bond terminal phosphate. Chain X used for 2GDI (two-chain ASU)."
+  "notes": "Validated against Serganov et al. Nature 2006 (doi:10.1038/nature04740). 2GDI structure: Arabidopsis thaliana TPP riboswitch with CCC (pyrithiamine PP analog). CRITICAL: thiazole ring is NOT recognised by the RNA — only the aminopyrimidine (HMP) arm and pyrophosphate tail are contacted. Aminopyrimidine: continuous stacking A41-G42-HMP-A43-G21; base triples (G19·A47)·G42 and (G18-C48)·A41 stabilise the pocket. G40 and G19 2'-OH H-bond to polar aminopyrimidine groups. Pyrophosphate: two Mg²⁺ ions (Mg1/Mg2) coordinate the phosphate oxygens; Mg1 directly contacts G60 O6 and G78 O6; C77 and G78 H-bond terminal phosphate. 2026-06-03: updated ligand atom names to match PDBQT (O1Pa→O1C, O2Pa→O2C, O3Pa→OP1 removed, O1Pb→OP1, O2Pb→OP2) and added P/PC phosphorus atoms. 2026-06-04 Codex review: metalCoordination is intentionally not listed as an expected term because the prepared reference pose scores metalCoordination 0.000; receptor Mg atoms X:101–103 are present but not within MacVina's metal cutoff of the ligand oxygens in the current PDBQT geometry. Receptor residue numbering from literature; note: MacVina detects contacts to X:11 and X:88 (different PDBQT numbering) — residue numbering investigation pending."
 }

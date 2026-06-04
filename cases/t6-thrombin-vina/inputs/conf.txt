@@ -1,0 +1,15 @@
+receptor = PROTEIN.pdbqt
+ligand = T6_model1.pdbqt
+
+log = logT6.txt
+out = outT6.pdbqt
+
+center_x = 15.998
+center_y = 94.244
+center_z = 30.413
+
+size_x = 46
+size_y = 76
+size_z = 82
+
+exhaustiveness = 4

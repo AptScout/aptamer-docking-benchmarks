@@ -1,0 +1,44 @@
+REMARK  Name = /tmp/hariboss_prep/5DHB_lig.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: P_1  and  O5'_5
+REMARK    2  A    between atoms: O5'_5  and  C5'_6
+REMARK    3  A    between atoms: C5'_6  and  C4'_7
+REMARK    4  A    between atoms: C1'_13  and  N9_14
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C4' 5GP A 101      12.110 -15.903  -1.756  0.00  0.00    +0.180 C 
+ATOM      2  O4' 5GP A 101      11.544 -15.407  -0.486  0.00  0.00    -0.331 OA
+ATOM      3  C3' 5GP A 101      11.100 -17.042  -2.238  0.00  0.00    +0.216 C 
+ATOM      4  O3' 5GP A 101      11.768 -18.025  -3.035  0.00  0.00    -0.218 OA
+ATOM      5  C2' 5GP A 101      10.610 -17.612  -0.903  0.00  0.00    +0.234 C 
+ATOM      6  O2' 5GP A 101      11.598 -18.372  -0.327  0.00  0.00    -0.216 OA
+ATOM      7  C1' 5GP A 101      10.503 -16.359  -0.061  0.00  0.00    +0.241 C 
+ENDROOT
+BRANCH   7   8
+ATOM      8  N9  5GP A 101       9.223 -15.637  -0.150  0.00  0.00    -0.269 N 
+ATOM      9  C8  5GP A 101       8.908 -14.386  -0.501  0.00  0.00    +0.182 A 
+ATOM     10  N7  5GP A 101       7.598 -14.171  -0.335  0.00  0.00    -0.217 NA
+ATOM     11  C5  5GP A 101       7.103 -15.345   0.159  0.00  0.00    +0.175 A 
+ATOM     12  C6  5GP A 101       5.850 -15.709   0.543  0.00  0.00    +0.302 A 
+ATOM     13  O6  5GP A 101       4.860 -14.925   0.460  0.00  0.00    -0.263 OA
+ATOM     14  N1  5GP A 101       5.671 -17.029   1.004  0.00  0.00    -0.171 NA
+ATOM     15  C2  5GP A 101       6.717 -17.903   1.099  0.00  0.00    +0.261 A 
+ATOM     16  N2  5GP A 101       6.464 -19.108   1.519  0.00  0.00    -0.086 NA
+ATOM     17  N3  5GP A 101       7.949 -17.534   0.737  0.00  0.00    -0.192 NA
+ATOM     18  C4  5GP A 101       8.124 -16.257   0.290  0.00  0.00    +0.172 A 
+ENDBRANCH   7   8
+BRANCH   1  19
+ATOM     19  C5' 5GP A 101      12.291 -14.778  -2.777  0.00  0.00    +0.186 C 
+BRANCH  19  20
+ATOM     20  O5' 5GP A 101      10.964 -14.348  -2.980  0.00  0.00    -0.268 OA
+BRANCH  20  21
+ATOM     21  P   5GP A 101      10.592 -13.380  -4.208  0.00  0.00    +0.533 P 
+ATOM     22  O1P 5GP A 101      11.338 -13.860  -5.399  0.00  0.00    -0.222 OA
+ATOM     23  O2P 5GP A 101      11.279 -11.972  -3.680  0.00  0.00    -0.115 OA
+ATOM     24  O3P 5GP A 101       9.107 -13.350  -4.249  0.00  0.00    -0.115 OA
+ENDBRANCH  20  21
+ENDBRANCH  19  20
+ENDBRANCH   1  19
+TORSDOF 4

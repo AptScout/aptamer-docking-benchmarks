@@ -1,0 +1,2 @@
+case_id,case_name,pose_id,role,source_mode,rank,total_score,phosphate_electrostatic,base_stacking,metal_coordination,contact_count,clash_count,rmsd_to_reference,expected_contact_hit_fraction,top_aptamer_interactions
+2g9c-purine-riboswitch,"Adenine/purine riboswitch bound to 3AY (pyrimidine-2,4,6-triamine)",mode:1,reference,1,1,-4.957114,0.000000,-0.430206,0.000000,1094,22,0.000,0.613,baseStacking A:91:C5#3 -> A:21:C8#141 3.20 A score -0.216 | baseStacking A:91:C5#3 -> A:52:C8#801 3.37 A score -0.214

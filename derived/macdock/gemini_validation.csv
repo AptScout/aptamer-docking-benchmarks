@@ -1,0 +1,11 @@
+case_id,baseline_auc,aptamer_auc,delta_auc,ef1_percent,rmsd_angstrom,notes
+2g9c-purine-riboswitch,0.909,0.93,0.021,14.3,0.4,ceiling; excellent RMSD
+2hoj-tpp-riboswitch,0.29,0.667,0.376,0.0,0.3,large improvement; excellent RMSD
+2ygh-sam-riboswitch,0.427,0.66,0.232,0.0,0.3,large improvement; excellent RMSD
+3b4b-glms-riboswitch,0.346,0.57,0.223,25.0,9.9,good AUC; moderate RMSD
+3sd3-thf-riboswitch,0.307,0.357,0.05,0.0,17.9,near-random; poor RMSD
+4rzd-preq1-riboswitch,0.958,0.88,-0.078,20.0,11.7,ceiling; aptamer adds noise
+5bjp-corn-dfho,0.95,0.847,-0.103,20.0,0.2,ceiling; excellent RMSD
+5dhb-gmp-primer-template,0.939,0.986,0.048,50.0,6.1,ceiling; best EF1%
+6c64-mango-ii-ekm,0.878,0.894,0.017,33.3,0.4,ceiling; excellent RMSD
+6wzs-ztp-riboswitch,0.678,0.813,0.136,20.0,6.9,good improvement

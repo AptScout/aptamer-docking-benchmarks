@@ -1,0 +1,2 @@
+case_id,case_name,pose_id,role,source_mode,rank,total_score,phosphate_electrostatic,base_stacking,metal_coordination,contact_count,clash_count,expected_contact_hit_fraction,top_aptamer_interactions
+1fmn-fmn-riboswitch,FMN riboswitch bound to flavin mononucleotide,mode:1,reference,1,1,-9.230038,-0.314339,-0.199590,0.000000,2774,35,0.500,baseStacking Y:200:C4#5 -> Y:85:C8#608 3.19 A score -0.200 | phosphateElectrostatic Y:200:P#28 -> Y:67:N2#209 4.03 A score -0.026 | phosphateElectrostatic Y:200:P#28 -> Y:68:N2#232 4.19 A score -0.024

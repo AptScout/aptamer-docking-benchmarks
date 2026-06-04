@@ -3,26 +3,11 @@
     "baseStacking"
   ],
   "receptorResidues": [
-    "G:26",
-    "G:65",
-    "U:61",
-    "A:64",
-    "G:14",
-    "A:13"
+    "G:53",
+    "C:54"
   ],
   "ligandAtoms": [
-    "C2",
-    "C3",
-    "C4",
-    "C5",
-    "C6",
-    "O1",
-    "C1b",
-    "C2b",
-    "C3b",
-    "C4b",
-    "C5b",
-    "C6b"
+    "C16"
   ],
-  "notes": "Validated against Huang et al. Nat Chem Biol 2014 (doi:10.1038/nchembio.1561) and Ferr\u00e9-D'Amar\u00e9 et al. Nat Methods 2014. 4Q9R: Spinach aptamer bound to 2ZY (TO1-Biotin analog / difluoro-hydroxyphenyl-imidazolinone). BINDING MECHANISM: DFHBI/2ZY stacks between G26 and G65 of the top G-quartet in an unusual G-quadruplex topology. U61\u00b7A64 base triple below the G-quartet provides the binding platform floor. G14 is extruded into solvent and partially encloses the phenyl ring face. The G-quadruplex motif locks the fluorophore in a planar conformation, restricting photoisomerisation and activating fluorescence. 4Q9R uses chain A (2 chains in structure). Note: 2ZY is a TO1-Biotin analog \u2014 different scaffold from DFHBI but same binding mechanism."
+  "notes": "Validated against Huang et al. Nat Chem Biol 2014 (doi:10.1038/nchembio.1561) and Ferre-D'Amare et al. Nat Methods 2014. 4Q9R: Spinach aptamer bound to 2ZY (TO1-Biotin analog / difluoro-hydroxyphenyl-imidazolinone). BINDING MECHANISM: DFHBI/2ZY stacks between G26 and G65 of the top G-quartet in an unusual G-quadruplex topology. U61-A64 base triple below the G-quartet provides the binding platform floor. G14 is extruded into solvent and partially encloses the phenyl ring face. The G-quadruplex motif locks the fluorophore in a planar conformation. 2026-06-03: receptor residues updated from literature numbering (G:26, G:65, U:61, A:64, G:14, A:13) to PDBQT-detected contacts (G:53, C:54) confirmed by MacVina pose report and case notes. Ligand atom narrowed to C16 (the primary aromatic carbon detected in baseStacking by MacVina). The G-quartet literature numbering does not match the prepared PDBQT residue numbering; the detected contacts G:53/C:54 are the actual stacking partners in the PDBQT structure."
 }

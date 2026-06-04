@@ -1,0 +1,2 @@
+case_id,case_name,system_type,mode,vina_affinity_kcal_mol,output_affinity_kcal_mol,expected_best_affinity_kcal_mol,vina_inspired_score,aptamer_interaction_score,phosphate_electrostatic,base_stacking,metal_coordination,contact_count,clash_count,evaluated_pair_count,expected_contact_hit_fraction,vina_elapsed_time_seconds,macvina_elapsed_time_seconds
+t6-thrombin-vina,T6 thrombin aptamer Vina reference,dna_aptamer_protein,1,-17.200,-17.200,-17.200,-17.469291,-17.650649,-0.181358,0.000000,0.000000,3439,15,5346,1.000,5530.437,3.061853

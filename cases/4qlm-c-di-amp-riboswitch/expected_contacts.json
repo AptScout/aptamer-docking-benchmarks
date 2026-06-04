@@ -26,5 +26,5 @@
     "O1Pa",
     "O2Pa"
   ],
-  "notes": "Validated against Ren et al. Nat Chem Biol 2014 (doi:10.1038/nchembio.1606) and Gao et al. Cell 2018 (PMC4294798). 4QLM has TWO c-di-AMP binding pockets (pseudo-two-fold symmetry). Each adenine ring is wedged between two RNA bases via stacking: Pocket A: A\u03b1 stacks on A95 and A10, stabilised by G39-C94 pair. Pocket B: A\u03b2 stacks on U112 and A45, stabilised by A73\u00b7U112 Hoogsteen pair. Adenine edges form H-bonds with 2\u2032-sugar hydroxyls and backbone phosphates. Residue 203 used (first of two 2BA copies in ASU)."
+  "notes": "Validated against Ren et al. Nat Chem Biol 2014 (doi:10.1038/nchembio.1606) and Gao et al. Cell 2018 (PMC4294798). 4QLM has TWO c-di-AMP binding pockets (pseudo-two-fold symmetry). Each adenine ring is wedged between two RNA bases via stacking: Pocket A: Aα stacks on A95 and A10, stabilised by G39-C94 pair. Pocket B: Aβ stacks on U112 and A45, stabilised by A73·U112 Hoogsteen pair. Adenine edges form H-bonds with 2'-sugar hydroxyls and backbone phosphates. 2026-06-03: MacVina detects baseStacking to A:112 and A:45 (confirmed in pose report). A:95, A:10, G:39, C:94, A:73 not yet confirmed in MacVina detection — retained as literature-expected but may need PDBQT-specific numbering review. Phosphate atoms O1Pa/O2Pa retained as pyrophosphate-electrostatic expectation."
 }

@@ -1,0 +1,18 @@
+case_id,case_name,system_type,mode,vina_affinity_kcal_mol,output_affinity_kcal_mol,expected_best_affinity_kcal_mol,vina_inspired_score,aptamer_interaction_score,phosphate_electrostatic,base_stacking,metal_coordination,contact_count,clash_count,evaluated_pair_count,expected_contact_hit_fraction,vina_elapsed_time_seconds,macvina_elapsed_time_seconds
+t6-thrombin-vina,T6 thrombin aptamer Vina reference,dna_aptamer_protein,1,-17.200,-17.200,-17.200,-17.469291,-17.650649,-0.181358,0.000000,0.000000,3439,15,5346,1.000,5530.437,3.128306
+4q9r-spinach-2zy,Spinach RNA aptamer bound to 2ZY fluorophore analog,rna_ligand,1,n/a,n/a,n/a,-10.326917,-10.690650,-0.003487,-0.360246,0.000000,2259,54,2455,1.000,n/a,0.911065
+1fmn-fmn-riboswitch,FMN riboswitch bound to flavin mononucleotide,rna_ligand,1,n/a,n/a,n/a,-8.716109,-9.708936,-0.494339,-0.498488,0.000000,2775,35,2952,0.750,n/a,1.216662
+1fmn-fmn-riboswitch-mg,FMN riboswitch with crystallographic Mg bridge,rna_ligand,1,n/a,n/a,n/a,-8.047419,-9.296926,-0.592836,-0.498488,-0.158184,2785,38,2965,1.000,n/a,1.183443
+2g9c-purine-riboswitch,"Adenine/purine riboswitch bound to 3AY (pyrimidine-2,4,6-triamine)",rna_ligand,1,n/a,n/a,n/a,-4.526907,-4.957114,0.000000,-0.430206,0.000000,1094,22,1186,0.613,n/a,0.461647
+4rzd-preq1-riboswitch,PreQ1 riboswitch bound to PRF (7-aminomethyl-7-deazaguanine analog),rna_ligand,1,n/a,n/a,-9.750,-3.894129,-4.618093,-0.112677,-0.611288,0.000000,1318,37,2352,0.458,n/a,1.278904
+2gdi-tpp-riboswitch,"TPP riboswitch bound to CCC (thiamine pyrophosphate analog, chain X)",rna_ligand,1,n/a,n/a,-10.980,5.102097,4.272001,-0.458115,-0.371982,0.000000,577,19,662,0.688,n/a,0.622639
+2ygh-sam-riboswitch,SAM-I riboswitch bound to S-adenosylmethionine,rna_ligand,1,n/a,n/a,-9.550,-11.409113,-11.618967,0.000000,-0.209854,0.000000,2567,24,2630,0.175,n/a,1.114479
+3b4b-glms-riboswitch,glmS riboswitch/ribozyme bound to glucosamine-6-phosphate (GlcN6P),rna_ligand,1,n/a,n/a,-4.640,-1.922547,-2.512284,-0.333181,-0.256556,0.000000,401,6,460,0.375,n/a,0.053822
+2hoj-tpp-riboswitch,TPP riboswitch bound to thiamine pyrophosphate,rna_ligand,1,n/a,n/a,-9.960,-7.847912,-8.790727,-0.478437,-0.464378,0.000000,2017,26,2113,0.500,n/a,0.615882
+3sd3-thf-riboswitch,THF riboswitch bound to folinic acid (FFO),rna_ligand,1,n/a,n/a,n/a,-8.002044,-8.240513,-0.021763,-0.216706,0.000000,1597,21,1707,0.350,n/a,0.807860
+5dhb-gmp-primer-template,RNA primer-template bound to GMP,rna_ligand,1,n/a,n/a,n/a,-3.030044,-3.391227,-0.189222,-0.171961,0.000000,439,9,492,0.648,n/a,0.011147
+6c64-mango-ii-ekm,Mango-II fluorescent RNA aptamer bound to EKM,rna_ligand,1,n/a,n/a,n/a,-12.155954,-12.442236,-0.031690,-0.254592,0.000000,1918,22,2046,0.843,n/a,0.173958
+5bjp-corn-dfho,Corn RNA aptamer bound to DFHO,rna_ligand,1,n/a,n/a,n/a,-9.672388,-9.945906,0.000000,-0.273518,0.000000,1342,19,1414,0.292,n/a,0.162810
+6wzs-ztp-riboswitch,ZTP riboswitch bound to UG4 (pyridine-imidazole analog),rna_ligand,1,n/a,n/a,n/a,-5.760075,-6.234072,-0.207730,-0.266267,0.000000,1388,47,1506,0.333,n/a,0.406287
+3irw-c-di-gmp-riboswitch,c-di-GMP riboswitch bound to cyclic di-GMP (C2E),rna_ligand,1,n/a,n/a,n/a,-16.436603,-17.428227,-0.800151,0.000000,-0.191474,3582,65,3647,0.750,n/a,0.873747
+4qlm-c-di-amp-riboswitch,c-di-AMP riboswitch bound to cyclic di-AMP (2BA),rna_ligand,1,n/a,n/a,n/a,-14.249864,-14.923426,-0.673561,0.000000,0.000000,3935,62,3997,0.321,n/a,1.195288

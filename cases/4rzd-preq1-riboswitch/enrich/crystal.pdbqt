@@ -1,0 +1,33 @@
+REMARK  Name = 4RZD_lig_crystal.pdb
+REMARK  2 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C7_8  and  C10_9
+REMARK    2  A    between atoms: C10_9  and  N11_10
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  N1  PRF A 201      34.345  29.426 108.131  0.00  0.00    +0.000 N 
+ATOM      2  C2  PRF A 201      34.194  30.724 108.671  0.00  0.00    +0.000 A 
+ATOM      3  N3  PRF A 201      32.955  31.275 108.875  0.00  0.00    +0.000 NA
+ATOM      4  C4  PRF A 201      31.783  30.577 108.556  0.00  0.00    +0.000 A 
+ATOM      5  C5  PRF A 201      31.891  29.252 108.004  0.00  0.00    +0.000 A 
+ATOM      6  C6  PRF A 201      33.224  28.685 107.796  0.00  0.00    +0.000 A 
+ATOM      7  O6  PRF A 201      33.367  27.422 107.271  0.00  0.00    +0.000 OA
+ATOM      8  C7  PRF A 201      30.531  28.792 107.784  0.00  0.00    +0.000 A 
+ATOM      9  C8  PRF A 201      29.687  29.826 108.191  0.00  0.00    +0.000 A 
+ATOM     10  N9  PRF A 201      30.438  30.884 108.652  0.00  0.00    +0.000 N 
+ATOM     11  N2  PRF A 201      35.367  31.486 109.017  0.00  0.00    +0.000 N 
+ATOM     12  H91 PRF A 201      35.176  29.079 108.005  0.00  0.00    +0.000 HD
+ATOM     13 HN91 PRF A 201      30.101  31.664 108.972  0.00  0.00    +0.000 HD
+ATOM     14 HN21 PRF A 201      35.281  32.333 109.338  0.00  0.00    +0.000 HD
+ATOM     15 HN22 PRF A 201      36.200  31.118 108.913  0.00  0.00    +0.000 HD
+ENDROOT
+BRANCH   8  16
+ATOM     16  C10 PRF A 201      30.119  27.467 107.216  0.00  0.00    +0.000 C 
+BRANCH  16  17
+ATOM     17  N11 PRF A 201      30.806  27.251 105.956  0.00  0.00    +0.000 NA
+ATOM     18 H111 PRF A 201      30.194  27.170 105.287  0.00  0.00    +0.000 HD
+ATOM     19 H112 PRF A 201      31.303  26.485 106.007  0.00  0.00    +0.000 HD
+ENDBRANCH  16  17
+ENDBRANCH   8  16
+TORSDOF 2

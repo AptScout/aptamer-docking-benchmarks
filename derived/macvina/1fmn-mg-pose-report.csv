@@ -1,0 +1,2 @@
+case_id,case_name,pose_id,role,source_mode,rank,total_score,phosphate_electrostatic,base_stacking,metal_coordination,contact_count,clash_count,expected_contact_hit_fraction,top_aptamer_interactions
+1fmn-fmn-riboswitch-mg,FMN riboswitch with crystallographic Mg bridge,mode:1,reference,1,1,-8.818028,-0.412836,-0.199590,-0.158184,2784,38,1.000,baseStacking Y:200:C4#5 -> Y:85:C8#608 3.19 A score -0.200 | metalCoordination Y:200:O1P#29 -> X:304:MG#2345 2.54 A score -0.158 | phosphateElectrostatic Y:200:P#28 -> X:304:MG#2345 3.45 A score -0.098

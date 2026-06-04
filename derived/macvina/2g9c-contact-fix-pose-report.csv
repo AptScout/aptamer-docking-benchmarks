@@ -1,0 +1,2 @@
+case_id,case_name,pose_id,role,source_mode,rank,total_score,phosphate_electrostatic,base_stacking,metal_coordination,contact_count,clash_count,rmsd_to_reference,expected_contact_hit_fraction,top_aptamer_interactions
+2g9c-purine-riboswitch,"Adenine/purine riboswitch bound to 3AY (pyrimidine-2,4,6-triamine)",mode:1,reference,1,1,-4.526907,0.000000,0.000000,0.000000,1092,22,0.000,0.000,baseStackingNearMiss C5#3 -> C8#801 plane 3.37 A lateral 3.19 A angle 6.5 deg fail lateral | baseStackingNearMiss C5#3 -> C8#141 plane 3.20 A lateral 3.83 A angle 0.5 deg fail lateral

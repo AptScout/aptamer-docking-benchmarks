@@ -1,0 +1,2 @@
+case_id,case_name,pose_id,role,source_mode,rank,total_score,phosphate_electrostatic,base_stacking,metal_coordination,contact_count,clash_count,rmsd_to_reference,expected_contact_hit_fraction,top_aptamer_interactions
+5bjp-corn-dfho,Corn RNA aptamer bound to DFHO,mode:1,reference,1,1,-9.945906,0.000000,-0.273518,0.000000,1342,19,0.000,0.292,baseStacking Y:104:C1#11 -> Y:25:C8#542 3.46 A score -0.274

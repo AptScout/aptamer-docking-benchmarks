@@ -1,0 +1,2 @@
+case_id,case_name,pose_id,role,source_mode,rank,total_score,phosphate_electrostatic,base_stacking,metal_coordination,contact_count,clash_count,rmsd_to_reference,expected_contact_hit_fraction,top_aptamer_interactions
+6c64-mango-ii-ekm,Mango-II fluorescent RNA aptamer bound to EKM,mode:1,reference,1,1,-12.388651,-0.031690,-0.201007,0.000000,1917,22,0.000,0.793,baseStacking A:101:C12#17 -> A:29:C8#635 3.98 A score -0.201 | phosphateElectrostatic A:101:N02#12 -> A:17:P#352 5.27 A score -0.013 | phosphateElectrostatic A:101:C01#2 -> A:17:P#352 3.99 A score -0.012

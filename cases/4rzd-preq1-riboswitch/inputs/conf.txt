@@ -1,0 +1,14 @@
+receptor = receptor.pdbqt
+ligand = ligand.pdbqt
+out = reference_pose.pdbqt
+
+center_x = 32.458
+center_y = 29.409
+center_z = 107.312
+
+size_x = 28
+size_y = 26
+size_z = 36
+
+exhaustiveness = 4
+num_modes = 9

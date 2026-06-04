@@ -1,0 +1,44 @@
+REMARK  Name = cases/6c64-mango-ii-ekm/inputs/ligand_ekm_chain_a.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C05_4  and  C06_5
+REMARK    2  A    between atoms: C06_5  and  C07_6
+REMARK    3  A    between atoms: C07_6  and  C08_7
+REMARK    4  A    between atoms: C08_7  and  C09_8
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C06 EKM A 101       6.755  37.254 -22.885  0.00  0.00    +0.026 C 
+ENDROOT
+BRANCH   1   5
+ATOM      2  C01 EKM A 101       5.011  35.554 -27.837  0.00  0.00    +0.113 C 
+ATOM      3  C03 EKM A 101       5.545  37.253 -26.273  0.00  0.00    +0.061 C 
+ATOM      4  C04 EKM A 101       6.002  37.652 -25.004  0.00  0.00    +0.011 C 
+ATOM      5  C05 EKM A 101       6.350  36.710 -24.040  0.00  0.00    -0.023 C 
+ATOM      6  C19 EKM A 101       6.245  35.313 -24.336  0.00  0.00    -0.004 C 
+ATOM      7  C20 EKM A 101       6.584  34.296 -23.404  0.00  0.00    -0.003 C 
+ATOM      8  C21 EKM A 101       6.462  32.943 -23.759  0.00  0.00    -0.001 C 
+ATOM      9  C22 EKM A 101       6.003  32.577 -25.034  0.00  0.00    -0.003 C 
+ATOM     10  C23 EKM A 101       5.673  33.581 -25.947  0.00  0.00    -0.002 C 
+ATOM     11  C24 EKM A 101       5.798  34.967 -25.579  0.00  0.00    +0.118 C 
+ATOM     12  N02 EKM A 101       5.463  35.943 -26.507  0.00  0.00    -0.299 N 
+ENDBRANCH   1   5
+BRANCH   1  13
+ATOM     13  C07 EKM A 101       7.311  36.623 -21.587  0.00  0.00    +0.007 C 
+BRANCH  13  14
+ATOM     14  C08 EKM A 101       8.487  35.962 -21.544  0.00  0.00    +0.032 C 
+BRANCH  14  15
+ATOM     15  C09 EKM A 101       8.878  35.447 -20.160  0.00  0.00    +0.125 C 
+ATOM     16  C11 EKM A 101       9.573  35.143 -17.727  0.00  0.00    +0.040 A 
+ATOM     17  C12 EKM A 101       9.960  35.071 -16.389  0.00  0.00    +0.007 A 
+ATOM     18  C13 EKM A 101      10.057  33.786 -15.832  0.00  0.00    +0.001 A 
+ATOM     19  C14 EKM A 101       9.807  32.615 -16.558  0.00  0.00    +0.001 A 
+ATOM     20  C15 EKM A 101       9.427  32.694 -17.882  0.00  0.00    +0.015 A 
+ATOM     21  C16 EKM A 101       9.311  33.993 -18.461  0.00  0.00    +0.054 A 
+ATOM     22  C18 EKM A 101       8.631  33.045 -20.665  0.00  0.00    +0.113 C 
+ATOM     23  N17 EKM A 101       8.938  34.182 -19.756  0.00  0.00    -0.298 N 
+ATOM     24  S10 EKM A 101       9.304  36.495 -18.820  0.00  0.00    -0.093 S 
+ENDBRANCH  14  15
+ENDBRANCH  13  14
+ENDBRANCH   1  13
+TORSDOF 4

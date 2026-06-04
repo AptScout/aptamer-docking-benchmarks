@@ -1,0 +1,43 @@
+REMARK  Name = 2GDI_lig_crystal.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: P_4  and  O5'_7
+REMARK    2  A    between atoms: O5'_7  and  C5'_8
+REMARK    3  A    between atoms: C5'_8  and  C4'_9
+REMARK    4  A    between atoms: C1'_15  and  N1_16
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  PC  CCC X  89     -21.540  -1.624 -36.793  0.00  0.00    +0.000 P 
+ATOM      2  O1C CCC X  89     -21.260  -0.225 -37.298  0.00  0.00    +0.000 OA
+ATOM      3  O2C CCC X  89     -20.859  -2.842 -37.375  0.00  0.00    +0.000 OA
+ATOM      4  C4' CCC X  89     -23.574   0.269 -35.461  0.00  0.00    +0.000 C 
+ATOM      5  O4' CCC X  89     -23.271   0.566 -34.091  0.00  0.00    +0.000 OA
+ATOM      6  C3' CCC X  89     -23.708  -1.232 -35.580  0.00  0.00    +0.000 C 
+ATOM      7  O3' CCC X  89     -23.102  -1.876 -36.683  0.00  0.00    +0.000 OA
+ATOM      8  C2' CCC X  89     -22.704  -1.666 -34.514  0.00  0.00    +0.000 C 
+ATOM      9  O2' CCC X  89     -21.435  -1.653 -35.184  0.00  0.00    +0.000 OA
+ATOM     10  C1' CCC X  89     -22.701  -0.579 -33.457  0.00  0.00    +0.000 C 
+ENDROOT
+BRANCH  10  11
+ATOM     11  N1  CCC X  89     -23.521  -1.033 -32.329  0.00  0.00    +0.000 N 
+ATOM     12  C2  CCC X  89     -23.000  -1.988 -31.429  0.00  0.00    +0.000 A 
+ATOM     13  O2  CCC X  89     -21.842  -2.430 -31.586  0.00  0.00    +0.000 OA
+ATOM     14  N3  CCC X  89     -23.745  -2.423 -30.389  0.00  0.00    +0.000 NA
+ATOM     15  C4  CCC X  89     -24.997  -1.955 -30.206  0.00  0.00    +0.000 A 
+ATOM     16  N4  CCC X  89     -25.737  -2.401 -29.162  0.00  0.00    +0.000 NA
+ATOM     17  C5  CCC X  89     -25.528  -1.022 -31.089  0.00  0.00    +0.000 A 
+ATOM     18  C6  CCC X  89     -24.764  -0.570 -32.159  0.00  0.00    +0.000 A 
+ENDBRANCH  10  11
+BRANCH   4  19
+ATOM     19  C5' CCC X  89     -24.860   0.991 -35.856  0.00  0.00    +0.000 C 
+BRANCH  19  20
+ATOM     20  O5' CCC X  89     -25.510   1.478 -34.681  0.00  0.00    +0.000 OA
+BRANCH  20  21
+ATOM     21  P   CCC X  89     -26.596   2.671 -34.733  0.00  0.00    +0.000 P 
+ATOM     22  OP1 CCC X  89     -26.594   3.277 -36.116  0.00  0.00    +0.000 OA
+ATOM     23  OP2 CCC X  89     -27.887   2.163 -34.137  0.00  0.00    +0.000 OA
+ENDBRANCH  20  21
+ENDBRANCH  19  20
+ENDBRANCH   4  19
+TORSDOF 4

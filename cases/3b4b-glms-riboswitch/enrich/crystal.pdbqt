@@ -1,0 +1,33 @@
+REMARK  Name = 3B4B_lig_crystal.pdb
+REMARK  3 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: C5_5  and  C6_6
+REMARK    2  A    between atoms: C6_6  and  O6_12
+REMARK    3  A    between atoms: O6_12  and  P_13
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  C1  GLP A 201      44.708  10.440  14.296  0.00  0.00    +0.000 C 
+ATOM      2  C2  GLP A 201      43.946  11.687  13.765  0.00  0.00    +0.000 C 
+ATOM      3  C3  GLP A 201      44.030  11.696  12.224  0.00  0.00    +0.000 C 
+ATOM      4  C4  GLP A 201      45.513  11.743  11.828  0.00  0.00    +0.000 C 
+ATOM      5  C5  GLP A 201      46.216  10.491  12.416  0.00  0.00    +0.000 C 
+ATOM      6  O1  GLP A 201      44.106   9.220  13.839  0.00  0.00    +0.000 OA
+ATOM      7  N2  GLP A 201      42.532  11.631  14.197  0.00  0.00    +0.000 NA
+ATOM      8  O3  GLP A 201      43.351  12.849  11.696  0.00  0.00    +0.000 OA
+ATOM      9  O4  GLP A 201      45.627  11.737  10.398  0.00  0.00    +0.000 OA
+ATOM     10  O5  GLP A 201      46.099  10.482  13.868  0.00  0.00    +0.000 OA
+ENDROOT
+BRANCH   5  11
+ATOM     11  C6  GLP A 201      47.709  10.518  12.045  0.00  0.00    +0.000 C 
+BRANCH  11  12
+ATOM     12  O6  GLP A 201      48.319  11.709  12.575  0.00  0.00    +0.000 OA
+BRANCH  12  13
+ATOM     13  P   GLP A 201      49.759  11.928  11.876  0.00  0.00    +0.000 P 
+ATOM     14  O1P GLP A 201      50.037  13.384  11.814  0.00  0.00    +0.000 OA
+ATOM     15  O2P GLP A 201      50.888  11.180  12.746  0.00  0.00    +0.000 OA
+ATOM     16  O3P GLP A 201      49.777  11.319  10.375  0.00  0.00    +0.000 OA
+ENDBRANCH  12  13
+ENDBRANCH  11  12
+ENDBRANCH   5  11
+TORSDOF 3
