@@ -288,7 +288,7 @@ After correcting the FMN riboswitch case (replacing 60 aromatic decoys with alip
 
 Three decoy design principles with general applicability are established: (i) **always exclude purines, pyrimidines, and phosphates**; (ii) **extend aromatic exclusion to ≥2 fused rings** for large aromatic ligands like FMN; (iii) **extend N-heterocyclic exclusion** to 6-membered N-heterocycles for guanine-analog ligands like PreQ1. All three are implemented in the benchmark repository's `prepare_decoys.py` script.
 
-The benchmark fills the gap for RNA VS that DUD-E fills for protein VS: a community reference enabling comparison of computational methods across structurally diverse RNA targets. It also provides the only validated ground truth currently available for training RNA-specific ML scoring functions—the missing prerequisite for extending GNN-based docking tools (DiffDock, Uni-Mol) to nucleic acid targets. All PDBQT files, preparation scripts, and scoring results are released openly at [GITHUB_URL].
+The benchmark fills the gap for RNA VS that DUD-E fills for protein VS: a community reference enabling comparison of computational methods across structurally diverse RNA targets. It also provides the only validated ground truth currently available for training RNA-specific ML scoring functions—the missing prerequisite for extending GNN-based docking tools (DiffDock, Uni-Mol) to nucleic acid targets. All PDBQT files, preparation scripts, and scoring results are released openly at https://github.com/khoonie/aptamer-docking-benchmarks.
 
 ---
 
@@ -299,7 +299,7 @@ The benchmark fills the gap for RNA VS that DUD-E fills for protein VS: a commun
 ## Data Availability
 
 Benchmark cases (PDBQT files, `case.json`, `contact_review.md`, enrichment results, preparation scripts) are available at:  
-`https://github.com/[TBD]/aptamer-docking-benchmarks`
+`https://github.com/khoonie/aptamer-docking-benchmarks`
 
 Version used in this paper: v0.6.0-alpha (19 cases validated, 17 enrichment sets)
 
