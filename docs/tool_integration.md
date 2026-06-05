@@ -1,6 +1,6 @@
 # Tool Integration Contract
 
-This dataset is the shared benchmark contract for MacVina, MacDock, and external comparator tooling. Tools should treat JSON metadata as versioned source of truth and molecular input/output files as local, reproducible artifacts.
+This dataset is the shared benchmark contract for AptScout, AptScout, and external comparator tooling. Tools should treat JSON metadata as versioned source of truth and molecular input/output files as local, reproducible artifacts.
 
 For the current 10-case validation and scoring sequence, see [`benchmark_runbook.md`](benchmark_runbook.md).
 
@@ -17,7 +17,7 @@ Readers must ignore unknown JSON fields so the schema can evolve without breakin
 
 ## Case Metadata
 
-`case.json` fields currently consumed by MacVina and MacDock:
+`case.json` fields currently consumed by AptScout and AptScout:
 
 - `id`: stable lowercase case identifier.
 - `name`: human-readable case name.
@@ -81,7 +81,7 @@ Tools should keep these separate from `decoyPosePath`, which remains the same-li
 
 ## Current Consumers
 
-MacVina:
+AptScout:
 
 ```sh
 cd ~/Projects/macvina
@@ -91,7 +91,7 @@ swift run macvinaAptamerCalibrate \
   --pose-csv ~/Projects/aptamer-docking-benchmarks/derived/macvina/shared-pose-report.csv
 ```
 
-MacDock:
+AptScout:
 
 ```sh
 cd ~/Projects/macdock
@@ -99,7 +99,7 @@ swift run macvinaBenchmark -- \
   --aptamer-benchmark ~/Projects/aptamer-docking-benchmarks/manifest.json
 ```
 
-MacDock writes aggregate output to `derived/macdock/aptamer-metrics.csv`.
+AptScout writes aggregate output to `derived/macdock/aptamer-metrics.csv`.
 
 For a fast contract check without docking:
 

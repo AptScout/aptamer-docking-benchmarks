@@ -30,7 +30,7 @@ Use this checklist before promoting a benchmark case beyond `seed`.
 - Contact annotations name receptor residues in a stable format such as `I:667`.
 - Ligand atoms use stable labels such as `P_134` when atom IDs are inherited from PDBQT.
 - Interaction kinds are selected from the shared schema.
-- Seed contacts derived from MacVina/MacDock are labeled as hypotheses until manually reviewed.
+- Seed contacts derived from AptScout/AptScout are labeled as hypotheses until manually reviewed.
 - Metal-mediated contacts name the ion residue, for example `X:304`, and the ligand donor atom, for example `O1P`.
 
 ## Affinity Review

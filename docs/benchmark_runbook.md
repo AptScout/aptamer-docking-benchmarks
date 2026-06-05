@@ -1,6 +1,6 @@
 # Benchmark Runbook
 
-This runbook describes how to run the shared 10-case manifest after the riboswitch-panel expansion and MacDock aptamer-scoring fix.
+This runbook describes how to run the shared 19-case manifest after the HARIBOSS expansion, contact-curation pass, and AptScout ligand-phosphate calibration split.
 
 ## 1. Validate Dataset Metadata
 
@@ -14,14 +14,14 @@ python3 scripts/validate_manifest.py
 Expected current result:
 
 ```text
-Validated 10 benchmark case(s).
+Validated 19 benchmark case(s).
 ```
 
-This checks JSON/schema/path contracts. It does not prove that MacVina or MacDock can parse every local ignored PDBQT file.
+This checks JSON/schema/path contracts. It does not prove that AptScout or AptScout can parse every local ignored PDBQT file.
 
-## 2. Validate MacVina Reader Compatibility
+## 2. Validate AptScout Reader Compatibility
 
-Run this from MacVina:
+Run this from AptScout:
 
 ```sh
 cd ~/Projects/macvina
@@ -33,11 +33,10 @@ swift run macvinaAptamerCalibrate \
 Expected current result:
 
 ```text
-Validation passed for 10 aptamer benchmark case(s).
-Parsed 13 output pose(s) and 10 decoy pose(s).
-Parsed 29 enrichment active pose(s) and 1054 enrichment decoy pose(s).
-Reference aptamer-term coverage: phosphate 8/10, stacking 8/10, metal 1/10
-Expected aptamer terms silent on reference pose: 2g9c-purine-riboswitch:stacking, 2ygh-sam-riboswitch:phosphate
+Validation passed for 19 aptamer benchmark case(s).
+Parsed 22 output pose(s) and 10 decoy pose(s).
+Parsed 41 enrichment active pose(s) and 1423 enrichment decoy pose(s).
+Reference aptamer-term coverage: phosphate 16/19, stacking 15/19, metal 2/19
 ```
 
 The 13 output poses are:
@@ -47,26 +46,29 @@ The 13 output poses are:
 - 1 reference pose for 1FMN
 - 1 reference pose for 1FMN-Mg
 - 6 riboswitch-panel reference poses
+- 9 HARIBOSS-derived RNA/cofactor/fluorogenic-aptamer reference poses
 
 The 10 decoy poses are the 4Q9R same-ligand 2ZY pose decoys.
 
-The enrichment totals are different-ligand active/decoy ligand sets, not same-ligand pose decoys. They are counted during MacVina validation to catch stale `activeCount` and `decoyCount` metadata, but they should not be used for RMSD-to-reference pose metrics.
+The enrichment totals are different-ligand active/decoy ligand sets, not same-ligand pose decoys. They are counted during AptScout validation to catch stale `activeCount` and `decoyCount` metadata, but they should not be used for RMSD-to-reference pose metrics.
 
-## 3. Generate MacVina Reports
+## 3. Generate AptScout Reports
 
-Run this from MacVina:
+Run this from AptScout:
 
 ```sh
 cd ~/Projects/macvina
 swift run macvinaAptamerCalibrate \
   --manifest ~/Projects/aptamer-docking-benchmarks/manifest.json \
-  --csv ~/Projects/aptamer-docking-benchmarks/derived/macvina/shared-metrics.csv \
-  --pose-csv ~/Projects/aptamer-docking-benchmarks/derived/macvina/shared-pose-report.csv
+  --csv ~/Projects/aptamer-docking-benchmarks/derived/macvina/19case-metrics.csv \
+  --pose-csv ~/Projects/aptamer-docking-benchmarks/derived/macvina/19case-pose-report.csv \
+  --enrichment-csv ~/Projects/aptamer-docking-benchmarks/derived/macvina/19case-enrichment.csv \
+  --ablation-csv ~/Projects/aptamer-docking-benchmarks/derived/macvina/19case-ablation.csv
 ```
 
-Use `shared-metrics.csv` for one-row-per-case summaries. Use `shared-pose-report.csv` for reference/output/decoy ranking, RMSD, clash counts, expected-contact hit fractions, and top aptamer interactions.
+Use `19case-metrics.csv` for one-row-per-case summaries. Use `19case-pose-report.csv` for reference/output/decoy ranking, RMSD, clash counts, expected-contact hit fractions, and top aptamer interactions. Use `19case-enrichment.csv` for active-vs-decoy AUC. Use `19case-ablation.csv` to identify which aptamer term drives enrichment.
 
-The current 10-case MacVina reference-pose snapshot is summarized in [`macvina_10_case_snapshot.md`](macvina_10_case_snapshot.md).
+The current 19-case AptScout reference-pose and ablation snapshot is summarized in [`macvina_19case_snapshot.md`](macvina_19case_snapshot.md). The earlier 10-case snapshot remains in [`macvina_10_case_snapshot.md`](macvina_10_case_snapshot.md).
 
 Interpretation rules:
 
@@ -74,10 +76,49 @@ Interpretation rules:
 - Use 4Q9R for same-ligand reference-vs-decoy pose ranking.
 - Use 1FMN-Mg as the current metal-coordination smoke test.
 - Use the riboswitch panel for structural/contact breadth, not pose-decoy discrimination yet.
+- Treat ligand-phosphate enrichment as a pharmacophore signal separate from receptor phosphate geometry.
 
-## 4. Validate MacDock Reader Compatibility
+To run the current aptamer weight sweep:
 
-Run this from MacDock:
+```sh
+cd ~/Projects/macvina
+swift run macvinaAptamerCalibrate \
+  --manifest ~/Projects/aptamer-docking-benchmarks/manifest.json \
+  --sweep-aptamer-weights \
+  --sweep-csv ~/Projects/aptamer-docking-benchmarks/derived/macvina/19case-weight-sweep.csv
+```
+
+The current best sweep row is:
+
+| Term | Weight |
+| --- | ---: |
+| receptor phosphate electrostatic | -0.320 |
+| ligand phosphate | -1.000 |
+| base stacking | -0.500 |
+| metal coordination | -0.100 |
+
+For a fast current-best check without repeating the full ligand-phosphate sweep
+grid, run a one-row sweep:
+
+```sh
+cd ~/Projects/macvina
+swift run macvinaAptamerCalibrate \
+  --manifest ~/Projects/aptamer-docking-benchmarks/manifest.json \
+  --phosphate-weights -0.32 \
+  --ligand-phosphate-weights -1.0 \
+  --stacking-weights -0.50 \
+  --metal-weights -0.10 \
+  --sweep-aptamer-weights \
+  --sweep-csv ~/Projects/aptamer-docking-benchmarks/derived/macvina/19case-current-best-specificity-sweep.csv
+```
+
+The focused current-best sweep is the preferred quick regression check after
+small objective-metric changes. Reserve the full 180-row sweep for weight-grid
+changes or final release snapshots.
+
+## 4. Validate AptScout Reader Compatibility
+
+Run this from AptScout:
 
 ```sh
 cd ~/Projects/macdock
@@ -91,7 +132,7 @@ This should parse the manifest, case files, configs, receptor/ligand PDBQT files
 Expected current result:
 
 ```text
-Validation passed for 10 shared aptamer benchmark case(s).
+Validation passed for 19 shared aptamer benchmark case(s).
 ```
 
 Current parsed local input counts:
@@ -109,9 +150,9 @@ Current parsed local input counts:
 | `3b4b-glms-riboswitch` | 417 | 1 | 1 | 0 |
 | `2hoj-tpp-riboswitch` | 1636 | 1 | 1 | 0 |
 
-Known MacDock build note: the current build emits an unused-local warning for `vinaWeights` in `macvinaBenchmark/main.swift`. That is a MacDock code cleanup item, not a dataset validation failure.
+Known AptScout build note: the current build emits an unused-local warning for `vinaWeights` in `macvinaBenchmark/main.swift`. That is a AptScout code cleanup item, not a dataset validation failure.
 
-## 5. Run MacDock Aptamer Benchmark
+## 5. Run AptScout Aptamer Benchmark
 
 For a quick smoke run:
 
@@ -131,15 +172,15 @@ swift run macvinaBenchmark -- \
   --grid-refine-count 10
 ```
 
-MacDock writes aggregate output under:
+AptScout writes aggregate output under:
 
 ```text
 ~/Projects/aptamer-docking-benchmarks/derived/macdock/
 ```
 
-## 6. Read MacDock Results Carefully
+## 6. Read AptScout Results Carefully
 
-After Claude's fix, MacDock aptamer terms should be case-specific. For each row:
+After Claude's fix, AptScout aptamer terms should be case-specific. For each row:
 
 - `macdock_aptamer_score - macdock_vina_score` should be consistent with the reported aptamer-term contributions.
 - `phosphate_contribution` and `stacking_contribution` should depend on docked pose geometry.
@@ -147,14 +188,14 @@ After Claude's fix, MacDock aptamer terms should be case-specific. For each row:
 - A repeated identical delta across all riboswitch cases is a regression signal.
 - Zero phosphate/stacking terms at low search depth may indicate poor pose recovery, not bad expected-contact metadata.
 
-Known current limitation: MacDock metal coordination is still not implemented in the benchmark aptamer path, so cases with `metalCoordination` should not be used to calibrate MacDock metal scoring yet.
+Known current limitation: AptScout metal coordination is still not implemented in the benchmark aptamer path, so cases with `metalCoordination` should not be used to calibrate AptScout metal scoring yet.
 
 ## 7. Calibration Gates
 
 Before using a run for calibration, confirm:
 
 - Dataset validation passes.
-- MacVina and MacDock validate-only runs pass.
+- AptScout and AptScout validate-only runs pass.
 - Output scores include per-term aptamer breakdowns.
 - Score deltas match the term breakdowns.
 - Same-ligand pose-decoy claims use `decoyPosePath`, not ligand-enrichment decoys.

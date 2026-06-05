@@ -8,7 +8,7 @@
 
 ## Abstract
 
-We present a curated benchmark of 19 RNA aptamer–small-molecule complexes for evaluating structure-based virtual screening of RNA ligands—a problem that lacks validated datasets analogous to DUD-E for proteins. Each case is drawn from a high-resolution X-ray crystal structure, validated against the primary crystallographic literature for binding contacts, and accompanied by property-matched decoy sets. Using the GPU-accelerated MacDock docking engine with its RNA-specific aptamer scoring terms, we characterize enrichment across all 17 cases with active/decoy sets. Aptamer scoring significantly improves enrichment (ΔAUC > 0.05) in 10/17 cases (mean ΔAUC = +0.080 across all 17 (Gemini validation)), with the largest improvements for cyclic di-nucleotide binders (TPP riboswitch: ΔAUC = +0.44), SAM-I riboswitch (ΔAUC = +0.28), glmS ribozyme (+0.23), and fluorogenic aptamers (Mango-II: +0.18, ZTP: +0.14). In 5 cases the baseline already achieves AUC > 0.90 (ceiling effect). Critically, one case that initially appeared detrimental (FMN riboswitch, AUC 0.967→0.533 with original decoys) is traced to systematic aromatic decoy contamination: all 60 original FMN decoys contained 10–30 aromatic C atoms each, which the nucleobase stacking term rewards non-specifically. Replacing them with 14 aliphatic reference compounds (aminoglycosides, mupirocin, raffinose) rescues the enrichment to AUC = 0.786 with aptamer scoring, establishing the revised benchmark outcome of 10/17 help, 7/17 neutral, 0/17 hurt. The FMN case study defines a previously undescribed decoy contamination mode specific to large aromatic RNA ligands. In the Gemini validation (17 cases, 100 property-matched decoys, blind docking), MacDock achieves RMSD < 2 Å in 8/17 cases and mean ΔAUC = +0.080. The Mg²⁺ anomaly (RMSD 0.3 Å without vs 16.6 Å with explicit Mg²⁺) demonstrates that unrelaxed divalent metals in rigid-receptor docking produce incorrect poses despite maintaining correct enrichment. The benchmark, preparation scripts, PDBQT files, and scoring results are publicly available.
+We present a curated benchmark of 19 RNA aptamer–small-molecule complexes for evaluating structure-based virtual screening of RNA ligands—a problem that lacks validated datasets analogous to DUD-E for proteins. Each case is drawn from a high-resolution X-ray crystal structure, validated against the primary crystallographic literature for binding contacts, and accompanied by property-matched decoy sets. Using the GPU-accelerated AptScout docking engine with its RNA-specific aptamer scoring terms, we characterize enrichment across all 17 cases with active/decoy sets. Aptamer scoring significantly improves enrichment (ΔAUC > 0.05) in 10/17 cases (mean ΔAUC = +0.080 across all 17 (Gemini validation)), with the largest improvements for cyclic di-nucleotide binders (TPP riboswitch: ΔAUC = +0.44), SAM-I riboswitch (ΔAUC = +0.28), glmS ribozyme (+0.23), and fluorogenic aptamers (Mango-II: +0.18, ZTP: +0.14). In 5 cases the baseline already achieves AUC > 0.90 (ceiling effect). Critically, one case that initially appeared detrimental (FMN riboswitch, AUC 0.967→0.533 with original decoys) is traced to systematic aromatic decoy contamination: all 60 original FMN decoys contained 10–30 aromatic C atoms each, which the nucleobase stacking term rewards non-specifically. Replacing them with 14 aliphatic reference compounds (aminoglycosides, mupirocin, raffinose) rescues the enrichment to AUC = 0.786 with aptamer scoring, establishing the revised benchmark outcome of 10/17 help, 7/17 neutral, 0/17 hurt. The FMN case study defines a previously undescribed decoy contamination mode specific to large aromatic RNA ligands. In the Gemini validation (17 cases, 100 property-matched decoys, blind docking), AptScout achieves RMSD < 2 Å in 8/17 cases and mean ΔAUC = +0.080. The Mg²⁺ anomaly (RMSD 0.3 Å without vs 16.6 Å with explicit Mg²⁺) demonstrates that unrelaxed divalent metals in rigid-receptor docking produce incorrect poses despite maintaining correct enrichment. The benchmark, preparation scripts, PDBQT files, and scoring results are publicly available.
 
 **Keywords**: RNA aptamers, riboswitches, virtual screening, docking benchmark, structure-based drug design, Vina scoring, shape complementarity, decoy design
 
@@ -30,7 +30,7 @@ Existing computational resources for RNA–small-molecule binding address parts 
 
 The absence of such a benchmark creates a practical problem: groups developing RNA-targeted VS methods have no standard against which to evaluate their approaches. The field lacks the equivalent of what DUD-E provided for protein VS (a diverse, validated, property-matched active/decoy set enabling method comparison).
 
-Here we describe a 19-case benchmark built from the crystallographic literature, covering all major RNA aptamer structural families: riboswitches (TPP, SAM-I, purine, preQ1, ZTP, lysine, glycine, glmS), fluorogenic aptamers (Spinach, Mango-II, Corn), DNA aptamers (thrombin T6), and RNA structural contexts (FMN riboswitch, GMP primer-template). Every case has been manually validated against the primary crystallographic reference paper for expected binding contacts. We use the GPU-accelerated MacDock docking engine [CITATION] with its RNA-specific aptamer scoring terms to characterise VS enrichment performance, systematically identifying which structural families benefit from RNA-aware scoring, which are at ceiling with baseline Vina, and—critically—which cases fail due to decoy design pitfalls that are not immediately obvious from property matching alone. The benchmark, preparation scripts, PDBQT files, and all scoring results are provided as an open resource.
+Here we describe a 19-case benchmark built from the crystallographic literature, covering all major RNA aptamer structural families: riboswitches (TPP, SAM-I, purine, preQ1, ZTP, lysine, glycine, glmS), fluorogenic aptamers (Spinach, Mango-II, Corn), DNA aptamers (thrombin T6), and RNA structural contexts (FMN riboswitch, GMP primer-template). Every case has been manually validated against the primary crystallographic reference paper for expected binding contacts. We use the GPU-accelerated AptScout docking engine [CITATION] with its RNA-specific aptamer scoring terms to characterise VS enrichment performance, systematically identifying which structural families benefit from RNA-aware scoring, which are at ceiling with baseline Vina, and—critically—which cases fail due to decoy design pitfalls that are not immediately obvious from property matching alone. The benchmark, preparation scripts, PDBQT files, and all scoring results are provided as an open resource.
 
 ---
 
@@ -47,9 +47,9 @@ Each case is stored as a directory with the following files:
 - `inputs/`: receptor PDBQT, ligand PDBQT, docking configuration (`conf.txt`), reference pose PDBQT
 - `enrich/`: active/decoy PDBQT sets (17/19 cases)
 
-The `manifest.json` file at the root of the repository lists all 19 cases and can be used programmatically to run the full benchmark via `macvinaBenchmark --aptamer-benchmark manifest.json`.
+The `manifest.json` file at the root of the repository lists all 19 cases and can be used programmatically to run the full benchmark via `aptscout --aptamer-benchmark manifest.json`.
 
-**Contact type definitions.** We recognise four binding contact types, matching the four MacDock aptamer scoring terms:
+**Contact type definitions.** We recognise four binding contact types, matching the four AptScout aptamer scoring terms:
 - *baseStacking*: ligand aromatic or planar ring within 3.5 Å of an RNA nucleobase ring centroid, with ring plane angle < 30°
 - *phosphateElectrostatic*: ligand cationic group (amino, guanidinium) within 4.0 Å of a backbone phosphate oxygen
 - *hBond*: hydrogen bond between ligand donor/acceptor and RNA base or sugar hydroxyl (donor-acceptor distance < 3.3 Å, angle > 120°)
@@ -60,11 +60,11 @@ The `manifest.json` file at the root of the repository lists all 19 cases and ca
 Each case was validated independently against the primary crystallographic reference, not against the PDBQT geometry alone. The procedure was:
 
 1. **Literature extraction**: Per-residue contacts listed in the paper's Results/Discussion section were extracted and entered into `contact_review.md`.
-2. **Geometry check**: The expected contacts were verified against the crystal structure PDB file using distance/angle calculations in PyMOL and the MacDock contact-detection module.
+2. **Geometry check**: The expected contacts were verified against the crystal structure PDB file using distance/angle calculations in PyMOL and the AptScout contact-detection module.
 3. **PDBQT geometry verification**: The PDBQT representation was confirmed to reproduce the crystal geometry within 0.3 Å RMSD for ligand heavy atoms.
 4. **Discrepancy logging**: Where the PDBQT geometry disagreed with the crystal structure (e.g., due to PDBQT atom-type assignment errors), the discrepancy was logged and the PDBQT was corrected.
 
-The contact hit fraction (`contact_hit_fraction` in Table 1) reports the fraction of expected contact *types* (not individual residues) detected in the top-scored MacDock pose. A value of 1.0 indicates all expected contact types were reproduced; 0.5 indicates half were detected. Across 19 cases, the mean contact hit fraction with aptamer scoring is 0.50 (range 0.0–1.0), indicating that roughly half of expected contact types are reproduced at the top-scored pose level. Cases where the contact hit fraction = 0.0 despite apparent aptamer scoring benefit (e.g., some riboswitch cases) reflect limitations of the single-pose contact detection at 1k screen depth rather than a failure of enrichment, as demonstrated by the high AUC values.
+The contact hit fraction (`contact_hit_fraction` in Table 1) reports the fraction of expected contact *types* (not individual residues) detected in the top-scored AptScout pose. A value of 1.0 indicates all expected contact types were reproduced; 0.5 indicates half were detected. Across 19 cases, the mean contact hit fraction with aptamer scoring is 0.50 (range 0.0–1.0), indicating that roughly half of expected contact types are reproduced at the top-scored pose level. Cases where the contact hit fraction = 0.0 despite apparent aptamer scoring benefit (e.g., some riboswitch cases) reflect limitations of the single-pose contact detection at 1k screen depth rather than a failure of enrichment, as demonstrated by the high AUC values.
 
 **Cases requiring special curation notes**: The glmS case (3B4B) is a ribozyme cofactor (not a riboswitch): glucosamine-6-phosphate accelerates self-cleavage rather than switching gene expression. Its binding pocket is nonetheless structurally well-defined and dockable. The c-di-GMP riboswitch (3IRW) has a pseudosymmetric binding site where A47 intercalation between both guanine rings of c-di-GMP is the critical contact—this is correctly detected by the stacking term. The TPP riboswitch (2HOJ) has the thiazole ring explicitly NOT contacting RNA; the pyrimidine ring makes the primary stacking interactions. The SAM-I riboswitch (2YGH) binds through sulfonium-to-carbonyl contacts in the P1 helix that are encoded as phosphate-electrostatic contacts in the current implementation.
 
@@ -76,7 +76,7 @@ Active ligands (1–7 per case) were drawn from the primary literature as compou
 
 ### 2.3 Docking and scoring
 
-Enrichment runs used MacDock (grid-hybrid mode: GPU screen at 1,000 candidates/compound + CPU L-BFGS refinement, 3 poses; box from crystal ligand + 4 Å padding). Two conditions were evaluated per case:
+Enrichment runs used AptScout (grid-hybrid mode: GPU screen at 1,000 candidates/compound + CPU L-BFGS refinement, 3 poses; box from crystal ligand + 4 Å padding). Two conditions were evaluated per case:
 
 - **Baseline**: standard Vina scoring (steric + H-bond + hydrophobic terms)  
 - **Aptamer scoring**: four RNA-specific terms added at bake time (receptor backbone-P weight, nucleobase stacking weight, ligand-P weight, metal coordination weight; calibrated defaults)
@@ -197,13 +197,13 @@ From systematic analysis of all 16 cases, four decoy design rules emerge for RNA
 
 **Missing enrichment sets.** Three cases lack enrichment sets: the glycine riboswitch (glycine MW = 75, no meaningful decoy space at this size), the Corn aptamer (DFHO fluorogen requiring specialised non-aromatic decoys, in progress), and the T6 thrombin DNA aptamer (DNA aptamer–protein docking, methodologically distinct). Populating these three cases would complete the benchmark.
 
-**Scoring function transferability.** All enrichment results reported here use MacDock's Vina-based scoring with aptamer terms calibrated on this benchmark. Evaluation of alternative scoring functions—including GNINA CNN scoring, DiffDock confidence scores, or dedicated RNA scoring functions—would substantially broaden the benchmark's utility as a community resource for comparing computational methods.
+**Scoring function transferability.** All enrichment results reported here use AptScout's Vina-based scoring with aptamer terms calibrated on this benchmark. Evaluation of alternative scoring functions—including GNINA CNN scoring, DiffDock confidence scores, or dedicated RNA scoring functions—would substantially broaden the benchmark's utility as a community resource for comparing computational methods.
 
 **Systematic study of box size effects.** The auto-box (+4 Å padding) was used uniformly, but binding site geometry varies considerably across RNA aptamer families. A systematic comparison of box sizes (2–8 Å padding) for representative cases would provide practical guidance for VS campaign setup.
 
 ### 4.4 Positioning within the computational drug discovery pipeline
 
-The benchmark serves a specific role in the modern ML-augmented drug discovery pipeline: **final validation** for RNA-targeted VS campaigns, providing physics-based enrichment after embedding-based pre-filtering (Milvus/Qdrant) and GNN-based rescoring. The critical gap this fills is that no GNN model trained on PDBbind protein-ligand data generalises to RNA-ligand binding (RNA is structurally and compositionally distinct from protein). MacDock's aptamer scoring terms — validated here across 16 diverse RNA aptamer structures — provide the only benchmarked enrichment signal for this target class.
+The benchmark serves a specific role in the modern ML-augmented drug discovery pipeline: **final validation** for RNA-targeted VS campaigns, providing physics-based enrichment after embedding-based pre-filtering (Milvus/Qdrant) and GNN-based rescoring. The critical gap this fills is that no GNN model trained on PDBbind protein-ligand data generalises to RNA-ligand binding (RNA is structurally and compositionally distinct from protein). AptScout's aptamer scoring terms — validated here across 16 diverse RNA aptamer structures — provide the only benchmarked enrichment signal for this target class.
 
 The benchmark also provides the seed training data for a future RNA-specific GNN scoring function. An SE(3)-equivariant graph neural network trained on the 19-case benchmark (extended to the full HARIBOSS dataset) would create a learned equivalent of the current physics-based aptamer terms, potentially improving the mean ΔAUC from +0.12 to >+0.25. The published benchmark (this paper) is the prerequisite for such a model: without a community-validated ground truth, ML training on RNA-ligand binding data lacks an evaluation standard.
 
@@ -243,9 +243,9 @@ derived/macdock/
 
 ### 5.2 Running the benchmark
 
-The full 19-case benchmark can be run with MacDock using:
+The full 19-case benchmark can be run with AptScout using:
 ```bash
-macvinaBenchmark \
+aptscout \
   --aptamer-benchmark manifest.json \
   --aptamer-scoring \
   --grid-hybrid \
@@ -255,7 +255,7 @@ macvinaBenchmark \
 
 Individual enrichment cases can be evaluated with:
 ```bash
-macvinaBenchmark \
+aptscout \
   --enrich cases/{case-id}/enrich \
   --aptamer-scoring \
   --grid-hybrid \
@@ -310,7 +310,7 @@ Version used in this paper: v0.6.0-alpha (19 cases validated, 17 enrichment sets
 [1] Serganov A, Nudler E. A decade of riboswitches. *Cell* 2013, 152:17–24.  
 [2] Mysinger MM et al. Directory of useful decoys, enhanced (DUD-E). *J Med Chem* 2012, 55:6582–6594.  
 [3] Oliver RC et al. HARIBOSS: a curated database of RNA–small-molecule crystal structures. *J Chem Inf Model* 2022, 62:4257–4270.  
-[4] [MacDock aptamer scoring paper — CITATION TBD]  
+[4] [AptScout aptamer scoring paper — CITATION TBD]  
 [5] Trott O, Olson AJ. AutoDock Vina. *J Comput Chem* 2010, 31:455–461.  
 
 ---
@@ -363,11 +363,11 @@ Following Gemini's recommended pipeline (100 property-matched decoys, blind dock
 
 ### Key observations
 
-1. **RMSD < 2 Å for 8/17 cases** — MacDock correctly places the bound ligand in near-crystallographic accuracy for half of all cases, including both flexible nucleotides (TPP at 0.3 Å, SAM at 0.3 Å, lysine at 0.3 Å) and large fluorogenic aptamers (Corn at 0.2 Å, Mango-II at 0.4 Å).
+1. **RMSD < 2 Å for 8/17 cases** — AptScout correctly places the bound ligand in near-crystallographic accuracy for half of all cases, including both flexible nucleotides (TPP at 0.3 Å, SAM at 0.3 Å, lysine at 0.3 Å) and large fluorogenic aptamers (Corn at 0.2 Å, Mango-II at 0.4 Å).
 
 2. **Decoy design governs AUC reliability** — the 2 cases showing AUC worsening (PreQ1, Corn) are ceiling cases where baseline Vina already achieves ≥0.95, and our current decoy sets (monocyclic aromatics) partially trigger the stacking term. Applying the extended aromatic exclusion rule consistently across all cases is expected to eliminate these worsening cases.
 
-3. **Discordant RMSD and AUC** (TPP+Mg: AUC +0.243 but RMSD 16.6 Å; lysine: RMSD 0.3 Å but AUC +0.059) — confirms that enrichment (ranking active vs decoys) and pose quality (RMSD) are partially orthogonal. MacDock's aptamer terms improve compound ranking even when the precise binding mode is not reproduced (flexible large ligands), and can place small ligands correctly even when they are hard to distinguish from decoys.
+3. **Discordant RMSD and AUC** (TPP+Mg: AUC +0.243 but RMSD 16.6 Å; lysine: RMSD 0.3 Å but AUC +0.059) — confirms that enrichment (ranking active vs decoys) and pose quality (RMSD) are partially orthogonal. AptScout's aptamer terms improve compound ranking even when the precise binding mode is not reproduced (flexible large ligands), and can place small ligands correctly even when they are hard to distinguish from decoys.
 
 ---
 *Word count: ~5,600 (Gemini validation section added 2026-06-04)*
@@ -379,11 +379,11 @@ Following Gemini's recommended pipeline (100 property-matched decoys, blind dock
 
 ### 8.1 Sub-angstrom accuracy across diverse scaffolds
 
-Seven cases achieved RMSD < 0.5 Å in the Gemini validation: Corn (0.2 Å), TPP/2HOJ (0.3 Å), SAM-I (0.3 Å), FMN+Mg (0.3 Å), Lysine (0.3 Å), FMN (0.4 Å), Purine (0.4 Å), and Mango-II (0.4 Å). This precision across seven chemically distinct scaffolds — a fluorogenic dye (DFHO), a thiamine cofactor, an aminoacyl-RNA ligand (SAM), a flavin nucleotide, an amino acid, a pyrimidine analog, and a thiazolylquinoline — demonstrates that MacDock is not guessing. It correctly reconstructs the local hydrogen-bonding networks and directional base-stacking geometries that define these RNA aptamer–ligand interactions. In structural biology, <0.5 Å RMSD corresponds to experimental coordinate precision; this level of accuracy means the docked poses are physically indistinguishable from the crystal structure within measurement uncertainty.
+Seven cases achieved RMSD < 0.5 Å in the Gemini validation: Corn (0.2 Å), TPP/2HOJ (0.3 Å), SAM-I (0.3 Å), FMN+Mg (0.3 Å), Lysine (0.3 Å), FMN (0.4 Å), Purine (0.4 Å), and Mango-II (0.4 Å). This precision across seven chemically distinct scaffolds — a fluorogenic dye (DFHO), a thiamine cofactor, an aminoacyl-RNA ligand (SAM), a flavin nucleotide, an amino acid, a pyrimidine analog, and a thiazolylquinoline — demonstrates that AptScout is not guessing. It correctly reconstructs the local hydrogen-bonding networks and directional base-stacking geometries that define these RNA aptamer–ligand interactions. In structural biology, <0.5 Å RMSD corresponds to experimental coordinate precision; this level of accuracy means the docked poses are physically indistinguishable from the crystal structure within measurement uncertainty.
 
 ### 8.2 The Mg²⁺ anomaly: explicit metal representation as structural throttle
 
-> *"We report a stark structural divergence in the Thiamine Pyrophosphate (TPP) riboswitch complex based on metal ion representation. In the absence of explicit cations, MacDock reproduces the near-native binding pose with a remarkable RMSD of 0.3 Å (2HOJ). However, introducing explicit Mg²⁺ coordinate point charges (2GDI) collapses pose fidelity, driving the RMSD to 16.6 Å. Classical force fields treat divalent cations as rigid, unyielding electrostatic sinks. During unbiased sampling, the highly localised charge of the explicit magnesium ion exerts an artificial, long-range electrostatic drag that completely overrules the softer, localised van der Waals packing and base-stacking forces of the RNA pocket. This provides definitive computational proof that implicit or soft-boundary metal representations are functionally superior for large-scale RNA virtual screening campaigns."*
+> *"We report a stark structural divergence in the Thiamine Pyrophosphate (TPP) riboswitch complex based on metal ion representation. In the absence of explicit cations, AptScout reproduces the near-native binding pose with a remarkable RMSD of 0.3 Å (2HOJ). However, introducing explicit Mg²⁺ coordinate point charges (2GDI) collapses pose fidelity, driving the RMSD to 16.6 Å. Classical force fields treat divalent cations as rigid, unyielding electrostatic sinks. During unbiased sampling, the highly localised charge of the explicit magnesium ion exerts an artificial, long-range electrostatic drag that completely overrules the softer, localised van der Waals packing and base-stacking forces of the RNA pocket. This provides definitive computational proof that implicit or soft-boundary metal representations are functionally superior for large-scale RNA virtual screening campaigns."*
 
 The direct head-to-head comparison:
 
@@ -396,11 +396,11 @@ When explicit Mg²⁺ coordinates are included in the receptor grid, the RMSD ex
 
 The physical mechanism is clear: in classical rigid-receptor scoring (Vina-based), divalent cations carry massive localised electrostatic potentials as rigid point charges. During blind docking, the ligand's negatively charged pyrophosphate tail is electrostatically attracted to the Mg²⁺ in a non-biological orientation, overriding the softer RNA packing forces. The result: the scoring function correctly identifies thiamine pyrophosphate as the top-scoring compound (enrichment is maintained) but places it in the wrong orientation (RMSD fails).
 
-**Implication for docking practice**: Explicit unrelaxed divalent metal ions in rigid-receptor RNA docking produce incorrect poses. Better approaches are: (a) omit the metal from the receptor grid; (b) add soft Lennard-Jones terms that reproduce the coordination geometry without the rigid electrostatic dominance (as implemented in MacDock's metal-coordination scoring); or (c) use implicit metal coordination represented as modified van der Waals parameters. The 2HOJ vs 2GDI comparison provides a mathematical proof of this principle that is directly publishable.
+**Implication for docking practice**: Explicit unrelaxed divalent metal ions in rigid-receptor RNA docking produce incorrect poses. Better approaches are: (a) omit the metal from the receptor grid; (b) add soft Lennard-Jones terms that reproduce the coordination geometry without the rigid electrostatic dominance (as implemented in AptScout's metal-coordination scoring); or (c) use implicit metal coordination represented as modified van der Waals parameters. The 2HOJ vs 2GDI comparison provides a mathematical proof of this principle that is directly publishable.
 
 ### 8.3 The Lysine Paradox: orthogonality of pose quality and enrichment quality
 
-> *"The evaluation of the L-lysine riboswitch (3D0U) highlights a fundamental paradox in computational docking: the total decoupling of spatial pose fidelity from decoy discrimination. MacDock successfully identified the exact native binding conformation with an elite RMSD of 0.3 Å. Concurrently, the virtual screening run yielded a near-random area under the receiver operating characteristic curve (AUC = 0.277). This confirms that pose quality and enrichment quality are entirely orthogonal performance vectors. A scoring function can possess an immaculate directional gradient that guides a true ligand into its exact physical minimum, while lacking the absolute scale calibration required to penalise highly charged zwitterionic decoys. Benchmarking efforts must treat these metrics as distinct engineering objectives."*
+> *"The evaluation of the L-lysine riboswitch (3D0U) highlights a fundamental paradox in computational docking: the total decoupling of spatial pose fidelity from decoy discrimination. AptScout successfully identified the exact native binding conformation with an elite RMSD of 0.3 Å. Concurrently, the virtual screening run yielded a near-random area under the receiver operating characteristic curve (AUC = 0.277). This confirms that pose quality and enrichment quality are entirely orthogonal performance vectors. A scoring function can possess an immaculate directional gradient that guides a true ligand into its exact physical minimum, while lacking the absolute scale calibration required to penalise highly charged zwitterionic decoys. Benchmarking efforts must treat these metrics as distinct engineering objectives."*
 
 The explanation reveals different failure modes in docking vs. enrichment:
 
@@ -411,12 +411,12 @@ This case demonstrates that pose quality and enrichment quality are orthogonal m
 
 ### 8.4 Affinity correlation: calibrated for enrichment, not prediction
 
-Figure 4 shows the correlation between MacDock aptamer scores (crystal-pose docking) and experimental ΔG = RT ln(Kd) for the 12 Category A cases (RMSD ≤ 7.5 Å). Spearman ρ = 0.13 (p = 0.70), Pearson r = 0.23 (p = 0.48) — not statistically significant.
+Figure 4 shows the correlation between AptScout aptamer scores (crystal-pose docking) and experimental ΔG = RT ln(Kd) for the 12 Category A cases (RMSD ≤ 7.5 Å). Spearman ρ = 0.13 (p = 0.70), Pearson r = 0.23 (p = 0.48) — not statistically significant.
 
 This result is expected and interpretable. Two systematic outlier patterns are visible:
 
 **Over-scored relative to ΔG** (score much more negative than affinity predicts):
-- *FMN*: MacDock score −12.0 kcal/mol, ΔG −7.2 kcal/mol. FMN carries one phosphate and a large aromatic isoalloxazine ring, triggering both ligand-P and stacking terms strongly. But the FMN riboswitch binds FMN relatively weakly (Kd ≈ 5 µM) — the riboswitch evolved for metabolite sensing at biological concentrations, not tight pharmaceutical binding.
+- *FMN*: AptScout score −12.0 kcal/mol, ΔG −7.2 kcal/mol. FMN carries one phosphate and a large aromatic isoalloxazine ring, triggering both ligand-P and stacking terms strongly. But the FMN riboswitch binds FMN relatively weakly (Kd ≈ 5 µM) — the riboswitch evolved for metabolite sensing at biological concentrations, not tight pharmaceutical binding.
 - *TPP (2HOJ)*: Score −12.9, ΔG −9.2. Thiamine pyrophosphate's two phosphate groups give a large ligand-P bonus regardless of whether those phosphates contribute to thermodynamic tightness.
 
 **Under-scored relative to ΔG** (affinity much tighter than score predicts):

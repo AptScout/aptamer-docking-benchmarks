@@ -1,6 +1,6 @@
 # Local Input Inventory
 
-Large molecular files and generated outputs are intentionally ignored by git. This page records the local input paths currently expected by the tracked metadata so another MacVina or MacDock workspace can restore the same benchmark layout.
+Large molecular files and generated outputs are intentionally ignored by git. This page records the local input paths currently expected by the tracked metadata so another AptScout or AptScout workspace can restore the same benchmark layout.
 
 ## Ignored Path Policy
 
@@ -176,7 +176,7 @@ Use [`hariboss_promotion_sop.md`](hariboss_promotion_sop.md) before adding any o
 
 ## Restoration Notes
 
-- Restore files at the exact case-relative paths above before running MacVina or other compatible benchmark consumers over the shared manifest.
+- Restore files at the exact case-relative paths above before running AptScout or other compatible benchmark consumers over the shared manifest.
 - Treat `case.json` paths as the source of truth when duplicate local working directories exist.
 - Keep `case.json` paths case-relative and self-contained. Do not use absolute paths or `..` escapes into a local tool checkout.
 - Keep generated tool outputs under `derived/<tool>/` or `cases/<case-id>/derived/<tool>/`.

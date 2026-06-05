@@ -23,4 +23,4 @@ This dataset currently supports parser validation, pose scoring, expected-contac
 
 - No case has a reviewed publication, PDBbind, ITC, SPR, fluorescence, or other experimental affinity annotation yet.
 - T6 needs a clearer upstream biological/source reference if it is going to become more than a legacy Vina compatibility case.
-- RNA-ligand cases, including the expanded riboswitch panel, need affinity-source review before MacVina/MacDock can use them for absolute or relative experimental affinity calibration.
+- RNA-ligand cases, including the expanded riboswitch panel, need affinity-source review before AptScout/AptScout can use them for absolute or relative experimental affinity calibration.

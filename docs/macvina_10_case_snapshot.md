@@ -1,6 +1,6 @@
-# MacVina 10-Case Snapshot
+# AptScout 10-Case Snapshot
 
-This snapshot records the current MacVina reference-pose metrics for the expanded 10-case manifest.
+This snapshot records the current AptScout reference-pose metrics for the expanded 10-case manifest.
 
 Generated with:
 
@@ -34,19 +34,19 @@ derived/macvina/shared-pose-report.csv
 | `3b4b-glms-riboswitch` | -1.923 | -2.332 | -0.153 | -0.257 | 0.000 | 0.375 | 6 |
 | `2hoj-tpp-riboswitch` | -7.848 | -8.431 | -0.118 | -0.464 | 0.000 | 0.500 | 26 |
 
-This snapshot was refreshed after the 2G9C expected-contact label correction and MacVina base-stacking near-miss reporting. `2g9c-purine-riboswitch` remains at zero MacVina aptamer contribution and zero expected-contact hit fraction. Its pose report now shows near misses that pass plane distance and angle but fail lateral overlap, confirming that the remaining issue is the local stacking geometry rather than only the removed `N4`/`N9` labels.
+This snapshot was refreshed after the 2G9C expected-contact label correction and AptScout base-stacking near-miss reporting. `2g9c-purine-riboswitch` remains at zero AptScout aptamer contribution and zero expected-contact hit fraction. Its pose report now shows near misses that pass plane distance and angle but fail lateral overlap, confirming that the remaining issue is the local stacking geometry rather than only the removed `N4`/`N9` labels.
 
 ## Readout
 
 - The original four-case set remains healthy: T6, 4Q9R, 1FMN, and 1FMN-Mg all show the expected aptamer-aware terms on reference poses.
-- 1FMN-Mg is the only current case with a nonzero MacVina `metalCoordination` term.
-- The riboswitch panel is case-specific under MacVina reference-pose scoring: 4RZD, 2GDI, 2YGH, 3B4B, and 2HOJ all show nonzero aptamer terms.
-- `2g9c-purine-riboswitch` currently shows zero MacVina aptamer-term contribution and zero expected-contact hit fraction despite literature/source stacking notes. Its closest stacking candidates fail the current lateral-overlap cutoff. It has been downgraded to `parsed`; see `cases/2g9c-purine-riboswitch/contact_review.md`.
+- 1FMN-Mg is the only current case with a nonzero AptScout `metalCoordination` term.
+- The riboswitch panel is case-specific under AptScout reference-pose scoring: 4RZD, 2GDI, 2YGH, 3B4B, and 2HOJ all show nonzero aptamer terms.
+- `2g9c-purine-riboswitch` currently shows zero AptScout aptamer-term contribution and zero expected-contact hit fraction despite literature/source stacking notes. Its closest stacking candidates fail the current lateral-overlap cutoff. It has been downgraded to `parsed`; see `cases/2g9c-purine-riboswitch/contact_review.md`.
 - The generated CSV parses correctly with Python's `csv` module; case names containing commas are quoted.
 
 ## Calibration Implications
 
-- Use this as a MacVina reference-pose baseline, not as a docked-pose search benchmark.
+- Use this as a AptScout reference-pose baseline, not as a docked-pose search benchmark.
 - Compare docked-pose breakdowns against this snapshot carefully: searched poses may show zero phosphate/stacking terms when they miss crystal-like contacts.
 - The largest current riboswitch-panel stacking signal is `2hoj-tpp-riboswitch` at `-0.464`.
 - The cleanest current metal comparison remains `1fmn-fmn-riboswitch` versus `1fmn-fmn-riboswitch-mg`.

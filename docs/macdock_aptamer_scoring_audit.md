@@ -1,6 +1,6 @@
-# MacDock Aptamer Scoring Audit
+# AptScout Aptamer Scoring Audit
 
-This note records the MacDock aptamer-scoring issue that was exposed by the six-case riboswitch panel and Claude's current fix summary.
+This note records the AptScout aptamer-scoring issue that was exposed by the six-case riboswitch panel and Claude's current fix summary.
 
 ## Original Diagnostic
 
@@ -19,7 +19,7 @@ That flat delta was a benchmark diagnostic, not a calibration result. The six ca
 
 ## Root Cause
 
-Claude traced the flat delta to placeholder logic in MacDock's `runAptamerBenchmark` path. The benchmark code was adding:
+Claude traced the flat delta to placeholder logic in AptScout's `runAptamerBenchmark` path. The benchmark code was adding:
 
 - a phosphate contribution whenever the receptor had any phosphate positions
 - a stacking contribution whenever the receptor had any nucleobase centers
@@ -36,14 +36,14 @@ The placeholder did not depend on docked pose geometry, ligand identity, or expe
 
 ## Reported Fix
 
-Claude reports that MacDock now routes the aptamer benchmark path through a real `VirtualScreeningSession` with an `AptamerGridConfig`:
+Claude reports that AptScout now routes the aptamer benchmark path through a real `VirtualScreeningSession` with an `AptamerGridConfig`:
 
 - receptor phosphate positions are baked into a Gaussian phosphate grid
 - receptor nucleobase centers are baked into a Gaussian stacking grid
 - `ReceptorGridScorer.scoreSync` samples those grids at transformed ligand atom positions
 - `aptamerBreakdown(pose:)` reports phosphate, stacking, and ligand-phosphate contributions for the top pose
 
-This means phosphate and stacking terms are now pose-geometry dependent in MacDock's benchmark path. The ligand-phosphate term remains pose-independent and differentiates ligands that contain phosphate atoms.
+This means phosphate and stacking terms are now pose-geometry dependent in AptScout's benchmark path. The ligand-phosphate term remains pose-independent and differentiates ligands that contain phosphate atoms.
 
 ## Post-Fix Interpretation
 
@@ -63,12 +63,12 @@ The panel now differentiates cases, but most pose-dependent phosphate/stacking t
 ## Dataset Implications
 
 - Keep the constant `-0.21` table as historical evidence that the panel caught placeholder scoring.
-- Future MacDock and MacVina reports should include per-term aptamer breakdowns before using scores for calibration.
+- Future AptScout and AptScout reports should include per-term aptamer breakdowns before using scores for calibration.
 - Same-ligand pose decoys are still needed for the riboswitch panel, because the current panel mostly validates loader/scoring paths rather than reference-vs-decoy discrimination.
 - Expected-contact hit metrics should eventually be pose-geometry based, not just receptor-feature based.
-- Metal coordination remains a separate gap for MacDock unless a metal grid or post-scoring metal term is added.
+- Metal coordination remains a separate gap for AptScout unless a metal grid or post-scoring metal term is added.
 
-## Suggested MacDock Benchmark Settings
+## Suggested AptScout Benchmark Settings
 
 Claude recommends deeper search before interpreting phosphate and stacking breakdowns:
 

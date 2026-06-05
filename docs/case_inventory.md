@@ -5,7 +5,7 @@ This inventory summarizes the current benchmark cases and the calibration signal
 Expected-contact provenance is tracked separately in [`contact_review.md`](contact_review.md).
 Affinity provenance is tracked separately in [`affinity_status.md`](affinity_status.md).
 The expanded RNA-ligand riboswitch panel is described in [`riboswitch_panel.md`](riboswitch_panel.md).
-MacDock's riboswitch-panel scoring audit is tracked in [`macdock_aptamer_scoring_audit.md`](macdock_aptamer_scoring_audit.md).
+AptScout's riboswitch-panel scoring audit is tracked in [`macdock_aptamer_scoring_audit.md`](macdock_aptamer_scoring_audit.md).
 
 ## Summary
 
@@ -29,7 +29,7 @@ MacDock's riboswitch-panel scoring audit is tracked in [`macdock_aptamer_scoring
 
 ### `t6-thrombin-vina`
 
-T6 is the legacy AutoDock/QuickVina-style anchor case for the shared benchmark format. Its config is now self-contained under `cases/t6-thrombin-vina/inputs/confainaT6.txt`, avoiding dependencies on a local MacVina checkout.
+T6 is the legacy AutoDock/QuickVina-style anchor case for the shared benchmark format. Its config is now self-contained under `cases/t6-thrombin-vina/inputs/confainaT6.txt`, avoiding dependencies on a local AptScout checkout.
 
 Use this case to check that tools can load aptamer-protein PDBQT inputs, parse Vina output modes, and reproduce a stable reference/output ranking. The current expected contact is intentionally permissive and should be manually reviewed before being treated as scientific ground truth.
 
@@ -37,7 +37,7 @@ Tracked detail: [`../cases/t6-thrombin-vina/vina_outputs.md`](../cases/t6-thromb
 
 ### `4q9r-spinach-2zy`
 
-4Q9R is the strongest current pose-ranking case for aptamer-aware calibration. It has a same-ligand local decoy file, `inputs/decoys.pdbqt`, with 10 alternate 2ZY poses. MacVina currently ranks the reference pose first against those decoys.
+4Q9R is the strongest current pose-ranking case for aptamer-aware calibration. It has a same-ligand local decoy file, `inputs/decoys.pdbqt`, with 10 alternate 2ZY poses. AptScout currently ranks the reference pose first against those decoys.
 
 Use this case for base-stacking weight calibration, reference-vs-decoy margin checks, clash-aware pose diagnostics, and RMSD-aware same-ligand reports. One decoy shows stronger stacking than the reference but loses due to clash/geometry penalties, so it is useful for balancing attractive stacking rewards against physical penalties.
 
@@ -63,7 +63,7 @@ Tracked detail: [`../cases/1fmn-fmn-riboswitch-mg/metal_coordination.md`](../cas
 
 The six-case riboswitch panel adds purine, preQ1, TPP, SAM, and glmS RNA-ligand systems. These cases are useful for checking whether aptamer-aware scoring produces case-specific contributions across varied ligands and RNA pockets.
 
-`2g9c-purine-riboswitch` is currently downgraded to `parsed`: local atom contacts are present, but MacVina reports zero base-stacking contribution and two previous ligand atom labels were not present in the local 3AY PDBQT. See [`../cases/2g9c-purine-riboswitch/contact_review.md`](../cases/2g9c-purine-riboswitch/contact_review.md).
+`2g9c-purine-riboswitch` is currently downgraded to `parsed`: local atom contacts are present, but AptScout reports zero base-stacking contribution and two previous ligand atom labels were not present in the local 3AY PDBQT. See [`../cases/2g9c-purine-riboswitch/contact_review.md`](../cases/2g9c-purine-riboswitch/contact_review.md).
 
 Its local enrichment set is also seed-level: 7 active models and 198 decoy models are present, but ligand identities and generation provenance still need review. See [`../cases/2g9c-purine-riboswitch/enrichment.md`](../cases/2g9c-purine-riboswitch/enrichment.md).
 
@@ -77,7 +77,7 @@ Use this case alongside 6C64 for fluorogenic aptamer base-stacking calibration. 
 
 ### Riboswitch Panel
 
-Claude's initial MacDock snapshot reported the same `-0.21` aptamer delta for all six panel cases. That exposed placeholder benchmark-path scoring and has been recorded as a diagnostic. Claude reports that MacDock now uses pose-geometry-based aptamer grids, but deeper searches and per-term reports are still needed before calibration.
+Claude's initial AptScout snapshot reported the same `-0.21` aptamer delta for all six panel cases. That exposed placeholder benchmark-path scoring and has been recorded as a diagnostic. Claude reports that AptScout now uses pose-geometry-based aptamer grids, but deeper searches and per-term reports are still needed before calibration.
 
 Tracked detail: [`riboswitch_panel.md`](riboswitch_panel.md).
 
@@ -98,7 +98,7 @@ The HARIBOSS seed expansion adds 11 tracked prep targets from RCSB/HARIBOSS meta
 | `5dhb-rna-gmp-primer-template` | `5GP` GMP | High-resolution nucleotide-like ligand |
 | `3sd3-thf-riboswitch` | `FFO` folate analog | High-resolution larger polar ligand |
 
-`6c64-mango-ii-ekm` has been promoted to the runnable manifest as a parsed stacking case. The remaining HARIBOSS cases are intentionally `seed`: they have no local ignored PDBQT inputs yet and their expected-contact files are empty. Use them as the next HARIBOSS prep queue, not as MacVina/MacDock calibration rows. Promotion order is tracked in [`hariboss_prep_queue.md`](hariboss_prep_queue.md).
+`6c64-mango-ii-ekm` has been promoted to the runnable manifest as a parsed stacking case. The remaining HARIBOSS cases are intentionally `seed`: they have no local ignored PDBQT inputs yet and their expected-contact files are empty. Use them as the next HARIBOSS prep queue, not as AptScout/AptScout calibration rows. Promotion order is tracked in [`hariboss_prep_queue.md`](hariboss_prep_queue.md).
 
 ## Calibration Coverage
 

@@ -1,6 +1,6 @@
 # Calibration Roadmap
 
-This roadmap describes how to move the dataset from seed/parser coverage toward calibration-ready MacVina and MacDock benchmarks. It is intentionally dataset-focused: the actions below add or review cases, contacts, decoys, and provenance rather than adding new tooling.
+This roadmap describes how to move the dataset from seed/parser coverage toward calibration-ready AptScout and AptScout benchmarks. It is intentionally dataset-focused: the actions below add or review cases, contacts, decoys, and provenance rather than adding new tooling.
 
 The current run sequence is tracked in [`benchmark_runbook.md`](benchmark_runbook.md).
 
@@ -46,7 +46,7 @@ Part of the HARIBOSS expansion is now in the runnable manifest. The remaining se
    - Keep the QuickVina `-17.2 kcal/mol` score marked as docking reference only.
 
 5. Use the riboswitch panel to expose flat aptamer scoring.
-   - Track MacVina/MacDock per-term pose reports for all six panel cases.
+   - Track AptScout/AptScout per-term pose reports for all six panel cases.
    - Treat identical aptamer deltas across the panel as a scoring-path diagnostic.
    - Add same-ligand pose decoys to at least one TPP case and one non-TPP case.
 
@@ -84,7 +84,7 @@ Use the curation statuses as gates:
 | `parsed` | Inputs parse reproducibly and receptor/ligand roles are identified |
 | `contact_reviewed` | Expected contacts have been manually reviewed against source coordinates or literature |
 | `affinity_reviewed` | Experimental affinity source, unit, assay, and caveats have been reviewed |
-| `validated` | Case is ready for shared MacVina/MacDock calibration and regression reporting |
+| `validated` | Case is ready for shared AptScout/AptScout calibration and regression reporting |
 
 ## Recommended Next Dataset Work
 
