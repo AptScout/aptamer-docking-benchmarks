@@ -4,7 +4,7 @@
 
 The first publicly curated benchmark for RNA aptamer VS with ROC-AUC evaluation — the DUD-E equivalent for RNA drug discovery.
 
-## Key Results (MacDock GPU, aptamer scoring)
+## Key Results (AptScout GPU, aptamer scoring)
 
 | Metric | Value |
 |--------|-------|
@@ -73,7 +73,7 @@ python3 scripts/run_full_benchmark.py --case 2hoj-tpp-riboswitch
 # All 17 evaluable cases
 python3 scripts/run_full_benchmark.py
 
-# MacDock aptamer benchmark (single-pose scoring)
+# AptScout aptamer benchmark (single-pose scoring)
 macvinaBenchmark \
   --aptamer-benchmark manifest.json \
   --aptamer-scoring \
@@ -82,7 +82,7 @@ macvinaBenchmark \
   --grid-refine-count 3
 ```
 
-Requires: [MacDock](https://github.com/khoonie/macdock), RDKit, Open Babel 3.x.
+Requires: [AptScout](https://github.com/AptScout), RDKit, Open Babel 3.x.
 
 ## Citation
 
