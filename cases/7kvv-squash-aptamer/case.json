@@ -1,0 +1,11 @@
+{
+  "id": "7kvv-squash-aptamer",
+  "name": "Squash RNA aptamer bound to DFHBI-1T",
+  "systemType": "rna_ligand",
+  "curationStatus": "seed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 7KVV; Trachman RJ et al. Nat Chem Biol 2022 doi:10.1038/s41589-022-01017-3",
+  "notes": "Squash fluorogenic aptamer + DFHBI-1T (747) at D:302. G-quadruplex fold. 2.85A X-ray. Companion to Spinach/iSpinach (same DFHBI family)."
+}

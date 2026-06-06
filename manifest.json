@@ -179,6 +179,26 @@
     {
       "id": "5ob3-ispinach-aptamer",
       "casePath": "cases/5ob3-ispinach-aptamer/case.json"
+    },
+    {
+      "id": "7szu-pepper-aptamer",
+      "casePath": "cases/7szu-pepper-aptamer/case.json"
+    },
+    {
+      "id": "7kvv-squash-aptamer",
+      "casePath": "cases/7kvv-squash-aptamer/case.json"
+    },
+    {
+      "id": "3gao-guanine-xanthine-riboswitch",
+      "casePath": "cases/3gao-guanine-xanthine-riboswitch/case.json"
+    },
+    {
+      "id": "4nya-thim-tpp-analog-riboswitch",
+      "casePath": "cases/4nya-thim-tpp-analog-riboswitch/case.json"
+    },
+    {
+      "id": "7u0y-pepper-hbc599-aptamer",
+      "casePath": "cases/7u0y-pepper-hbc599-aptamer/case.json"
     }
   ]
 }

@@ -1,0 +1,11 @@
+{
+  "id": "4nya-thim-tpp-analog-riboswitch",
+  "name": "thiM TPP riboswitch bound to synthetic analog (2QB)",
+  "systemType": "rna_ligand",
+  "curationStatus": "seed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 4NYA; Warner KD et al. 2014",
+  "notes": "E. coli thiM TPP riboswitch + synthetic compound 2QB. Chain A. Third drug-discovery case (after 5C45, 5KX9). 2.65A X-ray. Tests synthetic TPP-competitive antibacterial lead."
+}

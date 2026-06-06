@@ -1,0 +1,11 @@
+{
+  "id": "3gao-guanine-xanthine-riboswitch",
+  "name": "Guanine riboswitch bound to xanthine",
+  "systemType": "rna_ligand",
+  "curationStatus": "seed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 3GAO; Matyjasik MM & Batey RT 2019",
+  "notes": "Guanine riboswitch with xanthine (XAN) at A:90 \u2014 different ligand from guanine (1Y27). NCO cobalt-hexammine crystallization agents removed. 1.90A high-resolution. Tests ligand-swap in same pocket."
+}

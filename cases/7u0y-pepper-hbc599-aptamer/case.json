@@ -1,0 +1,11 @@
+{
+  "id": "7u0y-pepper-hbc599-aptamer",
+  "name": "Pepper RNA aptamer bound to HBC599",
+  "systemType": "rna_ligand",
+  "curationStatus": "seed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 7U0Y; Huang K et al. 2021",
+  "notes": "Pepper aptamer + HBC599 (KY6) at R:301 \u2014 red-shifted variant of HBC. Companion to 7SZU. Fluorogen reproducibility pair. 2.66A X-ray."
+}

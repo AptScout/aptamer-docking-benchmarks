@@ -1,0 +1,11 @@
+{
+  "id": "7szu-pepper-aptamer",
+  "name": "Pepper RNA aptamer bound to HBC",
+  "systemType": "rna_ligand",
+  "curationStatus": "seed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 7SZU; Huang K et al. Nat Chem Biol 2021 doi:10.1038/s41589-021-00768-9",
+  "notes": "Pepper fluorogenic aptamer + HBC (J8F) at R:103. New fluorogen scaffold. 2.24A X-ray. Companion to 7U0Y (HBC599 variant)."
+}

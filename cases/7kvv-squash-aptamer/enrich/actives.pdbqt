@@ -1,0 +1,44 @@
+MODEL        1
+REMARK  Name = /Users/khoon-sengtan/Projects/aptamer-docking-benchmarks/cases/4q9r-spinach-2zy/inputs/ligand_2zy.pdb
+REMARK  4 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK    1  A    between atoms: N14_3  and  C16_4
+REMARK    2  A    between atoms: C16_4  and  C19_5
+REMARK    3  A    between atoms: C11_8  and  C10_10
+REMARK    4  A    between atoms: C10_10  and  C2_11
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  O18 2ZY R 102     -44.469  -2.282  33.747  0.00  0.00    -0.269 OA
+ATOM      2  C15 2ZY R 102     -43.372  -2.194  34.425  0.00  0.00    +0.264 C 
+ATOM      3  N14 2ZY R 102     -42.653  -1.031  34.439  0.00  0.00    -0.249 N 
+ATOM      4  C13 2ZY R 102     -41.592  -1.402  35.270  0.00  0.00    +0.180 C 
+ATOM      5  C17 2ZY R 102     -40.631  -0.243  35.457  0.00  0.00    +0.049 C 
+ATOM      6  C11 2ZY R 102     -42.759  -3.355  35.248  0.00  0.00    +0.113 C 
+ATOM      7  N12 2ZY R 102     -41.629  -2.750  35.749  0.00  0.00    -0.251 NA
+ENDROOT
+BRANCH   3   8
+ATOM      8  C16 2ZY R 102     -43.163   0.195  33.670  0.00  0.00    +0.199 C 
+BRANCH   8   9
+ATOM      9  C19 2ZY R 102     -42.191   0.731  32.827  0.00  0.00    +0.416 C 
+ATOM     10  F20 2ZY R 102     -42.766   1.074  31.665  0.00  0.00    -0.168 F 
+ATOM     11  F21 2ZY R 102     -41.660   1.836  33.367  0.00  0.00    -0.168 F 
+ATOM     12  F22 2ZY R 102     -41.221  -0.166  32.605  0.00  0.00    -0.168 F 
+ENDBRANCH   8   9
+ENDBRANCH   3   8
+BRANCH   6  13
+ATOM     13  C10 2ZY R 102     -43.607  -4.599  35.164  0.00  0.00    +0.077 C 
+BRANCH  13  14
+ATOM     14  C2  2ZY R 102     -43.729  -5.962  35.594  0.00  0.00    -0.011 A 
+ATOM     15  C1  2ZY R 102     -44.736  -6.866  35.284  0.00  0.00    +0.029 A 
+ATOM     16  C6  2ZY R 102     -44.591  -8.139  35.853  0.00  0.00    +0.181 A 
+ATOM     17  F8  2ZY R 102     -45.494  -9.094  35.626  0.00  0.00    -0.201 F 
+ATOM     18  C5  2ZY R 102     -43.415  -8.438  36.720  0.00  0.00    +0.250 A 
+ATOM     19  O9  2ZY R 102     -43.227  -9.616  37.278  0.00  0.00    -0.282 OA
+ATOM     20  C4  2ZY R 102     -42.434  -7.381  36.956  0.00  0.00    +0.181 A 
+ATOM     21  F7  2ZY R 102     -41.341  -7.522  37.712  0.00  0.00    -0.201 F 
+ATOM     22  C3  2ZY R 102     -42.657  -6.174  36.364  0.00  0.00    +0.029 A 
+ENDBRANCH  13  14
+ENDBRANCH   6  13
+TORSDOF 4
+ENDMDL
