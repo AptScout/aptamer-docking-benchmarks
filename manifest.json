@@ -79,6 +79,10 @@
     {
       "id": "3oww-glycine-riboswitch",
       "casePath": "cases/3oww-glycine-riboswitch/case.json"
+    },
+    {
+      "id": "1y26-adenine-riboswitch",
+      "casePath": "cases/1y26-adenine-riboswitch/case.json"
     }
   ]
 }

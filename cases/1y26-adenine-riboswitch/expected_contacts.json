@@ -1,0 +1,22 @@
+{
+  "interactionKinds": [
+    "baseStacking",
+    "hydrogenBond"
+  ],
+  "receptorResidues": [
+    "X:74",
+    "X:22",
+    "X:23",
+    "X:47",
+    "X:48",
+    "X:51"
+  ],
+  "ligandAtoms": [
+    "N1",
+    "N3",
+    "N6",
+    "N7",
+    "N9"
+  ],
+  "notes": "Validated against Serganov et al. Cell 2004 (doi:10.1016/j.cell.2004.11.020). Adenine (ADE X:90) binds via Watson-Crick face: N1 and N6 H-bond to C74 (N3 and O2 respectively). N3 accepts H-bond from U22 2'-OH. Stacking: U48 stacks above and A23 stacks below the adenine ring (sandwich geometry). U51 contributes to pocket shape. All 5 Mg2+ ions removed per benchmark ion policy (Mg anomaly documented in paper). Ligand MW=135, single aromatic ring, no phosphate."
+}

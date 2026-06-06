@@ -1,0 +1,23 @@
+{
+  "id": "1y26-adenine-riboswitch",
+  "name": "Adenine riboswitch bound to adenine",
+  "systemType": "rna_ligand",
+  "curationStatus": "parsed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "structureID": "1Y26",
+  "sourceDatabase": "RCSB PDB",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.1,
+  "primaryLigandID": "ADE",
+  "selectedReceptorChains": ["X"],
+  "selectedLigandChains": ["X"],
+  "retainedIonLigands": [],
+  "removedIonLigands": ["MG"],
+  "preparationNotes": "All 5 Mg2+ ions (X:101-105) removed per benchmark ion policy. Single chain X RNA receptor. Adenine ligand ADE at X:90. Box 22x22x22 A centered on ligand centroid.",
+  "source": "RCSB PDB 1Y26; Serganov et al. Cell 2004 doi:10.1016/j.cell.2004.11.020",
+  "affinitySource": "Mandal M et al. Nat Struct Mol Biol 2003; Kd ~300 nM for adenine",
+  "affinityNotes": "Adenine riboswitch from V. vulnificus addA mRNA. Kd ~300 nM for adenine. Highly selective: guanine and 2-aminopurine bind ~100x weaker. Companion to 1Y27 (guanine riboswitch, B. subtilis) — same fold, single-nucleotide pocket change switches adenine/guanine selectivity.",
+  "notes": "add A-riboswitch from V. vulnificus. Adenine binds via Watson-Crick pairing with C74 (N1-N3, N6-O2 H-bonds). U48 and A23 form base-stacking sandwich above and below adenine. 2.10 A X-ray, best resolution among new cases."
+}

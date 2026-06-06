@@ -1,0 +1,20 @@
+REMARK  Name = inputs/ligand_raw.pdb
+REMARK  0 active torsions:
+REMARK  status: ('A' for Active; 'I' for Inactive)
+REMARK                            x       y       z     vdW  Elec       q    Type
+REMARK                         _______ _______ _______ _____ _____    ______ ____
+ROOT
+ATOM      1  N   UNL     1      -1.300  -1.145   0.312  0.00  0.00    +0.000 NA
+ATOM      2  C   UNL     1      -2.124  -0.045   0.342  0.00  0.00    +0.000 C 
+ATOM      3  N   UNL     1      -1.651   1.100  -0.068  0.00  0.00    +0.000 NA
+ATOM      4  C   UNL     1      -0.318   0.733  -0.601  0.00  0.00    +0.000 C 
+ATOM      5  C   UNL     1       0.819   1.463   0.060  0.00  0.00    +0.000 C 
+ATOM      6  N   UNL     1       0.691   2.802   0.318  0.00  0.00    +0.000 N 
+ATOM      7  N   UNL     1       1.912   0.827   0.364  0.00  0.00    +0.000 NA
+ATOM      8  C   UNL     1       1.992  -0.521   0.080  0.00  0.00    +0.000 C 
+ATOM      9  N   UNL     1       0.991  -1.302  -0.189  0.00  0.00    +0.000 NA
+ATOM     10  C   UNL     1      -0.207  -0.673  -0.169  0.00  0.00    +0.000 C 
+ATOM     11  H   UNL     1       1.338   3.153   1.016  0.00  0.00    +0.000 HD
+ATOM     12  H   UNL     1      -0.268   3.118   0.447  0.00  0.00    +0.000 HD
+ENDROOT
+TORSDOF 0
