@@ -1,3 +1,4 @@
+MODEL 1
 REMARK  Name: ADE
 REMARK  Name = 
 REMARK  1 active torsions:
@@ -23,6 +24,8 @@ ATOM     12  H   UNL     1      -2.797   1.989  -0.004  0.00  0.00    +0.000 HD
 ATOM     13  H   UNL     1      -1.215   2.781  -0.005  0.00  0.00    +0.000 HD
 ENDBRANCH   1  11
 TORSDOF 1
+ENDMDL
+MODEL 2
 REMARK  Name: 2AP
 REMARK  Name = 
 REMARK  0 active torsions:
@@ -44,6 +47,8 @@ ATOM     11  H   UNL     1       0.714  -0.896   0.047  0.00  0.00    +0.000 HD
 ATOM     12  H   UNL     1       6.196   1.899   0.063  0.00  0.00    +0.000 HD
 ENDROOT
 TORSDOF 0
+ENDMDL
+MODEL 3
 REMARK  Name: DAP
 REMARK  Name = 
 REMARK  0 active torsions:
@@ -69,6 +74,8 @@ ATOM     15  H   UNL     1       6.055  -2.584  -0.378  0.00  0.00    +0.000 HD
 ATOM     16  H   UNL     1       7.332  -0.305   0.036  0.00  0.00    +0.000 HD
 ENDROOT
 TORSDOF 0
+ENDMDL
+MODEL 4
 REMARK  Name: PUR
 REMARK  Name = 
 REMARK  0 active torsions:
@@ -88,6 +95,8 @@ ATOM      9  N   UNL     1       0.887  -1.439  -0.004  0.00  0.00    +0.000 NA
 ATOM     10  H   UNL     1      -1.840   2.038   0.002  0.00  0.00    +0.000 HD
 ENDROOT
 TORSDOF 0
+ENDMDL
+MODEL 5
 REMARK  Name: HXA
 REMARK  Name = 
 REMARK  0 active torsions:
@@ -109,3 +118,4 @@ ATOM     11  H   UNL     1      -2.901   0.452   0.017  0.00  0.00    +0.000 HD
 ATOM     12  H   UNL     1       2.735   1.352  -0.078  0.00  0.00    +0.000 HD
 ENDROOT
 TORSDOF 0
+ENDMDL

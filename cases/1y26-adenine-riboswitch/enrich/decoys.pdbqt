@@ -1,3 +1,4 @@
+MODEL 1
 REMARK  Name = D010
 REMARK  0 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -16,6 +17,8 @@ ATOM      9  C   UNL     1       0.934   1.420  -0.003  0.00  0.00    +0.000 A
 ATOM     10  H   UNL     1      -1.832  -2.064  -0.018  0.00  0.00    +0.000 HD
 ENDROOT
 TORSDOF 0
+ENDMDL
+MODEL 2
 REMARK  Name = D011
 REMARK  0 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -34,6 +37,8 @@ ATOM      9  C   UNL     1       1.000  -1.418  -0.004  0.00  0.00    +0.000 A
 ATOM     10  H   UNL     1      -1.876   2.004  -0.026  0.00  0.00    +0.000 HD
 ENDROOT
 TORSDOF 0
+ENDMDL
+MODEL 3
 REMARK  Name = D012
 REMARK  1 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -58,6 +63,8 @@ ATOM     12  H   UNL     1       0.664  -0.769  -0.103  0.00  0.00    +0.000 HD
 ATOM     13  H   UNL     1       0.640   0.914  -0.024  0.00  0.00    +0.000 HD
 ENDBRANCH   1  11
 TORSDOF 1
+ENDMDL
+MODEL 4
 REMARK  Name = D013
 REMARK  0 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -76,6 +83,8 @@ ATOM      9  C   UNL     1       1.030  -1.430   0.002  0.00  0.00    +0.000 A
 ATOM     10  H   UNL     1      -1.881   1.963   0.007  0.00  0.00    +0.000 HD
 ENDROOT
 TORSDOF 0
+ENDMDL
+MODEL 5
 REMARK  Name = D014
 REMARK  1 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -100,6 +109,8 @@ ATOM     12  H   UNL     1       0.524  -0.787  -0.201  0.00  0.00    +0.000 HD
 ATOM     13  H   UNL     1       0.500   0.897  -0.124  0.00  0.00    +0.000 HD
 ENDBRANCH   1  11
 TORSDOF 1
+ENDMDL
+MODEL 6
 REMARK  Name = D016
 REMARK  1 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -120,6 +131,8 @@ ATOM      8  H   UNL     1       2.851   0.857   0.137  0.00  0.00    +0.000 HD
 ATOM      9  H   UNL     1       2.858  -0.828   0.139  0.00  0.00    +0.000 HD
 ENDBRANCH   1   7
 TORSDOF 1
+ENDMDL
+MODEL 7
 REMARK  Name = D017
 REMARK  1 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -140,6 +153,8 @@ ATOM      8  H   UNL     1       2.874   0.720  -0.145  0.00  0.00    +0.000 HD
 ATOM      9  H   UNL     1       2.779  -0.963  -0.150  0.00  0.00    +0.000 HD
 ENDBRANCH   1   7
 TORSDOF 1
+ENDMDL
+MODEL 8
 REMARK  Name = D018
 REMARK  0 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -157,6 +172,8 @@ ATOM      8  H   UNL     1       2.712  -0.752  -0.495  0.00  0.00    +0.000 HD
 ATOM      9  H   UNL     1       2.632   0.805   0.139  0.00  0.00    +0.000 HD
 ENDROOT
 TORSDOF 0
+ENDMDL
+MODEL 9
 REMARK  Name = D019
 REMARK  1 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -180,6 +197,8 @@ ATOM     11  H   UNL     1       6.951   0.902  -0.746  0.00  0.00    +0.000 HD
 ATOM     12  H   UNL     1       6.929  -0.784  -0.748  0.00  0.00    +0.000 HD
 ENDBRANCH   5  10
 TORSDOF 1
+ENDMDL
+MODEL 10
 REMARK  Name = D020
 REMARK  0 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -197,6 +216,8 @@ ATOM      8  H   UNL     1       2.626   0.814   0.146  0.00  0.00    +0.000 HD
 ATOM      9  H   UNL     1       2.707  -0.743  -0.486  0.00  0.00    +0.000 HD
 ENDROOT
 TORSDOF 0
+ENDMDL
+MODEL 11
 REMARK  Name = D021
 REMARK  1 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -217,6 +238,8 @@ ATOM      8  H   UNL     1       2.806   0.840   0.136  0.00  0.00    +0.000 HD
 ATOM      9  H   UNL     1       2.804  -0.846   0.139  0.00  0.00    +0.000 HD
 ENDBRANCH   1   7
 TORSDOF 1
+ENDMDL
+MODEL 12
 REMARK  Name = D022
 REMARK  2 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -243,6 +266,8 @@ ATOM     11  H   UNL     1      -1.564  -2.458   0.231  0.00  0.00    +0.000 HD
 ATOM     12  H   UNL     1      -2.441  -1.048   0.451  0.00  0.00    +0.000 HD
 ENDBRANCH   6  10
 TORSDOF 2
+ENDMDL
+MODEL 13
 REMARK  Name = D023
 REMARK  2 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -269,6 +294,8 @@ ATOM     11  H   UNL     1       3.239  -0.495   0.183  0.00  0.00    +0.000 HD
 ATOM     12  H   UNL     1       2.399  -1.957   0.147  0.00  0.00    +0.000 HD
 ENDBRANCH   5  10
 TORSDOF 2
+ENDMDL
+MODEL 14
 REMARK  Name = D024
 REMARK  2 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -295,6 +322,8 @@ ATOM     11  H   UNL     1       6.946   0.948  -0.732  0.00  0.00    +0.000 HD
 ATOM     12  H   UNL     1       6.979  -0.737  -0.700  0.00  0.00    +0.000 HD
 ENDBRANCH   4  10
 TORSDOF 2
+ENDMDL
+MODEL 15
 REMARK  Name = D025
 REMARK  2 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -320,6 +349,8 @@ ATOM     10  O   UNL     1       1.739   1.301   0.006  0.00  0.00    +0.000 OA
 ATOM     11  H   UNL     1       1.576   2.255   0.069  0.00  0.00    +0.000 HD
 ENDBRANCH   6  10
 TORSDOF 2
+ENDMDL
+MODEL 16
 REMARK  Name = D026
 REMARK  2 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -345,6 +376,8 @@ ATOM     10  O   UNL     1       2.707   0.044  -0.051  0.00  0.00    +0.000 OA
 ATOM     11  H   UNL     1       3.045  -0.866  -0.025  0.00  0.00    +0.000 HD
 ENDBRANCH   4  10
 TORSDOF 2
+ENDMDL
+MODEL 17
 REMARK  Name = D027
 REMARK  1 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -366,6 +399,8 @@ ATOM      9  H   UNL     1      -3.849  -0.837   0.177  0.00  0.00    +0.000 HD
 ATOM     10  H   UNL     1      -3.848   0.849   0.174  0.00  0.00    +0.000 HD
 ENDBRANCH   1   8
 TORSDOF 1
+ENDMDL
+MODEL 18
 REMARK  Name = D028
 REMARK  1 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -387,6 +422,8 @@ ATOM      9  H   UNL     1       0.597   0.914   0.035  0.00  0.00    +0.000 HD
 ATOM     10  H   UNL     1       0.615  -0.770   0.015  0.00  0.00    +0.000 HD
 ENDBRANCH   1   8
 TORSDOF 1
+ENDMDL
+MODEL 19
 REMARK  Name = D029
 REMARK  2 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -409,6 +446,8 @@ ATOM      9  H   UNL     1       3.222   0.832   0.160  0.00  0.00    +0.000 HD
 ATOM     10  H   UNL     1       3.209  -0.854   0.173  0.00  0.00    +0.000 HD
 ENDBRANCH   1   8
 TORSDOF 1
+ENDMDL
+MODEL 20
 REMARK  Name = D030
 REMARK  0 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -425,6 +464,8 @@ ATOM      7  N   UNL     1      -0.248   1.148  -0.051  0.00  0.00    +0.000 N
 ATOM      8  H   UNL     1      -0.817   1.980   0.060  0.00  0.00    +0.000 HD
 ENDROOT
 TORSDOF 0
+ENDMDL
+MODEL 21
 REMARK  Name = D033
 REMARK  2 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -448,6 +489,8 @@ ATOM     10  N   UNL     1       3.215   0.896  -0.620  0.00  0.00    +0.000 N
 ATOM     11  H   UNL     1       2.763   1.798  -0.706  0.00  0.00    +0.000 HD
 ENDBRANCH   1  10
 TORSDOF 1
+ENDMDL
+MODEL 22
 REMARK  Name = D034
 REMARK  3 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -478,6 +521,8 @@ ATOM     13  H   UNL     1       2.354  -1.736   0.999  0.00  0.00    +0.000 HD
 ENDBRANCH  10  12
 ENDBRANCH   6  10
 TORSDOF 3
+ENDMDL
+MODEL 23
 REMARK  Name = D035
 REMARK  1 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -500,6 +545,8 @@ ATOM     10  H   UNL     1       0.513  -0.459  -0.619  0.00  0.00    +0.000 HD
 ATOM     11  H   UNL     1       0.499   0.610   0.745  0.00  0.00    +0.000 HD
 ENDBRANCH   1   8
 TORSDOF 1
+ENDMDL
+MODEL 24
 REMARK  Name = D036
 REMARK  1 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -522,6 +569,8 @@ ATOM     10  H   UNL     1       0.560  -0.174  -0.823  0.00  0.00    +0.000 HD
 ATOM     11  H   UNL     1       0.523  -0.347   0.896  0.00  0.00    +0.000 HD
 ENDBRANCH   1   8
 TORSDOF 1
+ENDMDL
+MODEL 25
 REMARK  Name = D037
 REMARK  1 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -544,6 +593,8 @@ ATOM     10  H   UNL     1       0.713  -0.410   0.792  0.00  0.00    +0.000 HD
 ATOM     11  H   UNL     1       0.641   0.621  -0.594  0.00  0.00    +0.000 HD
 ENDBRANCH   1   8
 TORSDOF 1
+ENDMDL
+MODEL 26
 REMARK  Name = D043
 REMARK  2 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -569,6 +620,8 @@ ATOM     10  O   UNL     1       2.709   0.041  -0.038  0.00  0.00    +0.000 OA
 ATOM     11  H   UNL     1       3.046  -0.869  -0.028  0.00  0.00    +0.000 HD
 ENDBRANCH   1  10
 TORSDOF 2
+ENDMDL
+MODEL 27
 REMARK  Name = D044
 REMARK  2 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -594,6 +647,8 @@ ATOM     10  O   UNL     1       2.346   0.961  -0.002  0.00  0.00    +0.000 OA
 ATOM     11  H   UNL     1       3.079   0.324  -0.004  0.00  0.00    +0.000 HD
 ENDBRANCH   1  10
 TORSDOF 2
+ENDMDL
+MODEL 28
 REMARK  Name = D045
 REMARK  2 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -619,6 +674,8 @@ ATOM     10  O   UNL     1       1.740   1.301   0.002  0.00  0.00    +0.000 OA
 ATOM     11  H   UNL     1       1.576   2.255   0.056  0.00  0.00    +0.000 HD
 ENDBRANCH   1  10
 TORSDOF 2
+ENDMDL
+MODEL 29
 REMARK  Name = D046
 REMARK  2 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -644,6 +701,8 @@ ATOM     10  O   UNL     1       1.746   1.298   0.016  0.00  0.00    +0.000 OA
 ATOM     11  H   UNL     1       1.583   2.253   0.068  0.00  0.00    +0.000 HD
 ENDBRANCH   4  10
 TORSDOF 2
+ENDMDL
+MODEL 30
 REMARK  Name = D047
 REMARK  1 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -663,6 +722,8 @@ ATOM      7  H   UNL     1       2.758   1.002  -0.014  0.00  0.00    +0.000 HD
 ATOM      8  H   UNL     1       2.607  -0.711  -0.022  0.00  0.00    +0.000 HD
 ENDBRANCH   1   6
 TORSDOF 1
+ENDMDL
+MODEL 31
 REMARK  Name = D048
 REMARK  2 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -688,6 +749,8 @@ ATOM     10  H   UNL     1       6.621  -1.073  -0.054  0.00  0.00    +0.000 HD
 ATOM     11  H   UNL     1       5.645  -2.483  -0.065  0.00  0.00    +0.000 HD
 ENDBRANCH   4   9
 TORSDOF 2
+ENDMDL
+MODEL 32
 REMARK  Name = D051
 REMARK  0 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -705,6 +768,8 @@ ATOM      8  C   UNL     1      -0.191  -0.808  -0.002  0.00  0.00    +0.000 A
 ATOM      9  C   UNL     1       1.070  -1.430   0.006  0.00  0.00    +0.000 A 
 ENDROOT
 TORSDOF 0
+ENDMDL
+MODEL 33
 REMARK  Name = D054
 REMARK  1 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -726,6 +791,8 @@ ATOM      9  H   UNL     1       0.644   0.943   0.425  0.00  0.00    +0.000 HD
 ATOM     10  H   UNL     1       0.642  -0.643   0.810  0.00  0.00    +0.000 HD
 ENDBRANCH   1   8
 TORSDOF 1
+ENDMDL
+MODEL 34
 REMARK  Name = D055
 REMARK  0 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -744,6 +811,8 @@ ATOM      9  C   UNL     1      -2.315   0.612   0.365  0.00  0.00    +0.000 C
 ATOM     10  O   UNL     1      -1.157   1.357  -0.023  0.00  0.00    +0.000 OA
 ENDROOT
 TORSDOF 0
+ENDMDL
+MODEL 35
 REMARK  Name = D056
 REMARK  0 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -762,6 +831,8 @@ ATOM      9  N   UNL     1      -1.567   1.041  -0.019  0.00  0.00    +0.000 N
 ATOM     10  H   UNL     1      -1.876   2.003  -0.023  0.00  0.00    +0.000 HD
 ENDROOT
 TORSDOF 0
+ENDMDL
+MODEL 36
 REMARK  Name = D057
 REMARK  0 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -779,6 +850,8 @@ ATOM      8  C   UNL     1       0.999   1.374  -0.005  0.00  0.00    +0.000 A
 ATOM      9  N   UNL     1      -0.213   0.687   0.002  0.00  0.00    +0.000 N 
 ENDROOT
 TORSDOF 0
+ENDMDL
+MODEL 37
 REMARK  Name = D060
 REMARK  0 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -797,6 +870,8 @@ ATOM      9  N   UNL     1      -1.502  -1.110  -0.006  0.00  0.00    +0.000 N
 ATOM     10  H   UNL     1      -1.832  -2.064  -0.018  0.00  0.00    +0.000 HD
 ENDROOT
 TORSDOF 0
+ENDMDL
+MODEL 38
 REMARK  Name = D061
 REMARK  0 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -813,6 +888,8 @@ ATOM      7  N   UNL     1       0.210  -1.140   0.002  0.00  0.00    +0.000 N
 ATOM      8  H   UNL     1       0.753  -1.994   0.003  0.00  0.00    +0.000 HD
 ENDROOT
 TORSDOF 0
+ENDMDL
+MODEL 39
 REMARK  Name = D063
 REMARK  1 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -833,6 +910,8 @@ ATOM      8  H   UNL     1       0.632  -0.893   0.060  0.00  0.00    +0.000 HD
 ATOM      9  H   UNL     1       0.610   0.793   0.066  0.00  0.00    +0.000 HD
 ENDBRANCH   1   7
 TORSDOF 1
+ENDMDL
+MODEL 40
 REMARK  Name = D064
 REMARK  0 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -850,6 +929,8 @@ ATOM      8  H   UNL     1       0.587  -0.757   0.496  0.00  0.00    +0.000 HD
 ATOM      9  H   UNL     1       0.670   0.812  -0.109  0.00  0.00    +0.000 HD
 ENDROOT
 TORSDOF 0
+ENDMDL
+MODEL 41
 REMARK  Name = D065
 REMARK  2 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -878,6 +959,8 @@ ATOM     13  H   UNL     1       4.721  -4.970  -2.891  0.00  0.00    +0.000 HD
 ATOM     14  H   UNL     1       5.690  -4.977  -1.512  0.00  0.00    +0.000 HD
 ENDBRANCH   4  12
 TORSDOF 2
+ENDMDL
+MODEL 42
 REMARK  Name = D066
 REMARK  2 active torsions:
 REMARK  status: ('A' for Active; 'I' for Inactive)
@@ -906,3 +989,4 @@ ATOM     13  H   UNL     1       6.242   1.304   3.899  0.00  0.00    +0.000 HD
 ATOM     14  H   UNL     1       6.045   2.117   2.437  0.00  0.00    +0.000 HD
 ENDBRANCH   5  12
 TORSDOF 2
+ENDMDL

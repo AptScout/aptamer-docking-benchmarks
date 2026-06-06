@@ -212,7 +212,9 @@ def generate_100_decoys(active_smiles_list: list, case_id: str,
         if mol is None: continue
         if has_excluded(mol): continue
         p = mol_props(mol)
-        if not (150 <= p["mw"] <= 650): continue
+        mw_lo = max(60, avg_props["mw"] * 0.5)
+        mw_hi = min(800, avg_props["mw"] * 2.5)
+        if not (mw_lo <= p["mw"] <= mw_hi): continue
         ranked.append((prop_distance(p, avg_props), name, smi))
     ranked.sort(key=lambda x: x[0])
 
@@ -401,8 +403,11 @@ def main():
         r = run_case(case_dir, options)
         results.append(r)
         if r["status"] == "ok":
-            print(f"  AUC: baseline={r['baseline_auc']:.3f}  aptamer={r['aptamer_auc']:.3f}"
-                  f"  Δ={r['delta_auc']:+.3f}")
+            if r["baseline_auc"] is not None and r["aptamer_auc"] is not None:
+                print(f"  AUC: baseline={r['baseline_auc']:.3f}  aptamer={r['aptamer_auc']:.3f}"
+                      f"  Δ={r['delta_auc']:+.3f}")
+            else:
+                print(f"  AUC: baseline={r['baseline_auc']}  aptamer={r['aptamer_auc']} (docking may have failed)")
             if r["ef1_aptamer"]: print(f"  EF1%: {r['ef1_aptamer']:.2f}×")
             if r["rmsd_aptamer"]: print(f"  RMSD: {r['rmsd_aptamer']:.1f} Å (aptamer scoring)")
         else:

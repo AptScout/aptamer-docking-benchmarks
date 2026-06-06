@@ -1,2 +1,2 @@
 case_id,n_actives,n_decoys_before,n_decoys_after,baseline_auc,aptamer_auc,delta_auc,ef1_baseline,ef1_aptamer,rmsd_baseline,rmsd_aptamer,status
-6wzs-ztp-riboswitch,5,30,30,0.6933,0.8333,0.14,20.0,20.0,6.89,6.89,ok
+1y26-adenine-riboswitch,5,42,42,0.881,0.8333,-0.047699999999999965,0.0,20.0,15.44,15.44,ok
