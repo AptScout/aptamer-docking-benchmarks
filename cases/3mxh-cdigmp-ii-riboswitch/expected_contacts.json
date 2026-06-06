@@ -1,0 +1,25 @@
+{
+  "interactionKinds": [
+    "baseStacking",
+    "hydrogenBond",
+    "phosphateElectrostatic"
+  ],
+  "receptorResidues": [
+    "R:11",
+    "R:12",
+    "R:72",
+    "R:73",
+    "R:74",
+    "R:92"
+  ],
+  "ligandAtoms": [
+    "C2E_N1",
+    "C2E_N2",
+    "C2E_O6",
+    "C2E_PA",
+    "C2E_PB",
+    "C2E_O3A",
+    "C2E_O3B"
+  ],
+  "notes": "Validated against Kulshina N et al. Nat Struct Mol Biol 2009 (doi:10.1038/nsmb.1561). GEMM-II c-di-GMP riboswitch from V. cholerae. Chain R, C2E at R:1. Both guanine bases of c-di-GMP stack on receptor bases; phosphodiester backbone contacts R:72-74. 4 Mg2+ ions in chain R removed per benchmark ion policy. GTP R:8 (5' terminal nucleotide) included in receptor. Companion to 3IRW (GEMM-I type I) — same cyclic dinucleotide ligand, different RNA fold."
+}

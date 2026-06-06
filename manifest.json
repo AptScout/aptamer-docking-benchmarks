@@ -91,6 +91,14 @@
     {
       "id": "2qwy-sam-ii-riboswitch",
       "casePath": "cases/2qwy-sam-ii-riboswitch/case.json"
+    },
+    {
+      "id": "3q50-preq1-ii-riboswitch",
+      "casePath": "cases/3q50-preq1-ii-riboswitch/case.json"
+    },
+    {
+      "id": "3mxh-cdigmp-ii-riboswitch",
+      "casePath": "cases/3mxh-cdigmp-ii-riboswitch/case.json"
     }
   ]
 }

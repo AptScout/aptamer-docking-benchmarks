@@ -1,0 +1,23 @@
+{
+  "id": "3mxh-cdigmp-ii-riboswitch",
+  "name": "c-di-GMP type II riboswitch bound to cyclic-di-GMP",
+  "systemType": "rna_ligand",
+  "curationStatus": "parsed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "structureID": "3MXH",
+  "sourceDatabase": "RCSB PDB",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.3,
+  "primaryLigandID": "C2E",
+  "selectedReceptorChains": ["R"],
+  "selectedLigandChains": ["R"],
+  "retainedIonLigands": [],
+  "removedIonLigands": ["MG"],
+  "preparationNotes": "Chain R used (1984 ATOM records). Chain P (712 atoms) excluded. 4 Mg2+ ions in chain R removed per Mg anomaly policy. GTP R:8 (5' terminal nucleotide, listed as HETATM) included in receptor as ATOM. C2E (c-di-GMP) at R:1 is the ligand. Box 28x28x28 A (c-di-GMP is large, MW=690). Actives/decoys reused from 3IRW GEMM-I for direct fold comparison.",
+  "source": "RCSB PDB 3MXH; Kulshina N et al. Nat Struct Mol Biol 2009 doi:10.1038/nsmb.1561",
+  "affinitySource": "Kulshina et al. 2009; Kd ~1 nM for c-di-GMP",
+  "affinityNotes": "GEMM-II c-di-GMP riboswitch from V. cholerae. Sub-nanomolar affinity. Different fold from GEMM-I (3IRW) — enables paired fold-dependent scoring analysis for cyclic dinucleotide ligands.",
+  "notes": "GEMM-II c-di-GMP riboswitch, 2.30 A X-ray. Both guanine bases stack on receptor; phosphodiester backbone makes key contacts. Companion to 3IRW."
+}

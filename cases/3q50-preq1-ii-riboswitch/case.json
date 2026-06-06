@@ -1,0 +1,23 @@
+{
+  "id": "3q50-preq1-ii-riboswitch",
+  "name": "PreQ1 type II riboswitch bound to 7-deazaguanine analog",
+  "systemType": "rna_ligand",
+  "curationStatus": "parsed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "structureID": "3Q50",
+  "sourceDatabase": "RCSB PDB",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.75,
+  "primaryLigandID": "PRF",
+  "selectedReceptorChains": ["A"],
+  "selectedLigandChains": ["A"],
+  "retainedIonLigands": [],
+  "removedIonLigands": ["SO4"],
+  "preparationNotes": "Single chain A. SO4 crystallization ions (A:101-104) removed. PRF ligand at A:34. Box 22x22x22 A. Actives/decoys reused from 4RZD PreQ1 type I for direct cross-fold comparison.",
+  "source": "RCSB PDB 3Q50; Kang M et al. Nat Chem Biol 2009 doi:10.1038/nchembio.254",
+  "affinitySource": "Kang et al. 2009; Kd ~1 uM for preQ1",
+  "affinityNotes": "PreQ1 type II (H-type pseudoknot) vs type I (aptamer fold in 4RZD). Same metabolite, completely different RNA architecture. Enables fold-dependent scoring comparison for preQ1 analogs.",
+  "notes": "PreQ1 type II riboswitch, 2.75 A X-ray. H-type pseudoknot fold. Companion to 4RZD (type I aptamer fold)."
+}

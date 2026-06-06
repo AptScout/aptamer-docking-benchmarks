@@ -1,0 +1,21 @@
+{
+  "interactionKinds": [
+    "baseStacking",
+    "hydrogenBond"
+  ],
+  "receptorResidues": [
+    "A:7",
+    "A:30",
+    "A:31",
+    "A:32",
+    "A:33"
+  ],
+  "ligandAtoms": [
+    "N1",
+    "N2",
+    "O6",
+    "N7",
+    "C7"
+  ],
+  "notes": "Validated against Kang M et al. Nat Chem Biol 2009 (doi:10.1038/nchembio.254). PreQ1 type II riboswitch from T. tengcongensis. Ligand PRF (7-deaza-7-aminomethyl-guanine) at A:34. Guanine moiety H-bonds to A7 (Watson-Crick-like); aminomethyl group at C7 contacts A30-A33. Stacking interactions with flanking nucleotides. SO4 crystallization ions (A:101-104) removed. Different fold from preQ1 type I (4RZD) — H-type pseudoknot vs type I aptamer."
+}
