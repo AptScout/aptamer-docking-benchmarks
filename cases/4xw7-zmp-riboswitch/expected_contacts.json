@@ -1,0 +1,24 @@
+{
+  "receptorResidues": [
+    "A:5",
+    "A:6",
+    "A:24",
+    "A:25",
+    "A:55"
+  ],
+  "ligandAtoms": [
+    "N1",
+    "N3",
+    "C4",
+    "C5",
+    "N6",
+    "O1P",
+    "O2P"
+  ],
+  "interactionKinds": [
+    "baseStacking",
+    "hydrogenBond",
+    "phosphateElectrostatic"
+  ],
+  "notes": "Validated against Kim PB et al. Nature 2015. ZTP/ZMP riboswitch from Fusobacterium ulcerans. Ligand AMZ (ZMP = AICAR monophosphate, 5-aminoimidazole-4-carboxamide ribonucleotide, MW=338) at A:101. 13 MG ions and 4 IRI (iridium hexamine crystallization agents) removed. Companion to 6WZS (ZTP, 3 phosphates) \u2014 tests whether monophosphate alone drives enrichment."
+}

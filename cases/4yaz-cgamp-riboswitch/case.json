@@ -1,0 +1,25 @@
+{
+  "id": "4yaz-cgamp-riboswitch",
+  "name": "3',3'-cGAMP riboswitch bound to cyclic-AMP-GMP",
+  "systemType": "rna_ligand",
+  "curationStatus": "parsed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 4YAZ; Kellenberger CA et al. Science 2015 doi:10.1126/science.1261622",
+  "notes": "GEMM-Ib riboswitch from Geobacter metallireducens. Ligand 4BW (3',3'-cGAMP). Mixed-linkage cyclic dinucleotide. 2.00A X-ray. Complements c-di-GMP-I/II and c-di-AMP.",
+  "structureID": "4YAZ",
+  "sourceDatabase": "RCSB PDB",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.0,
+  "primaryLigandID": "4BW",
+  "selectedReceptorChains": [
+    "R"
+  ],
+  "removedIonLigands": [
+    "MG",
+    "K"
+  ],
+  "affinitySource": "Kellenberger CA et al. 2015; Kd ~1 uM for 3,3-cGAMP",
+  "affinityNotes": "GEMM-Ib riboswitch binds 3,3-cGAMP (mixed-linkage). Completes cyclic dinucleotide family."
+}

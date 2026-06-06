@@ -1,0 +1,25 @@
+{
+  "id": "4xw7-zmp-riboswitch",
+  "name": "ZMP riboswitch bound to AICAR monophosphate",
+  "systemType": "rna_ligand",
+  "curationStatus": "parsed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 4XW7; Kim PB et al. Nature 2015 doi:10.1038/nature14816",
+  "notes": "ZTP/ZMP riboswitch from Fusobacterium ulcerans. Ligand AMZ (ZMP = AICAR monophosphate, 1 phosphate). 2.50A X-ray. Companion to 6WZS (ZTP, 3 phosphates) \u2014 tests monophosphate vs triphosphate scoring.",
+  "structureID": "4XW7",
+  "sourceDatabase": "RCSB PDB",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.5,
+  "primaryLigandID": "AMZ",
+  "selectedReceptorChains": [
+    "A"
+  ],
+  "removedIonLigands": [
+    "MG",
+    "IRI"
+  ],
+  "affinitySource": "Kim PB et al. 2015; Kd ~10 uM for ZMP",
+  "affinityNotes": "ZTP/ZMP riboswitch binds AICAR monophosphate (ZMP, 1 phosphate). Companion to 6WZS (ZTP, 3 phosphates) \u2014 tests monophosphate vs triphosphate enrichment."
+}

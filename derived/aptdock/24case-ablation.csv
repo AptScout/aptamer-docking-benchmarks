@@ -1,0 +1,73 @@
+case_id,case_name,enrichment_id,mode,active_count,decoy_count,auc,status,best_active_score,best_decoy_score,best_active_decoy_margin,mean_active_score,mean_decoy_score
+1fmn-fmn-riboswitch,FMN riboswitch bound to flavin mononucleotide,fmn-enrich-calib,vina_only,1,60,1.000000,perfect_or_near_perfect,-8.716,0.000,8.716,-8.716,0.000
+1fmn-fmn-riboswitch,FMN riboswitch bound to flavin mononucleotide,fmn-enrich-calib,receptor_phosphate_only,1,60,1.000000,perfect_or_near_perfect,-9.030,0.000,9.030,-9.030,0.000
+1fmn-fmn-riboswitch,FMN riboswitch bound to flavin mononucleotide,fmn-enrich-calib,ligand_phosphate_only,1,60,1.000000,perfect_or_near_perfect,-8.896,0.000,8.896,-8.896,0.000
+1fmn-fmn-riboswitch,FMN riboswitch bound to flavin mononucleotide,fmn-enrich-calib,ligand_phosphate_macdock_like,1,60,1.000000,perfect_or_near_perfect,-9.716,0.000,9.716,-9.716,0.000
+1fmn-fmn-riboswitch,FMN riboswitch bound to flavin mononucleotide,fmn-enrich-calib,base_stacking_only,1,60,1.000000,perfect_or_near_perfect,-9.215,0.000,9.215,-9.215,0.000
+1fmn-fmn-riboswitch,FMN riboswitch bound to flavin mononucleotide,fmn-enrich-calib,metal_coordination_only,1,60,1.000000,perfect_or_near_perfect,-8.716,0.000,8.716,-8.716,0.000
+1fmn-fmn-riboswitch,FMN riboswitch bound to flavin mononucleotide,fmn-enrich-calib,phosphate_terms_only,1,60,1.000000,perfect_or_near_perfect,-9.210,0.000,9.210,-9.210,0.000
+1fmn-fmn-riboswitch,FMN riboswitch bound to flavin mononucleotide,fmn-enrich-calib,all_default_terms,1,60,1.000000,perfect_or_near_perfect,-9.709,0.000,9.709,-9.709,0.000
+1fmn-fmn-riboswitch,FMN riboswitch bound to flavin mononucleotide,fmn-enrich-calib,all_terms_best_current,1,60,1.000000,perfect_or_near_perfect,-10.987,0.000,10.987,-10.987,0.000
+2g9c-purine-riboswitch,"Adenine/purine riboswitch bound to 3AY (pyrimidine-2,4,6-triamine)",purine-enrich,vina_only,7,88,0.652597,good_auc_negative_best_margin,-0.849,-1.754,-0.906,-0.324,2.419
+2g9c-purine-riboswitch,"Adenine/purine riboswitch bound to 3AY (pyrimidine-2,4,6-triamine)",purine-enrich,receptor_phosphate_only,7,88,0.657468,good_auc_negative_best_margin,-0.849,-1.754,-0.906,-0.346,2.396
+2g9c-purine-riboswitch,"Adenine/purine riboswitch bound to 3AY (pyrimidine-2,4,6-triamine)",purine-enrich,ligand_phosphate_only,7,88,0.652597,good_auc_negative_best_margin,-0.849,-1.754,-0.906,-0.324,2.419
+2g9c-purine-riboswitch,"Adenine/purine riboswitch bound to 3AY (pyrimidine-2,4,6-triamine)",purine-enrich,ligand_phosphate_macdock_like,7,88,0.652597,good_auc_negative_best_margin,-0.849,-1.754,-0.906,-0.324,2.419
+2g9c-purine-riboswitch,"Adenine/purine riboswitch bound to 3AY (pyrimidine-2,4,6-triamine)",purine-enrich,base_stacking_only,7,88,0.652597,good_auc_negative_best_margin,-0.849,-1.754,-0.906,-0.324,2.419
+2g9c-purine-riboswitch,"Adenine/purine riboswitch bound to 3AY (pyrimidine-2,4,6-triamine)",purine-enrich,metal_coordination_only,7,88,0.652597,good_auc_negative_best_margin,-0.849,-1.754,-0.906,-0.324,2.419
+2g9c-purine-riboswitch,"Adenine/purine riboswitch bound to 3AY (pyrimidine-2,4,6-triamine)",purine-enrich,phosphate_terms_only,7,88,0.657468,good_auc_negative_best_margin,-0.849,-1.754,-0.906,-0.346,2.396
+2g9c-purine-riboswitch,"Adenine/purine riboswitch bound to 3AY (pyrimidine-2,4,6-triamine)",purine-enrich,all_default_terms,7,88,0.657468,good_auc_negative_best_margin,-0.849,-1.754,-0.906,-0.346,2.396
+2g9c-purine-riboswitch,"Adenine/purine riboswitch bound to 3AY (pyrimidine-2,4,6-triamine)",purine-enrich,all_terms_best_current,7,88,0.660714,good_auc_negative_best_margin,-0.849,-1.754,-0.905,-0.363,2.378
+4rzd-preq1-riboswitch,PreQ1 riboswitch bound to PRF (7-aminomethyl-7-deazaguanine analog),preq1-enrich,vina_only,5,74,0.500000,near_random,0.000,0.000,0.000,0.000,0.000
+4rzd-preq1-riboswitch,PreQ1 riboswitch bound to PRF (7-aminomethyl-7-deazaguanine analog),preq1-enrich,receptor_phosphate_only,5,74,0.500000,near_random,0.000,0.000,0.000,0.000,0.000
+4rzd-preq1-riboswitch,PreQ1 riboswitch bound to PRF (7-aminomethyl-7-deazaguanine analog),preq1-enrich,ligand_phosphate_only,5,74,0.500000,near_random,0.000,0.000,0.000,0.000,0.000
+4rzd-preq1-riboswitch,PreQ1 riboswitch bound to PRF (7-aminomethyl-7-deazaguanine analog),preq1-enrich,ligand_phosphate_macdock_like,5,74,0.500000,near_random,0.000,0.000,0.000,0.000,0.000
+4rzd-preq1-riboswitch,PreQ1 riboswitch bound to PRF (7-aminomethyl-7-deazaguanine analog),preq1-enrich,base_stacking_only,5,74,0.500000,near_random,0.000,0.000,0.000,0.000,0.000
+4rzd-preq1-riboswitch,PreQ1 riboswitch bound to PRF (7-aminomethyl-7-deazaguanine analog),preq1-enrich,metal_coordination_only,5,74,0.500000,near_random,0.000,0.000,0.000,0.000,0.000
+4rzd-preq1-riboswitch,PreQ1 riboswitch bound to PRF (7-aminomethyl-7-deazaguanine analog),preq1-enrich,phosphate_terms_only,5,74,0.500000,near_random,0.000,0.000,0.000,0.000,0.000
+4rzd-preq1-riboswitch,PreQ1 riboswitch bound to PRF (7-aminomethyl-7-deazaguanine analog),preq1-enrich,all_default_terms,5,74,0.500000,near_random,0.000,0.000,0.000,0.000,0.000
+4rzd-preq1-riboswitch,PreQ1 riboswitch bound to PRF (7-aminomethyl-7-deazaguanine analog),preq1-enrich,all_terms_best_current,5,74,0.500000,near_random,0.000,0.000,0.000,0.000,0.000
+2gdi-tpp-riboswitch,"TPP riboswitch bound to CCC (thiamine pyrophosphate analog, chain X)",tpp-enrich-filtered,vina_only,7,266,0.624597,above_random_negative_best_margin,23.571,8.931,-14.640,58.003,74.301
+2gdi-tpp-riboswitch,"TPP riboswitch bound to CCC (thiamine pyrophosphate analog, chain X)",tpp-enrich-filtered,receptor_phosphate_only,7,266,0.628357,above_random_negative_best_margin,23.529,8.864,-14.664,57.370,73.968
+2gdi-tpp-riboswitch,"TPP riboswitch bound to CCC (thiamine pyrophosphate analog, chain X)",tpp-enrich-filtered,ligand_phosphate_only,7,266,0.625134,above_random_negative_best_margin,23.571,8.931,-14.640,57.875,74.301
+2gdi-tpp-riboswitch,"TPP riboswitch bound to CCC (thiamine pyrophosphate analog, chain X)",tpp-enrich-filtered,ligand_phosphate_macdock_like,7,266,0.630505,above_random_negative_best_margin,23.571,8.931,-14.640,57.289,74.301
+2gdi-tpp-riboswitch,"TPP riboswitch bound to CCC (thiamine pyrophosphate analog, chain X)",tpp-enrich-filtered,base_stacking_only,7,266,0.624597,above_random_negative_best_margin,23.571,8.931,-14.640,58.003,74.301
+2gdi-tpp-riboswitch,"TPP riboswitch bound to CCC (thiamine pyrophosphate analog, chain X)",tpp-enrich-filtered,metal_coordination_only,7,266,0.624597,above_random_negative_best_margin,23.571,8.931,-14.640,58.003,74.301
+2gdi-tpp-riboswitch,"TPP riboswitch bound to CCC (thiamine pyrophosphate analog, chain X)",tpp-enrich-filtered,phosphate_terms_only,7,266,0.628894,above_random_negative_best_margin,23.529,8.864,-14.664,57.241,73.968
+2gdi-tpp-riboswitch,"TPP riboswitch bound to CCC (thiamine pyrophosphate analog, chain X)",tpp-enrich-filtered,all_default_terms,7,266,0.628894,above_random_negative_best_margin,23.529,8.864,-14.664,57.241,73.968
+2gdi-tpp-riboswitch,"TPP riboswitch bound to CCC (thiamine pyrophosphate analog, chain X)",tpp-enrich-filtered,all_terms_best_current,7,266,0.636412,above_random_negative_best_margin,23.496,8.812,-14.684,56.163,73.709
+2ygh-sam-riboswitch,SAM-I riboswitch bound to S-adenosylmethionine,sam-enrich,vina_only,3,238,0.822129,strong,-1.922,-2.888,-0.966,1.627,22.466
+2ygh-sam-riboswitch,SAM-I riboswitch bound to S-adenosylmethionine,sam-enrich,receptor_phosphate_only,3,238,0.819328,strong,-1.955,-3.019,-1.065,1.617,22.440
+2ygh-sam-riboswitch,SAM-I riboswitch bound to S-adenosylmethionine,sam-enrich,ligand_phosphate_only,3,238,0.822129,strong,-1.922,-2.888,-0.966,1.627,22.466
+2ygh-sam-riboswitch,SAM-I riboswitch bound to S-adenosylmethionine,sam-enrich,ligand_phosphate_macdock_like,3,238,0.822129,strong,-1.922,-2.888,-0.966,1.627,22.466
+2ygh-sam-riboswitch,SAM-I riboswitch bound to S-adenosylmethionine,sam-enrich,base_stacking_only,3,238,0.822129,strong,-1.922,-2.888,-0.966,1.627,22.465
+2ygh-sam-riboswitch,SAM-I riboswitch bound to S-adenosylmethionine,sam-enrich,metal_coordination_only,3,238,0.822129,strong,-1.922,-2.888,-0.966,1.627,22.466
+2ygh-sam-riboswitch,SAM-I riboswitch bound to S-adenosylmethionine,sam-enrich,phosphate_terms_only,3,238,0.819328,strong,-1.955,-3.019,-1.065,1.617,22.440
+2ygh-sam-riboswitch,SAM-I riboswitch bound to S-adenosylmethionine,sam-enrich,all_default_terms,3,238,0.819328,strong,-1.955,-3.019,-1.065,1.617,22.439
+2ygh-sam-riboswitch,SAM-I riboswitch bound to S-adenosylmethionine,sam-enrich,all_terms_best_current,3,238,0.819328,strong,-1.979,-3.145,-1.165,1.608,22.418
+3b4b-glms-riboswitch,glmS riboswitch/ribozyme bound to glucosamine-6-phosphate (GlcN6P),glms-enrich,vina_only,4,165,0.500000,near_random,0.000,0.000,0.000,0.000,0.000
+3b4b-glms-riboswitch,glmS riboswitch/ribozyme bound to glucosamine-6-phosphate (GlcN6P),glms-enrich,receptor_phosphate_only,4,165,0.500000,near_random,0.000,0.000,0.000,0.000,0.000
+3b4b-glms-riboswitch,glmS riboswitch/ribozyme bound to glucosamine-6-phosphate (GlcN6P),glms-enrich,ligand_phosphate_only,4,165,0.750000,good,-0.180,0.000,0.180,-0.090,0.000
+3b4b-glms-riboswitch,glmS riboswitch/ribozyme bound to glucosamine-6-phosphate (GlcN6P),glms-enrich,ligand_phosphate_macdock_like,4,165,0.750000,good,-1.000,0.000,1.000,-0.500,0.000
+3b4b-glms-riboswitch,glmS riboswitch/ribozyme bound to glucosamine-6-phosphate (GlcN6P),glms-enrich,base_stacking_only,4,165,0.500000,near_random,0.000,0.000,0.000,0.000,0.000
+3b4b-glms-riboswitch,glmS riboswitch/ribozyme bound to glucosamine-6-phosphate (GlcN6P),glms-enrich,metal_coordination_only,4,165,0.500000,near_random,0.000,0.000,0.000,0.000,0.000
+3b4b-glms-riboswitch,glmS riboswitch/ribozyme bound to glucosamine-6-phosphate (GlcN6P),glms-enrich,phosphate_terms_only,4,165,0.750000,good,-0.180,0.000,0.180,-0.090,0.000
+3b4b-glms-riboswitch,glmS riboswitch/ribozyme bound to glucosamine-6-phosphate (GlcN6P),glms-enrich,all_default_terms,4,165,0.750000,good,-0.180,0.000,0.180,-0.090,0.000
+3b4b-glms-riboswitch,glmS riboswitch/ribozyme bound to glucosamine-6-phosphate (GlcN6P),glms-enrich,all_terms_best_current,4,165,0.750000,good,-1.000,0.000,1.000,-0.500,0.000
+2hoj-tpp-riboswitch,TPP riboswitch bound to thiamine pyrophosphate,tpp-enrich,vina_only,7,266,0.500000,near_random,0.000,0.000,0.000,0.000,0.000
+2hoj-tpp-riboswitch,TPP riboswitch bound to thiamine pyrophosphate,tpp-enrich,receptor_phosphate_only,7,266,0.500000,near_random,0.000,0.000,0.000,0.000,0.000
+2hoj-tpp-riboswitch,TPP riboswitch bound to thiamine pyrophosphate,tpp-enrich,ligand_phosphate_only,7,266,0.714286,good,-0.360,0.000,0.360,-0.129,0.000
+2hoj-tpp-riboswitch,TPP riboswitch bound to thiamine pyrophosphate,tpp-enrich,ligand_phosphate_macdock_like,7,266,0.714286,good,-2.000,0.000,2.000,-0.714,0.000
+2hoj-tpp-riboswitch,TPP riboswitch bound to thiamine pyrophosphate,tpp-enrich,base_stacking_only,7,266,0.500000,near_random,0.000,0.000,0.000,0.000,0.000
+2hoj-tpp-riboswitch,TPP riboswitch bound to thiamine pyrophosphate,tpp-enrich,metal_coordination_only,7,266,0.500000,near_random,0.000,0.000,0.000,0.000,0.000
+2hoj-tpp-riboswitch,TPP riboswitch bound to thiamine pyrophosphate,tpp-enrich,phosphate_terms_only,7,266,0.714286,good,-0.360,0.000,0.360,-0.129,0.000
+2hoj-tpp-riboswitch,TPP riboswitch bound to thiamine pyrophosphate,tpp-enrich,all_default_terms,7,266,0.714286,good,-0.360,0.000,0.360,-0.129,0.000
+2hoj-tpp-riboswitch,TPP riboswitch bound to thiamine pyrophosphate,tpp-enrich,all_terms_best_current,7,266,0.714286,good,-2.000,0.000,2.000,-0.714,0.000
+2hoj-tpp-riboswitch,TPP riboswitch bound to thiamine pyrophosphate,tpp-enrich-filtered,vina_only,7,266,0.500000,near_random,0.000,0.000,0.000,0.000,0.000
+2hoj-tpp-riboswitch,TPP riboswitch bound to thiamine pyrophosphate,tpp-enrich-filtered,receptor_phosphate_only,7,266,0.500000,near_random,0.000,0.000,0.000,0.000,0.000
+2hoj-tpp-riboswitch,TPP riboswitch bound to thiamine pyrophosphate,tpp-enrich-filtered,ligand_phosphate_only,7,266,0.714286,good,-0.360,0.000,0.360,-0.129,0.000
+2hoj-tpp-riboswitch,TPP riboswitch bound to thiamine pyrophosphate,tpp-enrich-filtered,ligand_phosphate_macdock_like,7,266,0.714286,good,-2.000,0.000,2.000,-0.714,0.000
+2hoj-tpp-riboswitch,TPP riboswitch bound to thiamine pyrophosphate,tpp-enrich-filtered,base_stacking_only,7,266,0.500000,near_random,0.000,0.000,0.000,0.000,0.000
+2hoj-tpp-riboswitch,TPP riboswitch bound to thiamine pyrophosphate,tpp-enrich-filtered,metal_coordination_only,7,266,0.500000,near_random,0.000,0.000,0.000,0.000,0.000
+2hoj-tpp-riboswitch,TPP riboswitch bound to thiamine pyrophosphate,tpp-enrich-filtered,phosphate_terms_only,7,266,0.714286,good,-0.360,0.000,0.360,-0.129,0.000
+2hoj-tpp-riboswitch,TPP riboswitch bound to thiamine pyrophosphate,tpp-enrich-filtered,all_default_terms,7,266,0.714286,good,-0.360,0.000,0.360,-0.129,0.000
+2hoj-tpp-riboswitch,TPP riboswitch bound to thiamine pyrophosphate,tpp-enrich-filtered,all_terms_best_current,7,266,0.714286,good,-2.000,0.000,2.000,-0.714,0.000

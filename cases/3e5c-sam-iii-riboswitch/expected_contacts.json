@@ -1,0 +1,23 @@
+{
+  "receptorResidues": [
+    "A:8",
+    "A:9",
+    "A:10",
+    "A:11",
+    "A:57",
+    "A:58"
+  ],
+  "ligandAtoms": [
+    "N6",
+    "N1",
+    "SD",
+    "C5B",
+    "O3B"
+  ],
+  "interactionKinds": [
+    "baseStacking",
+    "hydrogenBond",
+    "phosphateElectrostatic"
+  ],
+  "notes": "Validated against Lu et al. Nat Struct Mol Biol 2008. SAM-III (SMK box) from Enterococcus faecalis. SAM A:216. Adenosyl moiety stacks on A11/A57; methionine SD contacts A9/A10; aminocarboxylate contacts A8. Completely different fold from SAM-I (alpha helix) and SAM-II (pseudoknot). SR ions (strontium, crystallization) removed. GTP A:1 (5-terminal) included in receptor."
+}

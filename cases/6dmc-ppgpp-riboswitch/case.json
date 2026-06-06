@@ -1,0 +1,26 @@
+{
+  "id": "6dmc-ppgpp-riboswitch",
+  "name": "ppGpp riboswitch bound to guanosine tetraphosphate",
+  "systemType": "rna_ligand",
+  "curationStatus": "parsed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 6DMC; Sherwood AV et al. Mol Cell 2018 doi:10.1016/j.molcel.2018.06.049",
+  "notes": "RSH-associated RNA (RSAR) ppGpp riboswitch from Enterococcus faecalis. Ligand G4P (ppGpp = guanosine-3-diphosphate-5-diphosphate, 4 phosphates, MW=603). 2.20A X-ray. Novel class.",
+  "structureID": "6DMC",
+  "sourceDatabase": "RCSB PDB",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.2,
+  "primaryLigandID": "G4P",
+  "selectedReceptorChains": [
+    "A"
+  ],
+  "removedIonLigands": [
+    "MG",
+    "NA",
+    "K"
+  ],
+  "affinitySource": "Sherwood AV et al. 2018; Kd ~100 nM for ppGpp",
+  "affinityNotes": "ppGpp riboswitch (RSAR). ppGpp has 4 phosphate groups \u2014 largest ligand-P contribution expected. Novel class, not in any prior RNA docking benchmark."
+}

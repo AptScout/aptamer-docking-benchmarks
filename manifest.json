@@ -99,6 +99,26 @@
     {
       "id": "3mxh-cdigmp-ii-riboswitch",
       "casePath": "cases/3mxh-cdigmp-ii-riboswitch/case.json"
+    },
+    {
+      "id": "3e5c-sam-iii-riboswitch",
+      "casePath": "cases/3e5c-sam-iii-riboswitch/case.json"
+    },
+    {
+      "id": "3ski-deoxyguanosine-riboswitch",
+      "casePath": "cases/3ski-deoxyguanosine-riboswitch/case.json"
+    },
+    {
+      "id": "4yaz-cgamp-riboswitch",
+      "casePath": "cases/4yaz-cgamp-riboswitch/case.json"
+    },
+    {
+      "id": "6dmc-ppgpp-riboswitch",
+      "casePath": "cases/6dmc-ppgpp-riboswitch/case.json"
+    },
+    {
+      "id": "4xw7-zmp-riboswitch",
+      "casePath": "cases/4xw7-zmp-riboswitch/case.json"
     }
   ]
 }

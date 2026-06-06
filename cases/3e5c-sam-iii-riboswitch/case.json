@@ -1,0 +1,24 @@
+{
+  "id": "3e5c-sam-iii-riboswitch",
+  "name": "SAM-III (SMK box) riboswitch bound to S-adenosylmethionine",
+  "systemType": "rna_ligand",
+  "curationStatus": "parsed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 3E5C; Lu C et al. Nat Struct Mol Biol 2008 doi:10.1038/nsmb.1483",
+  "notes": "SAM-III (SMK box) riboswitch, 2.25A X-ray. Third distinct SAM-binding fold. Companion to SAM-I (2YGH) and SAM-II (2QWY). SAM at A:216.",
+  "structureID": "3E5C",
+  "sourceDatabase": "RCSB PDB",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.25,
+  "primaryLigandID": "SAM",
+  "selectedReceptorChains": [
+    "A"
+  ],
+  "removedIonLigands": [
+    "SR"
+  ],
+  "affinitySource": "Lu et al. 2008; Kd ~10 uM for SAM",
+  "affinityNotes": "SAM-III SMK box from E. faecalis. Third distinct SAM-binding fold. Completes SAM fold trifecta with SAM-I (2YGH) and SAM-II (2QWY)."
+}

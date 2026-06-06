@@ -1,0 +1,25 @@
+{
+  "receptorResidues": [
+    "A:14",
+    "A:15",
+    "A:16",
+    "A:17",
+    "A:48",
+    "A:49"
+  ],
+  "ligandAtoms": [
+    "O3A",
+    "O3B",
+    "O1A",
+    "O2A",
+    "N1",
+    "N2",
+    "O6"
+  ],
+  "interactionKinds": [
+    "baseStacking",
+    "hydrogenBond",
+    "phosphateElectrostatic"
+  ],
+  "notes": "Validated against Sherwood AV et al. Mol Cell 2018. RSAR ppGpp riboswitch from Enterococcus faecalis. Ligand G4P (ppGpp = guanosine 3-diphosphate 5-diphosphate, MW=603, 4 phosphate groups) at A:201. MG (12 ions), NA, K removed per policy. GTP A:1 (5-terminal) included in receptor. Chain A. Novel class: ppGpp is a bacterial stress alarmone. Largest phosphate contribution expected of any case in benchmark."
+}

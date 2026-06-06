@@ -1,0 +1,27 @@
+{
+  "id": "3ski-deoxyguanosine-riboswitch",
+  "name": "2'-deoxyguanosine riboswitch bound to 2'-deoxyguanosine",
+  "systemType": "rna_ligand",
+  "curationStatus": "parsed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 3SKI; Kim JN et al. Nat Chem Biol 2011 doi:10.1038/nchembio.557",
+  "notes": "DG riboswitch from Mesoplasma florum. Ligand GNG (2'-deoxyguanosine, MW=267). Unique: discriminates 2'-deoxy form from guanosine. 2.30A X-ray.",
+  "structureID": "3SKI",
+  "sourceDatabase": "RCSB PDB",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.3,
+  "primaryLigandID": "GNG",
+  "selectedReceptorChains": [
+    "A"
+  ],
+  "removedIonLigands": [
+    "MG",
+    "CCC",
+    "SIN",
+    "SO4"
+  ],
+  "affinitySource": "Kim JN et al. 2011; Kd ~3 uM for 2-deoxyguanosine",
+  "affinityNotes": "DG riboswitch discriminates 2-deoxyguanosine from guanosine (100-fold selectivity). Novel ligand class in benchmark."
+}

@@ -1,0 +1,25 @@
+{
+  "receptorResidues": [
+    "R:11",
+    "R:12",
+    "R:53",
+    "R:54",
+    "R:92",
+    "R:93"
+  ],
+  "ligandAtoms": [
+    "4BW_N1A",
+    "4BW_N2A",
+    "4BW_O6G",
+    "4BW_PA",
+    "4BW_PB",
+    "4BW_O3A",
+    "4BW_O3G"
+  ],
+  "interactionKinds": [
+    "baseStacking",
+    "hydrogenBond",
+    "phosphateElectrostatic"
+  ],
+  "notes": "Validated against Kellenberger CA et al. Science 2015. GEMM-Ib riboswitch from Geobacter metallireducens. Ligand 4BW (3,3-cGAMP = cyclic AMP-GMP with mixed 3-5 linkage) at R:106. MG and K removed per policy. GTP R:1 (5-terminal) included in receptor. Chain R used. Completes cyclic dinucleotide family: c-di-GMP-I, c-di-GMP-II, c-di-AMP, and now cGAMP."
+}
