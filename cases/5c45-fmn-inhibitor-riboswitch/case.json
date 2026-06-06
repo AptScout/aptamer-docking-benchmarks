@@ -1,0 +1,11 @@
+{
+  "id": "5c45-fmn-inhibitor-riboswitch",
+  "name": "FMN riboswitch bound to synthetic inhibitor (ribocil analog)",
+  "systemType": "rna_ligand",
+  "curationStatus": "seed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 5C45; Howe JA et al. Nature 2015 doi:10.1038/nature16477",
+  "notes": "FMN riboswitch bound to 51B (ribocil/synthetic inhibitor, MW~340). Chain X. First drug-discovery case in benchmark \u2014 synthetic small molecule, not natural ligand. 2.93A X-ray."
+}

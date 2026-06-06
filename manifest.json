@@ -139,6 +139,26 @@
     {
       "id": "6dmd-ppgpp-mn-riboswitch",
       "casePath": "cases/6dmd-ppgpp-mn-riboswitch/case.json"
+    },
+    {
+      "id": "5ddq-glutamine-riboswitch",
+      "casePath": "cases/5ddq-glutamine-riboswitch/case.json"
+    },
+    {
+      "id": "6e8s-imango-iii-aptamer",
+      "casePath": "cases/6e8s-imango-iii-aptamer/case.json"
+    },
+    {
+      "id": "4znp-zmp-riboswitch-ii",
+      "casePath": "cases/4znp-zmp-riboswitch-ii/case.json"
+    },
+    {
+      "id": "6fz0-sam-v-riboswitch",
+      "casePath": "cases/6fz0-sam-v-riboswitch/case.json"
+    },
+    {
+      "id": "5c45-fmn-inhibitor-riboswitch",
+      "casePath": "cases/5c45-fmn-inhibitor-riboswitch/case.json"
     }
   ]
 }

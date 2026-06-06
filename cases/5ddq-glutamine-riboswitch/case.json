@@ -1,0 +1,11 @@
+{
+  "id": "5ddq-glutamine-riboswitch",
+  "name": "L-glutamine riboswitch bound to L-glutamine",
+  "systemType": "rna_ligand",
+  "curationStatus": "seed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 5DDQ; Ren A et al. Nat Chem Biol 2015 doi:10.1038/nchembio.1989",
+  "notes": "Glutamine riboswitch at 2.40A. L-glutamine (GLN, MW=146) \u2014 new amino acid class. Dimeric structure; chain A used, GLN at A:101. Mn2+ removed per policy."
+}

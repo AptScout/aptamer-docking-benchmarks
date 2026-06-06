@@ -1,0 +1,11 @@
+{
+  "id": "6e8s-imango-iii-aptamer",
+  "name": "iMango-III aptamer bound to TO1-Biotin analog",
+  "systemType": "rna_ligand",
+  "curationStatus": "seed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 6E8S; Trachman RJ et al. Nat Chem Biol 2019 doi:10.1038/s41589-018-0184-5",
+  "notes": "iMango-III (improved variant) at 2.35A. Ligand EKJ (TO1-Biotin analog). Dimeric (A,B); chain A used. Companion to Mango-III (6E8T)."
+}

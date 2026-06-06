@@ -1,0 +1,11 @@
+{
+  "id": "4znp-zmp-riboswitch-ii",
+  "name": "ZMP riboswitch II (pfI) bound to AICAR monophosphate",
+  "systemType": "rna_ligand",
+  "curationStatus": "seed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 4ZNP; Kellenberger CA et al. Chem Biol 2015 doi:10.1016/j.chembiol.2015.02.012",
+  "notes": "pfI ZMP riboswitch at 2.94A. Ligand AMZ (ZMP/AICAR monophosphate). Dimeric; chain A. Second ZMP structure \u2014 companion to 4XW7."
+}

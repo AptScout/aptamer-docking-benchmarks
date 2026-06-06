@@ -1,0 +1,11 @@
+{
+  "id": "6fz0-sam-v-riboswitch",
+  "name": "SAM-V riboswitch bound to S-adenosylmethionine",
+  "systemType": "rna_ligand",
+  "curationStatus": "seed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 6FZ0; Huang L & Lilley DMJ NAR 2018 doi:10.1093/nar/gky340",
+  "notes": "metY SAM-V riboswitch at 2.50A. SAM at A:104. CBV (carbamate) at A:4 removed. 4th distinct SAM fold \u2014 completes SAM-I/II/III/V series."
+}
