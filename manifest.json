@@ -119,6 +119,26 @@
     {
       "id": "4xw7-zmp-riboswitch",
       "casePath": "cases/4xw7-zmp-riboswitch/case.json"
+    },
+    {
+      "id": "4lvv-thf-riboswitch-ii",
+      "casePath": "cases/4lvv-thf-riboswitch-ii/case.json"
+    },
+    {
+      "id": "5t83-guanidine-i-riboswitch",
+      "casePath": "cases/5t83-guanidine-i-riboswitch/case.json"
+    },
+    {
+      "id": "5nz6-guanidine-iii-riboswitch",
+      "casePath": "cases/5nz6-guanidine-iii-riboswitch/case.json"
+    },
+    {
+      "id": "6e8t-mango-iii-aptamer",
+      "casePath": "cases/6e8t-mango-iii-aptamer/case.json"
+    },
+    {
+      "id": "6dmd-ppgpp-mn-riboswitch",
+      "casePath": "cases/6dmd-ppgpp-mn-riboswitch/case.json"
     }
   ]
 }

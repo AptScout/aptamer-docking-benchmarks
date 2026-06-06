@@ -1,0 +1,21 @@
+{
+  "receptorResidues": [
+    "A:48",
+    "A:49",
+    "A:80",
+    "A:81",
+    "A:82"
+  ],
+  "ligandAtoms": [
+    "N5",
+    "N10",
+    "O1",
+    "O2",
+    "O3P"
+  ],
+  "interactionKinds": [
+    "hydrogenBond",
+    "phosphateElectrostatic"
+  ],
+  "notes": "THF riboswitch (Trausch et al. 2011, 4LVV). Two FFO molecules present; A:101 is primary binding site. 2.10A X-ray \u2014 higher resolution companion to 3SD3 (2.87A). Same ligand, same riboswitch family. Used to assess resolution-dependent scoring reproducibility."
+}

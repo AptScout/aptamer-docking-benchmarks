@@ -1,0 +1,21 @@
+{
+  "receptorResidues": [
+    "A:8",
+    "A:9",
+    "A:10",
+    "A:22",
+    "A:23"
+  ],
+  "ligandAtoms": [
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "S1"
+  ],
+  "interactionKinds": [
+    "baseStacking"
+  ],
+  "notes": "Mango-III aptamer (Trachman et al. 2019). TO1-Biotin (HZG) ligand. Tetrameric crystal (chains A-D); chain A used, HZG at A:101. G-quadruplex fold. Companion to Mango-II (6C64). Large aromatic fluorogenic dye. MG, SO4, K, NA removed. 2.90A X-ray."
+}

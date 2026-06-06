@@ -1,0 +1,23 @@
+{
+  "id": "4lvv-thf-riboswitch-ii",
+  "name": "THF riboswitch (high-resolution) bound to folinic acid",
+  "systemType": "rna_ligand",
+  "curationStatus": "parsed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 4LVV; Trausch JJ et al. Chem Biol 2011 doi:10.1016/j.chembiol.2011.08.016",
+  "notes": "THF riboswitch at 2.10A \u2014 higher resolution companion to 3SD3 (2.87A). Two FFO molecules at A:101 and A:102; use A:101 as primary. Same ligand family.",
+  "structureID": "4LVV",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.1,
+  "primaryLigandID": "FFO",
+  "selectedReceptorChains": [
+    "A"
+  ],
+  "removedIonLigands": [
+    "MG",
+    "SO4"
+  ],
+  "affinitySource": "Trausch et al. 2011; Kd ~50 nM for THF"
+}

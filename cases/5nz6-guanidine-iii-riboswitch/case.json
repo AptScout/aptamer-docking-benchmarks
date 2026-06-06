@@ -1,0 +1,24 @@
+{
+  "id": "5nz6-guanidine-iii-riboswitch",
+  "name": "Guanidine-III riboswitch bound to guanidinium",
+  "systemType": "rna_ligand",
+  "curationStatus": "parsed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 5NZ6; Huang L et al. Nucleic Acids Res 2017 doi:10.1093/nar/gkx999",
+  "notes": "Guanidine-III riboswitch from T. fusca. Same ligand as 5T83 (guanidinium), different fold. Companion cross-fold pair. 2.94A X-ray.",
+  "structureID": "5NZ6",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.94,
+  "primaryLigandID": "GAI",
+  "selectedReceptorChains": [
+    "A"
+  ],
+  "removedIonLigands": [
+    "CBV",
+    "SO4",
+    "MG"
+  ],
+  "affinitySource": "Huang et al. 2017; Kd ~1 mM for guanidine"
+}

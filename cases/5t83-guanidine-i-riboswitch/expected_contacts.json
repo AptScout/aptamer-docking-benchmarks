@@ -1,0 +1,17 @@
+{
+  "receptorResidues": [
+    "A:39",
+    "A:47",
+    "A:50",
+    "A:51"
+  ],
+  "ligandAtoms": [
+    "N1",
+    "N2",
+    "N3"
+  ],
+  "interactionKinds": [
+    "hydrogenBond"
+  ],
+  "notes": "Guanidine-I riboswitch (Reiss et al. 2017). Ligand GAI (guanidinium, MW=60, CH6N3+). Smallest ligand in benchmark. Relies entirely on H-bonds \u2014 no phosphate, no stacking. SPK (spermidine crystallization agent) removed. Tests scoring of cationic nitrogen-only ligands. 2.71A X-ray."
+}

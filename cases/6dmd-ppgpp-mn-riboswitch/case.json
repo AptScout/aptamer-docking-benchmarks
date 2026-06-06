@@ -1,0 +1,25 @@
+{
+  "id": "6dmd-ppgpp-mn-riboswitch",
+  "name": "ppGpp riboswitch (Mn form) bound to guanosine tetraphosphate",
+  "systemType": "rna_ligand",
+  "curationStatus": "parsed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 6DMD; Sherwood AV et al. Mol Cell 2018 doi:10.1016/j.molcel.2018.06.049",
+  "notes": "RSAR ppGpp riboswitch with MnCl2 (vs MgCl2 in 6DMC). Mn ions removed per policy. Companion to 6DMC. 2.65A X-ray. Tests metal-identity effect on receptor geometry.",
+  "structureID": "6DMD",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.65,
+  "primaryLigandID": "G4P",
+  "selectedReceptorChains": [
+    "A"
+  ],
+  "removedIonLigands": [
+    "MN",
+    "NA",
+    "K",
+    "SO4"
+  ],
+  "affinitySource": "Sherwood et al. 2018; Kd ~100 nM for ppGpp"
+}

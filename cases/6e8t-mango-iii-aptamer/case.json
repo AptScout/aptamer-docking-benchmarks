@@ -1,0 +1,25 @@
+{
+  "id": "6e8t-mango-iii-aptamer",
+  "name": "Mango-III aptamer bound to TO1-Biotin",
+  "systemType": "rna_ligand",
+  "curationStatus": "parsed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 6E8T; Trachman RJ et al. Nat Chem Biol 2019 doi:10.1038/s41589-018-0184-5",
+  "notes": "Mango-III (A10U variant) fluorogenic aptamer. Ligand HZG (TO1-Biotin). Tetrameric crystal structure (chains A-D); use chain A. 2.90A X-ray. Companion to Mango-II (6C64).",
+  "structureID": "6E8T",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.9,
+  "primaryLigandID": "HZG",
+  "selectedReceptorChains": [
+    "A"
+  ],
+  "removedIonLigands": [
+    "MG",
+    "SO4",
+    "K",
+    "NA"
+  ],
+  "affinitySource": "Trachman et al. 2019; Kd ~3 nM for TO1-Biotin"
+}

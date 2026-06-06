@@ -1,0 +1,25 @@
+{
+  "receptorResidues": [
+    "A:14",
+    "A:15",
+    "A:16",
+    "A:17",
+    "A:48",
+    "A:49"
+  ],
+  "ligandAtoms": [
+    "O3A",
+    "O3B",
+    "O1A",
+    "O2A",
+    "N1",
+    "N2",
+    "O6"
+  ],
+  "interactionKinds": [
+    "baseStacking",
+    "hydrogenBond",
+    "phosphateElectrostatic"
+  ],
+  "notes": "ppGpp riboswitch with MnCl2 (Sherwood et al. 2018, 6DMD). Companion to 6DMC (MgCl2 form). Mn ions (vs Mg in 6DMC) removed per metal policy. Chain A, G4P at A:201. Tests metal-identity effect on receptor geometry and scoring. 2.65A X-ray."
+}

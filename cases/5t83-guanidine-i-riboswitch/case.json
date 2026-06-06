@@ -1,0 +1,24 @@
+{
+  "id": "5t83-guanidine-i-riboswitch",
+  "name": "Guanidine-I riboswitch bound to guanidinium",
+  "systemType": "rna_ligand",
+  "curationStatus": "parsed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 5T83; Reiss CW et al. Nat Chem Biol 2017 doi:10.1038/nchembio.2395",
+  "notes": "Guanidine-I riboswitch from S. acidophilus. Novel cationic ligand (guanidinium, CH6N3+, MW=60). Smallest ligand in benchmark. 2.71A X-ray.",
+  "structureID": "5T83",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.71,
+  "primaryLigandID": "GAI",
+  "selectedReceptorChains": [
+    "A"
+  ],
+  "removedIonLigands": [
+    "SPK",
+    "SO4",
+    "MG"
+  ],
+  "affinitySource": "Reiss et al. 2017; Kd ~3 mM for guanidine"
+}

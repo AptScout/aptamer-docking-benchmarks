@@ -1,0 +1,17 @@
+{
+  "receptorResidues": [
+    "A:5",
+    "A:6",
+    "A:34",
+    "A:35"
+  ],
+  "ligandAtoms": [
+    "N1",
+    "N2",
+    "N3"
+  ],
+  "interactionKinds": [
+    "hydrogenBond"
+  ],
+  "notes": "Guanidine-III riboswitch (Huang et al. 2017). Ligand GAI at A:101. CBV (carbamate/crystallization agent) at A:2 and A:39 removed. Different fold from Guanidine-I (5T83) \u2014 cross-fold pair for purely H-bond-dependent ligand. 2.94A X-ray."
+}
