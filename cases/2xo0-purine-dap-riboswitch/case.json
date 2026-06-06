@@ -1,0 +1,11 @@
+{
+  "id": "2xo0-purine-dap-riboswitch",
+  "name": "xpt-pbuX C74U riboswitch bound to 2,4-diaminopurine",
+  "systemType": "rna_ligand",
+  "curationStatus": "seed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 2XO0; Delfosse V et al. NAR 2010 doi:10.1093/nar/gkq50",
+  "notes": "xpt-pbuX C74U mutant + ZZS (2,4-diaminopurine analog) at A:110. 1.70A high-res. Purine pocket ligand-swap companion to 1Y27/3GAO."
+}

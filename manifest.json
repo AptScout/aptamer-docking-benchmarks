@@ -199,6 +199,18 @@
     {
       "id": "7u0y-pepper-hbc599-aptamer",
       "casePath": "cases/7u0y-pepper-hbc599-aptamer/case.json"
+    },
+    {
+      "id": "6ck5-prpp-riboswitch",
+      "casePath": "cases/6ck5-prpp-riboswitch/case.json"
+    },
+    {
+      "id": "4lx5-m6-riboswitch",
+      "casePath": "cases/4lx5-m6-riboswitch/case.json"
+    },
+    {
+      "id": "2xo0-purine-dap-riboswitch",
+      "casePath": "cases/2xo0-purine-dap-riboswitch/case.json"
     }
   ]
 }

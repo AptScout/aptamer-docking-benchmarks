@@ -1,0 +1,11 @@
+{
+  "id": "4lx5-m6-riboswitch",
+  "name": "M-box (M6) riboswitch aptamer bound to guanine analog",
+  "systemType": "rna_ligand",
+  "curationStatus": "seed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 4LX5; Liberman JA et al. 2013",
+  "notes": "M6 riboswitch aptamer + 29G at A:501. 2.13A X-ray."
+}

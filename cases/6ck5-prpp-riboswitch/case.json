@@ -1,0 +1,11 @@
+{
+  "id": "6ck5-prpp-riboswitch",
+  "name": "PRPP riboswitch bound to phosphoribosyl pyrophosphate",
+  "systemType": "rna_ligand",
+  "curationStatus": "seed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 6CK5; Knappenberger AJ et al. eLife 2018 doi:10.7554/eLife.36381",
+  "notes": "PRPP (ykkC-III) riboswitch from T. mathranii + PRP (5-phosphoribosyl-1-pyrophosphate) at A:217. Phosphate-rich new ligand class. 2.49A X-ray."
+}

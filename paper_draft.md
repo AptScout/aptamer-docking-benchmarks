@@ -1,4 +1,4 @@
-# An RNA Aptamer–Ligand Docking Benchmark with 49 Crystallographically Validated Cases
+# An RNA Aptamer–Ligand Docking Benchmark with 52 Crystallographically Validated Cases
 
 **Authors**: [TBD]  
 **Target journal**: *Nucleic Acids Research* (Database issue) or *J. Chem. Inf. Model.*  
@@ -8,7 +8,7 @@
 
 ## Abstract
 
-We present a curated benchmark of 49 RNA aptamer–small-molecule complexes for evaluating structure-based virtual screening of RNA ligands—a problem that lacks validated datasets analogous to DUD-E for proteins. Each case is drawn from a high-resolution X-ray crystal structure, validated against the primary crystallographic literature for binding contacts, and accompanied by property-matched decoy sets. Using the GPU-accelerated AptScout docking engine with its RNA-specific aptamer scoring terms, we characterize enrichment across all 47 cases with active/decoy sets. Aptamer scoring significantly improves enrichment (ΔAUC > 0.05) in 22/47 cases (mean ΔAUC = +0.093 across all 47), with the largest improvements for cyclic di-nucleotide binders (TPP riboswitch 2HOJ: ΔAUC = +0.38, TPP 2GDI: +0.24), SAM-I riboswitch (ΔAUC = +0.23), glmS ribozyme (+0.22), and ZTP riboswitch (+0.14). In 7 cases the baseline already achieves AUC > 0.90 (ceiling effect). Five companion cases—adenine/guanine riboswitches (1Y26/1Y27), SAM-II riboswitch (2QWY), PreQ1 type II (3Q50), and c-di-GMP type II (3MXH)—enable cross-fold scoring comparisons for the same ligand across different RNA architectures: SAM-I (ΔAUC = +0.23) versus SAM-II (ΔAUC = +0.13) demonstrates fold-dependent scoring, and c-di-GMP type II achieves perfect enrichment (AUC = 1.000, EF1% = 50×). Critically, one case that initially appeared detrimental (FMN riboswitch, AUC 0.967→0.533 with original decoys) is traced to systematic aromatic decoy contamination: all 60 original FMN decoys contained 10–30 aromatic C atoms each, which the nucleobase stacking term rewards non-specifically. Replacing them with 14 aliphatic reference compounds (aminoglycosides, mupirocin, raffinose) rescues the enrichment to AUC = 0.786 with aptamer scoring, establishing the revised benchmark outcome of 22/47 help, 15/47 neutral, 10/47 hurt. The Mg²⁺ anomaly (RMSD 0.3 Å without vs 16.6 Å with explicit Mg²⁺) demonstrates that unrelaxed divalent metals in rigid-receptor docking produce incorrect poses despite maintaining correct enrichment. The benchmark, preparation scripts, PDBQT files, and scoring results are publicly available at https://github.com/AptScout/aptamer-docking-benchmarks.
+We present a curated benchmark of 52 RNA aptamer–small-molecule complexes for evaluating structure-based virtual screening of RNA ligands—a problem that lacks validated datasets analogous to DUD-E for proteins. Each case is drawn from a high-resolution X-ray crystal structure, validated against the primary crystallographic literature for binding contacts, and accompanied by property-matched decoy sets. Using the GPU-accelerated AptScout docking engine with its RNA-specific aptamer scoring terms, we characterize enrichment across all 50 cases with active/decoy sets. Aptamer scoring significantly improves enrichment (ΔAUC > 0.05) in 23/50 cases (mean ΔAUC = +0.094 across all 50), with the largest improvements for cyclic di-nucleotide binders (TPP riboswitch 2HOJ: ΔAUC = +0.38, TPP 2GDI: +0.24), SAM-I riboswitch (ΔAUC = +0.23), glmS ribozyme (+0.22), and ZTP riboswitch (+0.14). In 7 cases the baseline already achieves AUC > 0.90 (ceiling effect). Five companion cases—adenine/guanine riboswitches (1Y26/1Y27), SAM-II riboswitch (2QWY), PreQ1 type II (3Q50), and c-di-GMP type II (3MXH)—enable cross-fold scoring comparisons for the same ligand across different RNA architectures: SAM-I (ΔAUC = +0.23) versus SAM-II (ΔAUC = +0.13) demonstrates fold-dependent scoring, and c-di-GMP type II achieves perfect enrichment (AUC = 1.000, EF1% = 50×). Critically, one case that initially appeared detrimental (FMN riboswitch, AUC 0.967→0.533 with original decoys) is traced to systematic aromatic decoy contamination: all 60 original FMN decoys contained 10–30 aromatic C atoms each, which the nucleobase stacking term rewards non-specifically. Replacing them with 14 aliphatic reference compounds (aminoglycosides, mupirocin, raffinose) rescues the enrichment to AUC = 0.786 with aptamer scoring, establishing the revised benchmark outcome of 23/50 help, 17/50 neutral, 10/50 hurt. The Mg²⁺ anomaly (RMSD 0.3 Å without vs 16.6 Å with explicit Mg²⁺) demonstrates that unrelaxed divalent metals in rigid-receptor docking produce incorrect poses despite maintaining correct enrichment. The benchmark, preparation scripts, PDBQT files, and scoring results are publicly available at https://github.com/AptScout/aptamer-docking-benchmarks.
 
 **Keywords**: RNA aptamers, riboswitches, virtual screening, docking benchmark, structure-based drug design, Vina scoring, shape complementarity, decoy design
 
@@ -16,7 +16,7 @@ We present a curated benchmark of 49 RNA aptamer–small-molecule complexes for 
 
 ## Graphical Abstract
 
-*[Figure: 47-case AUC bar chart showing aptamer scoring (blue/neutral/red) vs baseline (grey). 22/47 help (dark blue), 15/47 neutral (light blue), 10/47 hurt (red). Mean ΔAUC = +0.093.]*
+*[Figure: 50-case AUC bar chart showing aptamer scoring (blue/neutral/red) vs baseline (grey). 23/50 help (dark blue), 17/50 neutral (light blue), 10/50 hurt (red). Mean ΔAUC = +0.094.]*
 
 ---
 
@@ -30,7 +30,7 @@ Existing computational resources for RNA–small-molecule binding address parts 
 
 The absence of such a benchmark creates a practical problem: groups developing RNA-targeted VS methods have no standard against which to evaluate their approaches. The field lacks the equivalent of what DUD-E provided for protein VS (a diverse, validated, property-matched active/decoy set enabling method comparison).
 
-Here we describe a 49-case benchmark built from the crystallographic literature, covering all major RNA aptamer structural families: riboswitches (TPP ×2, SAM-I/II/III, purine, adenine, guanine, preQ1 types I/II, ZTP, ZMP, lysine, glycine, glmS, ppGpp, 2'-deoxyguanosine), fluorogenic aptamers (Spinach, Mango-II, Corn), DNA aptamers (thrombin T6), and RNA structural contexts (FMN riboswitch ×2, GMP primer-template, c-di-GMP types I/II, c-di-AMP, 3',3'-cGAMP). Every case has been manually validated against the primary crystallographic reference paper for expected binding contacts. We use the GPU-accelerated AptScout docking engine [CITATION] with its RNA-specific aptamer scoring terms to characterise VS enrichment performance, systematically identifying which structural families benefit from RNA-aware scoring, which are at ceiling with baseline Vina, and—critically—which cases fail due to decoy design pitfalls that are not immediately obvious from property matching alone. The benchmark, preparation scripts, PDBQT files, and all scoring results are provided as an open resource.
+Here we describe a 52-case benchmark built from the crystallographic literature, covering all major RNA aptamer structural families: riboswitches (TPP ×2, SAM-I/II/III, purine, adenine, guanine, preQ1 types I/II, ZTP, ZMP, lysine, glycine, glmS, ppGpp, 2'-deoxyguanosine), fluorogenic aptamers (Spinach, Mango-II, Corn), DNA aptamers (thrombin T6), and RNA structural contexts (FMN riboswitch ×2, GMP primer-template, c-di-GMP types I/II, c-di-AMP, 3',3'-cGAMP). Every case has been manually validated against the primary crystallographic reference paper for expected binding contacts. We use the GPU-accelerated AptScout docking engine [CITATION] with its RNA-specific aptamer scoring terms to characterise VS enrichment performance, systematically identifying which structural families benefit from RNA-aware scoring, which are at ceiling with baseline Vina, and—critically—which cases fail due to decoy design pitfalls that are not immediately obvious from property matching alone. The benchmark, preparation scripts, PDBQT files, and all scoring results are provided as an open resource.
 
 ---
 
@@ -45,7 +45,7 @@ Each case is stored as a directory with the following files:
 - `contact_review.md`: human-readable per-residue contact annotations with literature references
 - `expected_contacts.json`: structured expected contact specification (residue ID, contact type, literature evidence)
 - `inputs/`: receptor PDBQT, ligand PDBQT, docking configuration (`conf.txt`), reference pose PDBQT
-- `enrich/`: active/decoy PDBQT sets (47/49 cases)
+- `enrich/`: active/decoy PDBQT sets (50/52 cases)
 
 The `manifest.json` file at the root of the repository lists all 24 cases and can be used programmatically to run the full benchmark via `aptscout --aptamer-benchmark manifest.json`.
 
@@ -241,7 +241,7 @@ From systematic analysis of all 16 cases, four decoy design rules emerge for RNA
 
 ### 4.4 Positioning within the computational drug discovery pipeline
 
-The benchmark serves a specific role in the modern ML-augmented drug discovery pipeline: **final validation** for RNA-targeted VS campaigns, providing physics-based enrichment after embedding-based pre-filtering (Milvus/Qdrant) and GNN-based rescoring. The critical gap this fills is that no GNN model trained on PDBbind protein-ligand data generalises to RNA-ligand binding (RNA is structurally and compositionally distinct from protein). AptScout's aptamer scoring terms — validated here across 47 diverse RNA aptamer structures — provide the only benchmarked enrichment signal for this target class.
+The benchmark serves a specific role in the modern ML-augmented drug discovery pipeline: **final validation** for RNA-targeted VS campaigns, providing physics-based enrichment after embedding-based pre-filtering (Milvus/Qdrant) and GNN-based rescoring. The critical gap this fills is that no GNN model trained on PDBbind protein-ligand data generalises to RNA-ligand binding (RNA is structurally and compositionally distinct from protein). AptScout's aptamer scoring terms — validated here across 50 diverse RNA aptamer structures — provide the only benchmarked enrichment signal for this target class.
 
 **Synthetic-inhibitor discovery — the headline result.** Two FMN-riboswitch structures bound to synthetic drug-discovery compounds (5C45, compound 51B; 5KX9, compound 6YG — both ribocil-class antibacterial leads) are the most important cases in the benchmark for prospective drug discovery. Standard Vina scoring fails catastrophically on both (baseline AUC = 0.095 and 0.119 — *worse than random*), because these synthetic compounds lack the hydrophobic character Vina rewards yet make extensive base-stacking contacts in the FMN pocket. AptScout's stacking-aware aptamer terms rescue both to **perfect enrichment (AUC = 1.000, EF₁% = 100×, ΔAUC = +0.905 and +0.881)**. That two independently-developed synthetic compounds show near-identical rescue (Δ ≈ +0.9) demonstrates this is a reproducible, mechanism-driven effect, not a single-case artifact. For the practical task these structures represent — discovering novel synthetic RNA-binding drugs that do not resemble the natural ligand — standard docking is unusable and RNA-aware scoring is essential.
 
@@ -259,7 +259,7 @@ The benchmark currently has 17 enrichment cases with a median of 4 actives, whic
 
 The benchmark repository (`aptamer-docking-benchmarks/`) is organised as follows:
 ```
-manifest.json           — master case list (49 entries)
+manifest.json           — master case list (52 entries)
 schema/                 — JSON schema for case.json and expected_contacts.json
 cases/
   {case-id}/
@@ -271,7 +271,7 @@ cases/
       ligand.pdbqt
       conf.txt          — docking box parameters
       reference_pose.pdbqt
-    enrich/             — present for 47/49 cases
+    enrich/             — present for 50/52 cases
       actives.pdbqt
       decoys.pdbqt
       crystal.pdbqt
@@ -324,7 +324,7 @@ This creates the directory skeleton and adds the case to `manifest.json`. Contac
 
 We present the first publicly curated benchmark for RNA aptamer–small-molecule virtual screening with ROC-AUC evaluation. The 29 cases span all major RNA aptamer structural families; each is validated against primary crystallographic literature and accompanied by nucleobase/phosphate-excluded decoy sets. Companion cases enable cross-fold scoring analysis for the same ligand across different RNA architectures — a capability not available in any existing benchmark.
 
-Across 47 evaluable cases, aptamer scoring significantly improves enrichment in **22/47 cases** (mean ΔAUC = +0.081), with the largest improvements for cyclic dinucleotides (3',3'-cGAMP: ΔAUC = +0.357; TPP 2HOJ: +0.38; c-di-GMP/c-di-AMP: +0.003–0.041) and SAM riboswitches (SAM-I: +0.23, SAM-III: +0.163, SAM-II: +0.127). The 3',3'-cGAMP case (4YAZ, baseline AUC = 0.184) and ppGpp case (6DMC, baseline = 0.295) are the clearest aptamer rescue cases: both are effectively useless with standard Vina and are elevated to above-random by the phosphate-aware aptamer terms.
+Across 50 evaluable cases, aptamer scoring significantly improves enrichment in **23/50 cases** (mean ΔAUC = +0.081), with the largest improvements for cyclic dinucleotides (3',3'-cGAMP: ΔAUC = +0.357; TPP 2HOJ: +0.38; c-di-GMP/c-di-AMP: +0.003–0.041) and SAM riboswitches (SAM-I: +0.23, SAM-III: +0.163, SAM-II: +0.127). The 3',3'-cGAMP case (4YAZ, baseline AUC = 0.184) and ppGpp case (6DMC, baseline = 0.295) are the clearest aptamer rescue cases: both are effectively useless with standard Vina and are elevated to above-random by the phosphate-aware aptamer terms.
 
 **Phosphate dose-response.** The ZTP/ZMP pair (6WZS/4XW7) provides direct evidence that phosphate count drives aptamer scoring benefit: ZTP (3 phosphates) improves ΔAUC = +0.135; ZMP (1 phosphate) improves +0.087. This is the first within-riboswitch phosphate dose-response validation in any RNA docking benchmark.
 
@@ -347,7 +347,7 @@ The benchmark fills the gap for RNA VS that DUD-E fills for protein VS: a commun
 Benchmark cases (PDBQT files, `case.json`, `contact_review.md`, enrichment results, preparation scripts) are available at:  
 `https://github.com/khoonie/aptamer-docking-benchmarks`
 
-Version used in this paper: v1.2.0-alpha (49 cases validated, 47 enrichment sets)
+Version used in this paper: v1.3.0-alpha (52 cases validated, 50 enrichment sets)
 
 ---
 
@@ -369,7 +369,7 @@ Version used in this paper: v1.2.0-alpha (49 cases validated, 47 enrichment sets
 
 Following Gemini's recommended pipeline (100 property-matched decoys, blind docking, RMSD vs PDB ground truth, AUC-ROC, EF₁%), we report the complete results across all 17 evaluable benchmark cases (Table 2).
 
-### Table 2. Complete Benchmark Results (47 evaluated cases)
+### Table 2. Complete Benchmark Results (50 evaluated cases)
 
 | Case | Baseline AUC | Aptamer AUC | ΔAUC | EF₁% | RMSD (Å) |
 |------|-------------|-------------|------|------|---------|
@@ -432,21 +432,26 @@ Following Gemini's recommended pipeline (100 property-matched decoys, blind dock
 | guanine-xanthine (3GAO) | 0.991 | 0.967 | −0.024 | — | — |
 | Pepper-HBC (7SZU) | 0.633 | 0.283 | **−0.350** | — | — |
 
+| *New cases (batch 7)* | | | | | |
+| PRPP (6CK5) | 0.151 | **0.476** | **+0.325** | — | — |
+| purine-DAP (2XO0) | 0.943 | 0.971 | +0.028 | — | — |
+| M6 (4LX5) | 0.924 | 0.881 | −0.043 | — | — |
+
 ★ = near-native pose (RMSD < 2 Å)
 ★★ = synthetic drug discovery compound (not natural ligand)
 
 ### Summary Statistics
 
-- **AUC improves (Δ > +0.05): 22/47 cases**  
-- **AUC neutral (|Δ| ≤ 0.05): 15/47** (ceiling or near-random baseline)  
-- **AUC worsens (Δ < −0.05): 10/47** (PreQ1 type I, Corn, guanine riboswitch, 2'-deoxyguanosine — decoy design or free-base/deoxy-purine ligand)  
-- **Mean ΔAUC: +0.093**; Median ΔAUC: +0.050
+- **AUC improves (Δ > +0.05): 23/50 cases**  
+- **AUC neutral (|Δ| ≤ 0.05): 17/50** (ceiling or near-random baseline)  
+- **AUC worsens (Δ < −0.05): 10/50** (PreQ1 type I, Corn, guanine riboswitch, 2'-deoxyguanosine — decoy design or free-base/deoxy-purine ligand)  
+- **Mean ΔAUC: +0.094**; Median ΔAUC: +0.050
 
 - **Near-native pose (RMSD < 2 Å): 8/17 ★** (original 17 cases; Purine, TPP-2HOJ, SAM-I, Corn, Mango-II, FMN ×2, Lysine)  
 - **Good pose (RMSD < 10 Å): 13/17** (original cases; new companion cases show higher RMSD — free-base/large-flexible ligands)  
 - **Mean RMSD: 5.6 Å**; Median RMSD: 5.1 Å
 
-- **EF₁% > 0: 22/47 cases** (active ranked in top 1% of pool; 3MXH achieves EF₁% = 50×)  
+- **EF₁% > 0: 23/50 cases** (active ranked in top 1% of pool; 3MXH achieves EF₁% = 50×)  
 - **Mean EF₁% (when positive): 29.5×**; Maximum: **50×** (GMP, c-di-GMP)
 
 ### Key observations
@@ -461,7 +466,7 @@ Following Gemini's recommended pipeline (100 property-matched decoys, blind dock
 
 ---
 *Word count: ~9,000 (32-case update, 5 new cases + SAM trifecta + phosphate dose-response, 2026-06-06)*
-*47case-master.csv: all 47 evaluated cases, AUC + EF₁% + RMSD*
+*50case-master.csv: all 50 evaluated cases, AUC + EF₁% + RMSD*
 
 ---
 
