@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "datasetVersion": "0.6.0-alpha",
   "name": "Shared Aptamer Docking Benchmarks",
-  "description": "Tool-neutral aptamer and nucleic-acid docking benchmark metadata for MacVina, MacDock, and external comparator calibration.",
+  "description": "Tool-neutral aptamer and nucleic-acid docking benchmark metadata for AptDock, AptScout, and external comparator calibration.",
   "cases": [
     {
       "id": "t6-thrombin-vina",
@@ -83,6 +83,10 @@
     {
       "id": "1y26-adenine-riboswitch",
       "casePath": "cases/1y26-adenine-riboswitch/case.json"
+    },
+    {
+      "id": "1y27-guanine-riboswitch",
+      "casePath": "cases/1y27-guanine-riboswitch/case.json"
     }
   ]
 }

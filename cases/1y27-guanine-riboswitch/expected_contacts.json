@@ -1,0 +1,22 @@
+{
+  "interactionKinds": [
+    "baseStacking",
+    "hydrogenBond"
+  ],
+  "receptorResidues": [
+    "X:74",
+    "X:22",
+    "X:23",
+    "X:47",
+    "X:51",
+    "X:52"
+  ],
+  "ligandAtoms": [
+    "N1",
+    "N2",
+    "O6",
+    "N7",
+    "N9"
+  ],
+  "notes": "Validated against Serganov et al. Cell 2004 (doi:10.1016/j.cell.2004.11.020). Guanine (GUN X:101) binds via Watson-Crick face to U74: N1-H donates to U74 O2, O6 accepts from U74 N3-H. N2-H contacts A52. Stacking: U47 above, A23 below (same sandwich geometry as 1Y26 adenine riboswitch). The single-residue difference C74→U74 (vs 1Y26) switches adenine/guanine selectivity. GDP (X:14) and CCC (X:81) removed as crystallization artifacts. No Mg ions present in structure."
+}

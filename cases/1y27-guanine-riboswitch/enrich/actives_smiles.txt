@@ -1,0 +1,5 @@
+O=c1[nH]c2[nH]cnc2c(N)n1 GUN
+O=c1[nH]cnc2[nH]cnc12 HXA
+O=c1[nH]c(=O)[nH]c2[nH]cnc12 XAN
+Nc1nc2[nH]cnc2n1 2AP
+O=c1[nH]c2[nH]ncc2c(N)n1 8AZG

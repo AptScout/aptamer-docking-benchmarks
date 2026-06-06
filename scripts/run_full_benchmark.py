@@ -9,7 +9,7 @@ Full benchmark pipeline per Gemini's recommendation:
 Usage:
   python3 scripts/run_full_benchmark.py [--dry-run] [--case CASE_ID]
 
-Requires: RDKit, obabel, macvinaBenchmark binary
+Requires: RDKit, obabel, aptscoutBenchmark binary
 """
 
 import argparse
@@ -27,7 +27,11 @@ except ImportError:
     sys.exit("RDKit required.")
 
 ROOT   = Path(__file__).parent.parent
-BIN    = ROOT.parent / "macdock/.build/arm64-apple-macosx/release/macvinaBenchmark"
+_BIN_CANDIDATES = [
+    ROOT.parent / "macdock/.build/arm64-apple-macosx/release/aptscoutBenchmark",
+    ROOT.parent / "macdock/.build/arm64-apple-macosx/release/macvinaBenchmark",
+]
+BIN = next((b for b in _BIN_CANDIDATES if b.exists()), _BIN_CANDIDATES[0])
 CASES  = ROOT / "cases"
 TMPDIR = Path("/tmp/aptamer_benchmark_upgrade")
 TMPDIR.mkdir(exist_ok=True)
@@ -414,7 +418,7 @@ def main():
             print(f"  Status: {r['status']}")
 
     # Write results CSV
-    out_csv = ROOT / "derived/macdock/full_benchmark_results.csv"
+    out_csv = ROOT / "derived/aptscout/full_benchmark_results.csv"
     out_csv.parent.mkdir(exist_ok=True)
     fields = ["case_id","n_actives","n_decoys_before","n_decoys_after",
               "baseline_auc","aptamer_auc","delta_auc",

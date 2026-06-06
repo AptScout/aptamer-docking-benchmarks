@@ -1,0 +1,23 @@
+{
+  "id": "1y27-guanine-riboswitch",
+  "name": "Guanine riboswitch bound to guanine",
+  "systemType": "rna_ligand",
+  "curationStatus": "parsed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "structureID": "1Y27",
+  "sourceDatabase": "RCSB PDB",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.4,
+  "primaryLigandID": "GUN",
+  "selectedReceptorChains": ["X"],
+  "selectedLigandChains": ["X"],
+  "retainedIonLigands": [],
+  "removedIonLigands": ["GDP", "CCC"],
+  "preparationNotes": "GDP (X:14, likely 5' terminal nucleotide artifact) and CCC (X:81, crystallization agent) removed. No Mg ions in structure. Single chain X. Guanine ligand GUN at X:101. Box 22x22x22 A centered on ligand centroid.",
+  "source": "RCSB PDB 1Y27; Serganov et al. Cell 2004 doi:10.1016/j.cell.2004.11.020",
+  "affinitySource": "Mandal M & Breaker RR Nat Struct Mol Biol 2004; Kd ~5 uM for guanine",
+  "affinityNotes": "xpt G-riboswitch from B. subtilis. Guanine Kd ~5 uM. Hypoxanthine (no N2-amino) binds ~10x weaker. Companion to 1Y26 (V. vulnificus adenine riboswitch) — identical fold, single C74U swap confers guanine vs adenine selectivity.",
+  "notes": "xpt G-riboswitch from B. subtilis. Watson-Crick H-bonds: N1-H to U74 O2, O6 accepts from U74 N3-H. N2-H contacts A52. Stacking sandwich: U47 above, A23 below. 2.40 A X-ray."
+}
