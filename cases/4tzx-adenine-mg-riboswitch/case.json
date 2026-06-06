@@ -1,0 +1,11 @@
+{
+  "id": "4tzx-adenine-mg-riboswitch",
+  "name": "Adenine riboswitch (Mg2+ form) bound to adenine",
+  "systemType": "rna_ligand",
+  "curationStatus": "seed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 4TZX; Reining A et al. Nature 2013 doi:10.1038/nature12575",
+  "notes": "Adenine riboswitch from V. vulnificus grown in Mg2+ \u2014 companion to 1Y26 (no Mg form). Tests Mg2+ effect on aptamer scoring for free-base ligand. ADE at X:101. 2.01A X-ray."
+}

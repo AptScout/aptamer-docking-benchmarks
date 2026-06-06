@@ -1,0 +1,11 @@
+{
+  "id": "5kx9-fmn-riboswitch-inhibitor2",
+  "name": "FMN riboswitch bound to second synthetic inhibitor (6YG)",
+  "systemType": "rna_ligand",
+  "curationStatus": "seed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 5KX9; Howe JA et al. eLife 2016 doi:10.7554/eLife.22053",
+  "notes": "FMN riboswitch with compound 6YG (different ribocil analog from 5C45 compound 51B). Chain X, 6YG at X:108. Second drug-discovery case. 2.90A X-ray."
+}

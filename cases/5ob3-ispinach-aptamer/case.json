@@ -1,0 +1,11 @@
+{
+  "id": "5ob3-ispinach-aptamer",
+  "name": "iSpinach aptamer bound to DFHBI",
+  "systemType": "rna_ligand",
+  "curationStatus": "seed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 5OB3; Autour A et al. Nucleic Acids Res 2016 doi:10.1093/nar/gkw518",
+  "notes": "iSpinach (improved Spinach) fluorogenic aptamer. Ligand 1TU (DFHBI). G-quadruplex fold. Companion to Spinach (4Q9R, ligand 2ZY). 2.00A X-ray."
+}

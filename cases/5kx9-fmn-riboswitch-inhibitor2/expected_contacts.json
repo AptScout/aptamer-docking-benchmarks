@@ -1,0 +1,6 @@
+{
+  "receptorResidues": [],
+  "ligandAtoms": [],
+  "interactionKinds": [],
+  "notes": "Seed case: add expected contacts after initial parsing or literature/crystal-contact review."
+}

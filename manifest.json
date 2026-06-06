@@ -159,6 +159,26 @@
     {
       "id": "5c45-fmn-inhibitor-riboswitch",
       "casePath": "cases/5c45-fmn-inhibitor-riboswitch/case.json"
+    },
+    {
+      "id": "5u3g-guanidine-ykkc-riboswitch",
+      "casePath": "cases/5u3g-guanidine-ykkc-riboswitch/case.json"
+    },
+    {
+      "id": "4tzx-adenine-mg-riboswitch",
+      "casePath": "cases/4tzx-adenine-mg-riboswitch/case.json"
+    },
+    {
+      "id": "5kpy-hydroxytryptophan-aptamer",
+      "casePath": "cases/5kpy-hydroxytryptophan-aptamer/case.json"
+    },
+    {
+      "id": "5kx9-fmn-riboswitch-inhibitor2",
+      "casePath": "cases/5kx9-fmn-riboswitch-inhibitor2/case.json"
+    },
+    {
+      "id": "5ob3-ispinach-aptamer",
+      "casePath": "cases/5ob3-ispinach-aptamer/case.json"
     }
   ]
 }

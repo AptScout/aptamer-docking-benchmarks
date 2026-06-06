@@ -1,0 +1,11 @@
+{
+  "id": "5u3g-guanidine-ykkc-riboswitch",
+  "name": "ykkC guanidine riboswitch (D. dadantii) bound to guanidinium",
+  "systemType": "rna_ligand",
+  "curationStatus": "seed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 5U3G; Sherwood AV & Breaker RR RNA 2017 doi:10.1261/rna.062802.117",
+  "notes": "ykkC guanidine riboswitch from Dickeya dadantii. Ligand GAI at B:125. 2.30A X-ray. 3rd distinct guanidine fold (after 5T83 Guanidine-I and 5NZ6 Guanidine-III)."
+}

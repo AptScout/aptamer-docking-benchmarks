@@ -1,0 +1,11 @@
+{
+  "id": "5kpy-hydroxytryptophan-aptamer",
+  "name": "5-Hydroxytryptophan aptamer bound to 5-HTP",
+  "systemType": "rna_ligand",
+  "curationStatus": "seed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "source": "RCSB PDB 5KPY; Shui B et al. Angew Chem 2012 doi:10.1002/anie.201108299",
+  "notes": "Synthetic RNA aptamer for 5-hydroxytryptophan (4PQ, MW=220). Aromatic amino acid. Novel class: indole ring + amino acid. 2.00A X-ray. Not a natural riboswitch."
+}
