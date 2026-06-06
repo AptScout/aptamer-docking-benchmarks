@@ -1,0 +1,24 @@
+{
+  "interactionKinds": [
+    "baseStacking",
+    "hydrogenBond",
+    "phosphateElectrostatic"
+  ],
+  "receptorResidues": [
+    "A:11",
+    "A:24",
+    "A:25",
+    "A:26",
+    "A:42",
+    "A:43"
+  ],
+  "ligandAtoms": [
+    "N6",
+    "N1",
+    "N3",
+    "O2'",
+    "SD",
+    "C5'"
+  ],
+  "notes": "Validated against Gilbert et al. Nat Struct Mol Biol 2008 (doi:10.1038/nsmb.1371). SAM-II riboswitch from Thermoanaerobacter tengcongensis. Chain A, SAM at A:100. Adenosyl moiety of SAM stacks on G11 and contacts A24/A25/A26 via Watson-Crick-like H-bonds. Methionine sulfonium (SD) contacts A42/A43 backbone. Completely different fold from SAM-I (2YGH) despite identical ligand — used as paired case to show fold-dependent scoring. CS (cesium) and MG removed per ion policy. PO4 crystallization ions removed."
+}

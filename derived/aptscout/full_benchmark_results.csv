@@ -1,2 +1,2 @@
 case_id,n_actives,n_decoys_before,n_decoys_after,baseline_auc,aptamer_auc,delta_auc,ef1_baseline,ef1_aptamer,rmsd_baseline,rmsd_aptamer,status
-1y27-guanine-riboswitch,5,42,42,0.8667,0.7762,-0.09050000000000002,0.0,0.0,26.64,26.64,ok
+2qwy-sam-ii-riboswitch,3,238,238,0.528,0.4216,-0.10640000000000005,0.0,0.0,73.13,73.13,ok

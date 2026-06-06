@@ -1,0 +1,9 @@
+case_id,case_name,enrichment_id,active_count,decoy_count,crystal_count,auc,status,best_active_score,best_decoy_score,best_active_decoy_margin,mean_active_score,mean_decoy_score
+1fmn-fmn-riboswitch,FMN riboswitch bound to flavin mononucleotide,fmn-enrich-calib,1,60,1,1.000000,perfect_or_near_perfect,-9.709,0.000,9.709,-9.709,0.000
+2g9c-purine-riboswitch,"Adenine/purine riboswitch bound to 3AY (pyrimidine-2,4,6-triamine)",purine-enrich,7,88,1,0.657468,good_auc_negative_best_margin,-0.849,-1.754,-0.906,-0.346,2.396
+4rzd-preq1-riboswitch,PreQ1 riboswitch bound to PRF (7-aminomethyl-7-deazaguanine analog),preq1-enrich,5,74,1,0.500000,near_random,0.000,0.000,0.000,0.000,0.000
+2gdi-tpp-riboswitch,"TPP riboswitch bound to CCC (thiamine pyrophosphate analog, chain X)",tpp-enrich-filtered,7,266,1,0.628894,above_random_negative_best_margin,23.529,8.864,-14.664,57.241,73.968
+2ygh-sam-riboswitch,SAM-I riboswitch bound to S-adenosylmethionine,sam-enrich,3,238,1,0.819328,strong,-1.955,-3.019,-1.065,1.617,22.439
+3b4b-glms-riboswitch,glmS riboswitch/ribozyme bound to glucosamine-6-phosphate (GlcN6P),glms-enrich,4,165,1,0.750000,good,-0.180,0.000,0.180,-0.090,0.000
+2hoj-tpp-riboswitch,TPP riboswitch bound to thiamine pyrophosphate,tpp-enrich,7,266,1,0.714286,good,-0.360,0.000,0.360,-0.129,0.000
+2hoj-tpp-riboswitch,TPP riboswitch bound to thiamine pyrophosphate,tpp-enrich-filtered,7,266,1,0.714286,good,-0.360,0.000,0.360,-0.129,0.000

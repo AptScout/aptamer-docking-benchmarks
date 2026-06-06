@@ -1,0 +1,23 @@
+{
+  "id": "2qwy-sam-ii-riboswitch",
+  "name": "SAM-II riboswitch bound to S-adenosylmethionine",
+  "systemType": "rna_ligand",
+  "curationStatus": "parsed",
+  "configPath": "inputs/conf.txt",
+  "referencePoseMode": 1,
+  "expectedContactsPath": "expected_contacts.json",
+  "structureID": "2QWY",
+  "sourceDatabase": "RCSB PDB",
+  "experimentalMethod": "X-RAY DIFFRACTION",
+  "resolutionAngstrom": 2.8,
+  "primaryLigandID": "SAM",
+  "selectedReceptorChains": ["A"],
+  "selectedLigandChains": ["A"],
+  "retainedIonLigands": [],
+  "removedIonLigands": ["CS", "MG", "PO4"],
+  "preparationNotes": "Trimeric crystal structure (chains A, B, C). Chain A selected (SAM at A:100). CS (cesium, crystallization), MG (per Mg anomaly policy), PO4 (crystallization phosphates) all removed. Box 25x25x25 A — SAM is larger than free bases. Actives/decoys reused from SAM-I case (2YGH) for direct cross-fold comparison.",
+  "source": "RCSB PDB 2QWY; Gilbert SD et al. Nat Struct Mol Biol 2008 doi:10.1038/nsmb.1371",
+  "affinitySource": "Gilbert et al. 2008; Kd ~1 uM for SAM",
+  "affinityNotes": "SAM-II riboswitch from T. tengcongensis metK mRNA. Completely different fold from SAM-I despite binding same SAM ligand. Kd ~1 uM. Key paired case: same enrichment library as 2YGH SAM-I enables direct fold-dependent scoring comparison.",
+  "notes": "SAM-II riboswitch, 2.80 A X-ray. Adenosyl stacks on G11; methionine sulfonium contacts A42/A43. Different topology from SAM-I — beta-pseudoknot fold vs SAM-I alpha helix arrangement."
+}
